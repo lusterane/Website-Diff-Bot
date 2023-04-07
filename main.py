@@ -1,19 +1,42 @@
 from Website_Scraper import Website_Scraper
-from HTMLEntryObjectModel import HTMLEntryObjectModel, HTMLEntryObjectEncoder
+from Models import HTMLEntryObjectModel, HTMLEntryObjectEncoder, RequestObject
+from DatabaseManager import DatabaseManager
+from types import SimpleNamespace
+import json
+import pickle
 
-if __name__ == '__main__':
+def main():
     website_scraper = Website_Scraper()
-    url1 = 'https://www.katsucon.org/katsucon-2023-artist-alley/'
-    url2 = "https://animefest.org/e/AF2023/Activities/BizarreBazaar"
-    url3 = "https://www.animeboston.com/artists/artists_alley/"
-    urls = [url1,url2,url3]
+
+    requestObjects = []
+    requestObjects.append(RequestObject(user='Joyce',email='tobychow98@gmail.com', link='https://www.katsucon.org/katsucon-2023-artist-alley/'))
+    requestObjects.append(RequestObject(user='Joyce',email='tobychow98@gmail.com', link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'))
+    requestObjects.append(RequestObject(user='Joyce',email='tobychow98@gmail.com', link='https://www.animeboston.com/artists/artists_alley/'))
+
+    # response htmls from requests
+    encodedDictHTMLEntryModels = website_scraper.get_encoded_dict_HTML_Entries(requestObjects)
+
+    # place into database
+    # dm = DatabaseManager()
+    # dm.insert_html_data(encodedDictHTMLEntryModels[0])
+
+    # save data locally
+    # test_save_results_locally(encodedDictHTMLEntryModels)
+    # encodedDictHTMLEntryModels = test_get_dict_from_local_results()
+    # print(encodedDictHTMLEntryModels)
+
+def test_save_results_locally(encodedDictHTMLEntryModels):
+    count = 0
+    for json_model in encodedDictHTMLEntryModels:
+        with open(f"model_{str(count)}.json", 'wb') as write_file:
+            pickle.dump(json_model, write_file, protocol=pickle.HIGHEST_PROTOCOL)
+        count += 1
+
+def test_get_dict_from_local_results():
     encodedDictHTMLEntryModels = []
-
-    for url in urls:
-        raw_html = website_scraper.get_raw_html_from_link(url)
-        model = HTMLEntryObjectModel(customer="Joyce",html_data=raw_html,email="tobychow98@gmail.com")
-        encodedDictHTMLEntryModels.append(HTMLEntryObjectEncoder().encode(model))
-    print(encodedDictHTMLEntryModels)
-
-
-
+    for count in range(3):
+        with open(f"model_{str(count)}.json", 'rb') as read_file:
+            encodedDictHTMLEntryModels.append(pickle.load(read_file))
+    return encodedDictHTMLEntryModels
+if __name__ == '__main__':
+    main()

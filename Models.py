@@ -8,6 +8,13 @@ class HTMLEntryObjectModel:
     def __repr__(self):
         return f'Customer: {self.customer}\nHtml Data:\n{self.html_data}\nEmail: {self.email}\n'
 
+class RequestObject:
+    def __init__(self, user, email, link):
+        self.user = user
+        self.email = email
+        self.link = link
+
+
 class HTMLEntryObjectEncoder(JSONEncoder):
     def default(self, o: HTMLEntryObjectModel) -> HTMLEntryObjectModel:
         return o.__dict__
