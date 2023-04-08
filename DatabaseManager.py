@@ -23,10 +23,9 @@ class DatabaseManager:
             .execute()
         print(data, count)
 
-    def update_tables_with_response_objects(self, html_entry_objects: [Models.ScrapingResponseObject]):
-        for html_entry_object in html_entry_objects:
-            html_response = self.__update_html_table(html_entry_object)
-            user_response = self.__update_user_table(html_entry_object)
+    def update_tables_with_scrape_response(self, html_entry_object: Models.ScrapingResponseObject):
+        html_response = self.__update_html_table(html_entry_object)
+        user_response = self.__update_user_table(html_entry_object)
 
     def __update_html_table(self, entry_object: Models.ScrapingResponseObject):
         html_table_name = os.environ.get(DBTable.HTML_Table_Name.value)
@@ -47,11 +46,6 @@ class DatabaseManager:
 
     def __update_user_table(self, entry_object: Models.ScrapingResponseObject):
         user_table_name = os.environ.get(DBTable.User_Table_Name.value)
-
-        return None, None
-
-    def serialize_json(self, dict):
-        json_object = json.dumps(dict, indent=4)
 
 
 class DBTable(Enum):

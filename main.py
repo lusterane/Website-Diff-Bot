@@ -1,5 +1,4 @@
 import pickle
-
 from DatabaseManager import DatabaseManager
 from Models import RequestObject
 from Website_Scraper import Website_Scraper
@@ -9,17 +8,21 @@ def main():
     website_scraper = Website_Scraper()
 
     request_objects = [RequestObject(name='Joyce', email='tobychow98@gmail.com',
-                                     link='https://www.op.gg/'),]
-                       # RequestObject(name='Joyce', email='tobychow98@gmail.com',
-                       #               link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
-                       # RequestObject(name='Joyce', email='tobychow98@gmail.com',
-                       #               link='https://www.animeboston.com/artists/artists_alley/')]
+                                     link='https://www.sascassnime.ssscom/vendors-and-artists/artist-alley/artist-alley-registration/'),
+                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                                     link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
+                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                                     link='https://www.animeboston.com/artists/artists_alley/')]
 
     # response htmls from requests
-    response_objects = website_scraper.scrape_requests(request_objects)
+    response_object = website_scraper.scrape_request(request_objects[0])
+
+    if not response_object:
+        return
+
     # place into database
     dm = DatabaseManager()
-    dm.update_tables_with_response_objects(response_objects)
+    dm.update_tables_with_scrape_response(response_object)
 
     # save data locally
     # test_save_results_locally(encodedDictHTMLEntryModels)
