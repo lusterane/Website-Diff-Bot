@@ -1,9 +1,12 @@
 import json
 import os
-from supabase import create_client, Client
 import random
-import Models
 from enum import Enum
+
+from supabase import create_client
+
+import Models
+
 
 class DatabaseManager:
     def __init__(self):
@@ -12,9 +15,9 @@ class DatabaseManager:
         self.supabase = create_client(url, key)
 
     def insert_data_test(self):
-        data, count = self.supabase\
-            .table('countries')\
-            .insert({"id": 1, "name": "Denmark"})\
+        data, count = self.supabase \
+            .table('countries') \
+            .insert({"id": 1, "name": "Denmark"}) \
             .execute()
         print(data, count)
 
@@ -26,9 +29,11 @@ class DatabaseManager:
     def __update_html_table(self, entry_object: Models.ScrapingResponseObject):
         html_table_name = os.environ.get(DBTable.HTML_Table_Name.value)
         data, count = None, None
+
         def find_entry():
 
             return None
+
         exists = find_entry()
         if exists:
             # replace entry
@@ -42,10 +47,13 @@ class DatabaseManager:
             }
             data, count = self.supabase.table(html_table_name).insert(new_entry).execute()
         return data, count
+
     def __update_user_table(self, entry_object: Models.ScrapingResponseObject):
         user_table_name = os.environ.get(DBTable.User_Table_Name.value)
+
     def serialize_json(self, dict):
         json_object = json.dumps(dict, indent=4)
+
 
 class DBTable(Enum):
     HTML_Table_Name = "HTML_Table_Name"

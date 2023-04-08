@@ -1,6 +1,8 @@
 import certifi
 import urllib3
-from Models import ScrapingResponseObject, HTMLEntryObjectEncoder, RequestObject
+
+from Models import ScrapingResponseObject
+
 
 class Website_Scraper:
 
@@ -13,6 +15,7 @@ class Website_Scraper:
                                                            html_data=raw_html,
                                                            email=requestObject.email))
         return response_objects
+
     def __get_raw_html_from_link(self, url):
         try:
             http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
