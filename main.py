@@ -9,15 +9,14 @@ def main():
     website_scraper = Website_Scraper()
 
     request_objects = [RequestObject(name='Joyce', email='tobychow98@gmail.com',
-                                     link='https://www.katsucon.org/katsucon-2023-artist-alley/'),
-                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
-                                     link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
-                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
-                                     link='https://www.animeboston.com/artists/artists_alley/')]
+                                     link='https://www.op.gg/'),]
+                       # RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                       #               link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
+                       # RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                       #               link='https://www.animeboston.com/artists/artists_alley/')]
 
     # response htmls from requests
     response_objects = website_scraper.scrape_requests(request_objects)
-
     # place into database
     dm = DatabaseManager()
     dm.update_tables_with_response_objects(response_objects)

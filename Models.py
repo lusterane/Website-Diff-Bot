@@ -27,22 +27,24 @@ class RequestObject:
         self.email = email
         self.link = link
 
-
-class DBHTMLEntryObject:
-    def __init__(self, html_data_id, link, html_data):
+class DBHTMLObject:
+    def __init__(self, html_data_id, link, html_data, last_updated='1990-01-01T00:00:00.965861+00:00'):
         self.html_data_id = html_data_id
         self.link = link
         self.html_data = html_data
+        self.last_updated = last_updated
+
+    @staticmethod
+    def from_json(json_dct):
+        return DBHTMLObject(json_dct['html_data_id'],
+                            json_dct['link'],
+                            json_dct['html_data'],
+                            json_dct['last_updated'])
 
 
-class DBUserEntryObject:
+class DBUserObject:
     def __init__(self, user_data_id, email, name, html_data_fk):
         self.user_data_id = user_data_id
         self.email = email
         self.name = name
         self.html_data_fk = html_data_fk
-
-
-class HTMLEntryObjectEncoder(JSONEncoder):
-    def default(self, o: ScrapingResponseObject) -> ScrapingResponseObject:
-        return o.__dict__
