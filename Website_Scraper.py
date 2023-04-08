@@ -5,6 +5,8 @@ import Models
 
 
 class Website_Scraper:
+    def __init__(self):
+        urllib3.disable_warnings()
     def scrape_request(self, request_object):
         try:
             raw_html = self.__get_raw_html_from_link(request_object.link)

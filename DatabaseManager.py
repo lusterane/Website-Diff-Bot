@@ -27,6 +27,8 @@ class DatabaseManager:
         html_response = self.__update_html_table(html_entry_object)
         user_response = self.__update_user_table(html_entry_object)
 
+        return True
+
     def __update_html_table(self, entry_object: Models.ScrapingResponseObject):
         html_table_name = os.environ.get(DBTable.HTML_Table_Name.value)
 

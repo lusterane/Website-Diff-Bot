@@ -1,0 +1,14 @@
+2023-04-08 15:44:04,566 - root - INFO - hELO WORLD
+2023-04-08 15:47:59,270 - root - INFO - Starting Scraping . . .
+2023-04-08 15:47:59,336 - root - INFO - Scraping Failed . . .
+2023-04-08 15:48:34,971 - root - INFO - Starting Scraping . . .
+2023-04-08 15:48:35,628 - root - INFO - Scraping Success!
+2023-04-08 15:48:35,628 - root - INFO - Putting into DB . . .
+2023-04-08 15:53:33,435 - root - INFO - Starting Scraping . . .
+2023-04-08 15:53:34,062 - root - INFO - Scraping Success!
+2023-04-08 15:53:34,062 - root - INFO - Putting into DB . . .
+2023-04-08 15:53:34,662 - root - INFO - DB Querying Failed . . .
+2023-04-08 15:53:42,724 - root - INFO - Starting Scraping . . .
+2023-04-08 15:53:43,076 - root - INFO - Scraping Success!
+2023-04-08 15:53:43,076 - root - INFO - Putting into DB . . .
+2023-04-08 15:53:43,718 - root - INFO - DB Querying Success!
