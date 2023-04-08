@@ -1,16 +1,18 @@
 import certifi
 import urllib3
-from Models import HTMLEntryObjectModel, HTMLEntryObjectEncoder, RequestObject
+from Models import ScrapingResponseObject, HTMLEntryObjectEncoder, RequestObject
 
 class Website_Scraper:
 
-    def get_encoded_dict_HTML_Entries(self,requestObjects):
-        encodedDictHTMLEntryModels = []
-        for requestObject in requestObjects:
+    def scrape_requests(self, request_objects):
+        response_objects = []
+        for requestObject in request_objects:
             raw_html = self.__get_raw_html_from_link(requestObject.link)
-            model = HTMLEntryObjectModel(customer=requestObject.user, html_data=raw_html, email=requestObject.email)
-            encodedDictHTMLEntryModels.append(HTMLEntryObjectEncoder().encode(model))
-        return encodedDictHTMLEntryModels
+            response_objects.append(ScrapingResponseObject(link=requestObject.link,
+                                                           name=requestObject.name,
+                                                           html_data=raw_html,
+                                                           email=requestObject.email))
+        return response_objects
     def __get_raw_html_from_link(self, url):
         try:
             http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())

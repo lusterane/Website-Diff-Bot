@@ -1,5 +1,5 @@
 from Website_Scraper import Website_Scraper
-from Models import HTMLEntryObjectModel, HTMLEntryObjectEncoder, RequestObject
+from Models import ScrapingResponseObject, HTMLEntryObjectEncoder, RequestObject
 from DatabaseManager import DatabaseManager
 from types import SimpleNamespace
 import json
@@ -8,17 +8,19 @@ import pickle
 def main():
     website_scraper = Website_Scraper()
 
-    requestObjects = []
-    requestObjects.append(RequestObject(user='Joyce',email='tobychow98@gmail.com', link='https://www.katsucon.org/katsucon-2023-artist-alley/'))
-    requestObjects.append(RequestObject(user='Joyce',email='tobychow98@gmail.com', link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'))
-    requestObjects.append(RequestObject(user='Joyce',email='tobychow98@gmail.com', link='https://www.animeboston.com/artists/artists_alley/'))
+    request_objects = [RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                                     link='https://www.katsucon.org/katsucon-2023-artist-alley/'),
+                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                                     link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
+                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                                     link='https://www.animeboston.com/artists/artists_alley/')]
 
     # response htmls from requests
-    encodedDictHTMLEntryModels = website_scraper.get_encoded_dict_HTML_Entries(requestObjects)
+    response_objects = website_scraper.scrape_requests(request_objects)
 
     # place into database
-    # dm = DatabaseManager()
-    # dm.insert_html_data(encodedDictHTMLEntryModels[0])
+    dm = DatabaseManager()
+    dm.update_tables_with_response_objects(response_objects)
 
     # save data locally
     # test_save_results_locally(encodedDictHTMLEntryModels)
