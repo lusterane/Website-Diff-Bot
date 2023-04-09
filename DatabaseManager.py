@@ -16,7 +16,7 @@ class DatabaseManager:
         self.current_datetime = str(datetime.now(timezone.utc))
         self.user_table_name = os.environ.get(DBTable.User_Table_Name.value)
         self.html_table_name = os.environ.get(DBTable.HTML_Table_Name.value)
-        self.html_user_relation_table_name = os.environ.get(DBTable.HTML_Table_Name.value)
+        self.html_user_relation_table_name = os.environ.get(DBTable.HTML_User_Relation_Table_Name.value)
     def update_tables_with_scrape_response(self, scraping_response: ScrapingResponseObject):
         # must create user before html entry because of foreign key relation
         html_object = self.__update_html_table(scraping_response)
@@ -38,8 +38,8 @@ class DatabaseManager:
             return existing_entry
         else:
             # create new entry
-            new_entry = DBHTMLObject(html_data_id=self.__get_random_primary_key, link=scraping_response.link,
-                                            html_data=scraping_response.html_data, last_updated=self.current_datetime)
+            new_entry = DBHTMLObject(link=scraping_response.link,
+                                     html_data=scraping_response.html_data, last_updated=self.current_datetime)
             self.__insert_html(new_entry)
             # TODO: throw error if primary key same as existing
             return new_entry
@@ -51,7 +51,7 @@ class DatabaseManager:
             return DBUserObject.from_json(user_response.data[0])
         else:
             # create new entry
-            new_entry = DBUserObject(user_data_id=self.__get_random_primary_key(), email=scraping_response.email)
+            new_entry = DBUserObject(email=scraping_response.email)
             self.__insert_user(new_entry)
             # TODO: throw error if primary key same as existing
             return new_entry
@@ -62,8 +62,8 @@ class DatabaseManager:
             return DBHTMLUserRelationObject.from_json(relation_response.data[0])
         else:
             # create new relation
-            new_entry = DBHTMLUserRelationObject(user_data_id=self.__get_random_primary_key(), html_data_link=html_object.html_data, user_data_email=user_object.email)
-            self.__insert_user(new_entry)
+            new_entry = DBHTMLUserRelationObject(id=self.__get_random_primary_key(), link=html_object.link, email=user_object.email)
+            self.__insert_relation(new_entry)
             # TODO: throw error if primary key same as existing
             return new_entry
 
@@ -85,7 +85,7 @@ class DatabaseManager:
 
     # RELATION TABLE
     def __fetch_relation_table(self, html_entry: DBHTMLObject, user_entry: DBUserObject):
-        return self.supabase.table(self.html_user_relation_table_name).select('*', count='exact').eq('user_data_email', user_entry.email).eq('html_data_link', html_entry.link).execute()
+        return self.supabase.table(self.html_user_relation_table_name).select('*', count='exact').eq('email', user_entry.email).eq('link', html_entry.link).execute()
     def __insert_relation(self, entry):
         return self.supabase.table(self.html_user_relation_table_name).insert(entry.__dict__, count='exact').execute()
     def __get_random_primary_key(self):

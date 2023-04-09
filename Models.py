@@ -25,39 +25,35 @@ class RequestObject:
 
 
 class DBHTMLObject:
-    def __init__(self, html_data_id, link, html_data, last_updated='1990-01-01T00:00:00.965861+00:00'):
-        self.html_data_id = html_data_id
+    def __init__(self, link, html_data, last_updated='1990-01-01T00:00:00.965861+00:00'):
         self.link = link
         self.html_data = html_data
         self.last_updated = last_updated
 
     @staticmethod
     def from_json(json_dct):
-        return DBHTMLObject(json_dct['html_data_id'],
-                            json_dct['link'],
+        return DBHTMLObject(json_dct['link'],
                             json_dct['html_data'],
                             json_dct['last_updated'])
 
 
 class DBUserObject:
-    def __init__(self, user_data_id, email):
-        self.user_data_id = user_data_id
+    def __init__(self, email):
         self.email = email
 
     @staticmethod
     def from_json(json_dct):
-        return DBUserObject(json_dct['user_data_id'],
-                            json_dct['email'])
+        return DBUserObject(json_dct['email'])
 
 
 class DBHTMLUserRelationObject:
-    def __init__(self, id, html_data_link, user_data_email):
+    def __init__(self, id, link, email):
         self.id = id
-        self.user_data_email = user_data_email
-        self.html_data_link = html_data_link
+        self.email = email
+        self.link = link
 
     @staticmethod
     def from_json(json_dct):
         return DBHTMLUserRelationObject(json_dct['id'],
-                                        json_dct['user_data_email'],
-                                        json_dct['html_data_link'])
+                                        json_dct['email'],
+                                        json_dct['link'])
