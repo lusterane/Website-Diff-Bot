@@ -45,8 +45,8 @@ class DBHTMLUserRelationObject:
     @staticmethod
     def from_json(json_dct):
         return DBHTMLUserRelationObject(json_dct['id'],
-                                        json_dct['email'],
-                                        json_dct['link'])
+                                        json_dct['link'],
+                                        json_dct['email'])
 
 
 class DBUpdatedHTMLObject:
@@ -59,6 +59,6 @@ class DBUpdatedHTMLObject:
     @staticmethod
     def from_json(json_dct):
         return DBUpdatedHTMLObject(json_dct['id'],
-                                   json_dct['html_diff'],
                                    json_dct['updated_on'],
+                                   json_dct['html_diff'],
                                    json_dct['link'])

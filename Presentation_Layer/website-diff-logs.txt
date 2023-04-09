@@ -7,3 +7,421 @@
 2023-04-09 13:14:33,519 - root - INFO - Starting Scraping . . .
 2023-04-09 13:14:34,196 - root - INFO - Scraping Success!
 2023-04-09 13:14:34,197 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:14:34] "POST /all/updateTableWithEmailAndLink?email=tobychow98@gmail.com&link=https://www.animeboston.com/artists/artists_alley/ HTTP/1.1" 200 -
+2023-04-09 13:15:48,545 - root - INFO - Starting Scraping . . .
+2023-04-09 13:15:48,964 - root - INFO - Scraping Success!
+2023-04-09 13:15:48,964 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:15:48] "POST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animeboston.com/artists/artists_alley/ HTTP/1.1" 200 -
+2023-04-09 13:23:02,778 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 13:23:02,812 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:23:03,329 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:23:03,332 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:23:07,427 - root - INFO - Starting Scraping . . .
+2023-04-09 13:23:07,858 - root - INFO - Scraping Success!
+2023-04-09 13:23:07,858 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:23:07] "POST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animeboston.com/artists/artists_alley/ HTTP/1.1" 200 -
+2023-04-09 13:23:26,438 - root - INFO - Starting Scraping . . .
+2023-04-09 13:23:26,480 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002F0D000BC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:23:26,480 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:23:26,481 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002F0D000BA90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:23:26,481 - root - INFO - Scraping Failed . . .
+2023-04-09 13:23:26,481 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:23:26] "[33mPOST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animebosssston.com/artists/artists_alley/ HTTP/1.1[0m" 404 -
+2023-04-09 13:24:11,904 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 13:24:11,935 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:24:12,458 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:24:12,462 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:24:14,518 - root - INFO - Starting Scraping . . .
+2023-04-09 13:24:14,556 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F53D3ABE48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:14,557 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:24:14,557 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F53D3ABD30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:14,557 - root - INFO - Scraping Failed . . .
+2023-04-09 13:24:14,558 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:24:14] "[33mPOST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animebosssston.com/artists/artists_alley/ HTTP/1.1[0m" 404 -
+2023-04-09 13:24:20,657 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 13:24:20,691 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:24:21,275 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:24:21,278 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:24:21,994 - root - INFO - Starting Scraping . . .
+2023-04-09 13:24:21,998 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001A844E1BBE0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:21,998 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:24:21,998 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001A844E1B710>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:21,998 - root - INFO - Scraping Failed . . .
+2023-04-09 13:24:22,000 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:24:22] "[33mPOST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animebosssston.com/artists/artists_alley/ HTTP/1.1[0m" 404 -
+2023-04-09 13:24:31,578 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 13:24:31,578 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 13:24:31,579 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:24:32,077 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:24:32,080 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:24:35,168 - root - INFO - Starting Scraping . . .
+2023-04-09 13:24:35,172 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000240AB57B2B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:35,172 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:24:35,173 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000240AB57BC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:35,173 - root - INFO - Scraping Failed . . .
+2023-04-09 13:24:35,173 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:24:35] "[33mPOST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animebosssston.com/artists/artists_alley/ HTTP/1.1[0m" 404 -
+2023-04-09 13:24:44,408 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 13:24:44,442 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:24:45,003 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:24:45,007 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:24:46,181 - root - INFO - Starting Scraping . . .
+2023-04-09 13:24:46,246 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000021D7ACABD68>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:46,246 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:24:46,246 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000021D7ACABC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:24:46,246 - root - INFO - Scraping Failed . . .
+2023-04-09 13:24:46,247 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:24:46] "[31m[1mPOST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animebosssston.com/artists/artists_alley/ HTTP/1.1[0m" 400 -
+2023-04-09 13:24:59,345 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 13:24:59,345 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 13:24:59,348 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:25:00,509 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:25:00,515 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:25:04,231 - root - INFO - Starting Scraping . . .
+2023-04-09 13:25:13,586 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001480A40FA90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:25:15,631 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:25:17,567 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001480A4632E8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:26:06,397 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 13:26:06,397 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 13:26:06,398 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:26:06,908 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:26:06,911 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:26:08,496 - root - INFO - Starting Scraping . . .
+2023-04-09 13:26:08,567 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001AE26D3BD68>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:26:08,567 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:26:08,567 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001AE26D3BC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:26:08,567 - root - INFO - Scraping Failed . . .
+2023-04-09 13:26:08,568 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:26:08] "[31m[1mPOST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animebosssston.com/artists/artists_alley/ HTTP/1.1[0m" 400 -
+2023-04-09 13:26:30,442 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 13:26:30,476 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:26:31,024 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:26:31,028 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:26:32,032 - root - INFO - Starting Scraping . . .
+2023-04-09 13:26:32,038 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002254BC0BD68>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:26:32,038 - root - INFO - Will try again with non-secure connection ...
+2023-04-09 13:26:32,039 - root - INFO - Failed with: HTTPSConnectionPool(host='www.animebosssston.com', port=443): Max retries exceeded with url: /artists/artists_alley/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002254BC0BA58>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-09 13:26:32,039 - root - INFO - Scraping Failed . . .
+2023-04-09 13:26:32,040 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:26:32] "[33mPOST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animebosssston.com/artists/artists_alley/ HTTP/1.1[0m" 404 -
+2023-04-09 14:33:39,646 - root - INFO - Starting Scraping . . .
+2023-04-09 14:33:40,057 - root - INFO - Scraping Success!
+2023-04-09 14:33:40,058 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:33:40] "POST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animeboston.com/artists/artists_alley/ HTTP/1.1" 200 -
+2023-04-09 14:37:14,036 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:37:14,075 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:40:14,722 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 14:40:14,722 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 14:40:14,723 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:40:15,220 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:40:15,224 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:40:20,273 - root - INFO - Starting Scraping . . .
+2023-04-09 14:40:20,644 - root - INFO - Scraping Success!
+2023-04-09 14:40:20,644 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:40:20] "POST /all/updateTableWithEmailAndLink?email=joyuce@gmail.com&link=https://www.animeboston.com/artists/artists_alley/ HTTP/1.1" 200 -
+2023-04-09 14:41:03,139 - root - INFO - Starting Scraping . . .
+2023-04-09 14:41:03,556 - root - INFO - Scraping Success!
+2023-04-09 14:41:03,556 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:41:03] "POST /all/updateTableWithEmailAndLink?email=tobychow98@gmail.com&link=https://www.animeboston.com/artists/artists_alley/ HTTP/1.1" 200 -
+2023-04-09 14:41:18,483 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:41:18] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 14:42:49,791 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:42:49,825 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:42:50,349 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:42:50,353 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:42:52,424 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:42:52,456 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:42:53,052 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:42:53,056 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:42:55,097 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:42:55] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 14:43:09,464 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:43:09,511 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:43:10,035 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:43:10,038 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:43:15,815 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:43:15] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 14:43:39,738 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:43:39,775 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:43:40,337 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:43:40,341 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:43:43,915 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 14:43:43,915 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 14:43:43,916 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:43:45,074 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:43:45,080 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:45:25,648 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:45:25,696 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:47:01,166 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 14:47:01,168 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 14:47:01,170 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:47:02,366 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:47:02,373 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:48:19,725 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:48:19,778 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:48:20,976 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:48:20,982 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:48:35,814 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 14:48:35,814 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 14:48:35,816 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:48:37,089 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:48:37,094 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:49:03,658 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:49:03,703 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:50:21,918 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 14:50:21,918 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 14:50:21,919 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:50:22,438 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:50:22,442 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:50:25,642 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:50:25] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 14:50:48,970 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:50:48] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 14:50:59,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 14:50:59,310 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:50:59,824 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:50:59,829 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:51:19,831 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:51:19] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 14:51:41,754 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 14:51:41,786 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:51:42,298 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:51:42,302 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:52:22,214 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 14:52:22,248 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:52:22,792 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:52:22,796 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:52:38,159 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 14:52:38,199 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:52:38,764 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:52:38,768 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:52:40,610 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 14:52:40] "POST /all/updateAllHTMLEntries HTTP/1.1" 200 -
+2023-04-09 14:53:48,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 14:53:48,332 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:53:48,944 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:53:48,948 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:53:57,149 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 14:53:57,178 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:53:57,705 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:53:57,708 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:54:20,244 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 14:54:20,273 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 14:54:20,784 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 14:54:20,788 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 14:55:43,659 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 14:55:43,716 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:07:21,568 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:07:21,568 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:07:21,570 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:07:22,094 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:07:22,098 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:07:40,335 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:07:40,335 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:07:40,336 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:07:41,512 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:07:41,519 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:08:02,832 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 15:08:02,882 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:08:04,084 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:08:04,090 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:08:11,659 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:08:11,659 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:08:11,662 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:08:12,930 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:08:12,940 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:08:22,470 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:08:22] "POST /all/updateAllHTMLEntries HTTP/1.1" 200 -
+2023-04-09 15:08:35,279 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 15:08:35,320 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:08:36,542 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:08:36,547 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:09:03,049 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 15:09:03,096 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:09:04,350 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:09:04,356 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:09:07,834 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:09:07,834 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:09:07,836 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:09:09,083 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:09:09,089 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:09:09,587 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:09:09] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:09:15,357 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:09:15] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:09:33,144 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:09:33] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:10:27,971 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:10:27,971 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:10:27,973 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:10:29,232 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:10:29,238 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:10:48,540 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:10:48,541 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:10:48,543 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:10:49,719 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:10:49,725 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:10:52,009 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:10:52] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:11:00,139 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:11:00] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:11:09,028 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:11:09,028 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:11:09,031 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:11:10,198 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:11:10,203 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:11:12,032 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:11:12] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:11:52,872 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:11:52,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:11:52,875 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:11:54,129 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:11:54,135 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:14:08,366 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Persistence_Layer\\Models.py', reloading
+2023-04-09 15:14:08,413 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:14:09,601 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:14:09,606 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:14:20,964 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:14:20,965 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:14:20,967 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:14:22,185 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:14:22,192 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:26:09,334 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:26:09,334 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:26:09,335 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:26:09,870 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:26:09,874 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:27:09,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 15:27:09,321 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:27:09,881 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:27:09,886 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:27:27,312 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 15:27:27,347 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:27:27,881 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:27:27,885 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:28:05,515 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:28:05,515 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:28:05,517 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:28:06,045 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:28:06,050 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:28:08,633 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:28:08] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:28:08,633 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:28:08] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:29:16,501 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:29:16,501 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:29:16,503 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:29:17,784 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:29:17,792 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:29:18,355 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:29:18] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:29:18,355 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:29:18] "[33mPOST /all/updateAllHTMLEntries HTTP/1.1[0m" 404 -
+2023-04-09 15:29:42,794 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:29:42,794 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:29:42,797 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:29:44,089 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:29:44,095 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:31:50,023 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:31:50,023 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:31:50,024 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:31:50,550 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:31:50,554 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:31:54,491 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:54,491 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:55,382 - root - INFO - Scraping Success!
+2023-04-09 15:31:55,382 - root - INFO - Scraping Success!
+2023-04-09 15:31:56,135 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:56,135 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:56,550 - root - INFO - Scraping Success!
+2023-04-09 15:31:56,550 - root - INFO - Scraping Success!
+2023-04-09 15:31:57,158 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:57,158 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:57,463 - root - INFO - Scraping Success!
+2023-04-09 15:31:57,463 - root - INFO - Scraping Success!
+2023-04-09 15:31:58,024 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:58,024 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:58,330 - root - INFO - Scraping Success!
+2023-04-09 15:31:58,330 - root - INFO - Scraping Success!
+2023-04-09 15:31:58,892 - root - INFO - Starting Scraping . . .
+2023-04-09 15:31:58,892 - root - INFO - Starting Scraping . . .
+2023-04-09 15:32:00,153 - root - INFO - Scraping Success!
+2023-04-09 15:32:00,153 - root - INFO - Scraping Success!
+2023-04-09 15:32:01,454 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:32:01] "POST /all/updateAllHTMLEntries HTTP/1.1" 200 -
+2023-04-09 15:32:01,454 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:32:01] "POST /all/updateAllHTMLEntries HTTP/1.1" 200 -
+2023-04-09 15:32:57,092 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Website_Scraper.py', reloading
+2023-04-09 15:32:57,092 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Website_Scraper.py', reloading
+2023-04-09 15:32:57,125 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:32:57,671 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:32:57,675 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:33:00,616 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-09 15:33:00,616 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-09 15:33:01,159 - root - INFO - Scraping Success!
+2023-04-09 15:33:01,159 - root - INFO - Scraping Success!
+2023-04-09 15:33:01,779 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-09 15:33:01,779 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-09 15:33:02,161 - root - INFO - Scraping Success!
+2023-04-09 15:33:02,161 - root - INFO - Scraping Success!
+2023-04-09 15:33:02,738 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-09 15:33:02,738 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-09 15:33:03,031 - root - INFO - Scraping Success!
+2023-04-09 15:33:03,031 - root - INFO - Scraping Success!
+2023-04-09 15:33:03,530 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-09 15:33:03,530 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-09 15:33:03,828 - root - INFO - Scraping Success!
+2023-04-09 15:33:03,828 - root - INFO - Scraping Success!
+2023-04-09 15:33:04,332 - root - INFO - Starting Scraping https://www.op.gg for daniel98@gmail.com. . .
+2023-04-09 15:33:04,332 - root - INFO - Starting Scraping https://www.op.gg for daniel98@gmail.com. . .
+2023-04-09 15:33:05,540 - root - INFO - Scraping Success!
+2023-04-09 15:33:05,540 - root - INFO - Scraping Success!
+2023-04-09 15:33:06,497 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:33:06] "POST /all/updateAllHTMLEntries HTTP/1.1" 200 -
+2023-04-09 15:33:06,497 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:33:06] "POST /all/updateAllHTMLEntries HTTP/1.1" 200 -
+2023-04-09 15:36:20,161 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 15:36:20,161 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 15:36:20,197 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:36:20,739 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:36:20,743 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:36:45,016 - root - INFO - Starting Scraping https://www.google.com/ for tobs@gmail.com. . .
+2023-04-09 15:36:45,263 - root - INFO - Scraping Success!
+2023-04-09 15:36:45,263 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:36:45] "POST /all/updateTableWithEmailAndLink?email=tobs@gmail.com&link=https://www.google.com/ HTTP/1.1" 200 -
+2023-04-09 15:38:10,268 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 15:38:10,314 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:38:10,860 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:38:10,864 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:38:17,353 - root - INFO - Starting Scraping https://www.google.com/ for tobs@gmail.com. . .
+2023-04-09 15:38:17,518 - root - INFO - Scraping Success!
+2023-04-09 15:38:18,911 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:38:18] "[33mPOST /all/updateTableWithEmailAndLink?email=tobs@gmail.com&link=https://www.google.com/ HTTP/1.1[0m" 404 -
+2023-04-09 15:38:42,476 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:38:42,476 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:38:42,478 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:38:43,648 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:38:43,654 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:38:48,174 - root - INFO - Starting Scraping https://www.google.com/ for tobs@gmail.com. . .
+2023-04-09 15:38:48,416 - root - INFO - Scraping Success!
+2023-04-09 15:39:06,403 - root - INFO - Found Diff in https://www.google.com/ !!!
+2023-04-09 15:41:31,754 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 15:41:31,828 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:41:33,197 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:41:33,203 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:41:53,416 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 15:41:53,467 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:41:54,638 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:41:54,643 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:42:00,031 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 15:42:00,079 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:42:01,273 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:42:01,279 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:43:01,787 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 15:43:01,829 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:44:54,739 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 15:44:54,739 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 15:44:54,740 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:44:55,264 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:44:55,269 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 15:44:57,963 - root - INFO - Starting Scraping https://www.google.com/ for tobs@gmail.com. . .
+2023-04-09 15:44:58,299 - root - INFO - Scraping Success!
+2023-04-09 15:44:58,731 - root - INFO - Found Diff in https://www.google.com/ !!!
+2023-04-09 15:44:59,626 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:44:59] "POST /all/updateTableWithEmailAndLink?email=tobs@gmail.com&link=https://www.google.com/ HTTP/1.1" 200 -
+2023-04-09 15:45:14,125 - root - INFO - Starting Scraping https://www.google.com/ for tobsa@gmail.com. . .
+2023-04-09 15:45:14,393 - root - INFO - Scraping Success!
+2023-04-09 15:45:14,642 - root - INFO - Found Diff in https://www.google.com/ !!!
+2023-04-09 15:45:15,847 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 15:45:15] "POST /all/updateTableWithEmailAndLink?email=tobsa@gmail.com&link=https://www.google.com/ HTTP/1.1" 200 -
+2023-04-09 15:56:56,805 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service_Layer\\Database_Manager.py', reloading
+2023-04-09 15:56:56,864 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 15:56:57,542 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 15:56:57,545 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 16:53:11,986 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation_Layer\\Flask_API_Routing.py', reloading
+2023-04-09 16:53:12,017 - werkzeug - INFO -  * Restarting with stat

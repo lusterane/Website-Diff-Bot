@@ -12,7 +12,7 @@ class Website_Scraper:
         urllib3.disable_warnings()
 
     def scrape_request(self, request_object):
-        logging.info('Starting Scraping . . .')
+        logging.info(f'Starting Scraping {request_object.link} for {request_object.email}. . .')
         try:
             raw_html = self.__get_raw_html_from_link(request_object.link)
             logging.info('Scraping Success!')
@@ -34,7 +34,7 @@ class Website_Scraper:
             pass
         except Exception as e:
             logging.info(f"Failed with: {e}")
-            raise urllib3_exceptions.MaxRetryError
+            raise e
         try:
             logging.info("Will try again with non-secure connection ...")
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_NONE')
@@ -42,4 +42,4 @@ class Website_Scraper:
             return str(response.data.decode('utf-8'))
         except Exception as e:
             logging.info(f"Failed with: {e}")
-            raise urllib3_exceptions.MaxRetryError
+            raise e

@@ -1,6 +1,7 @@
 import logging
 import os
 import random
+from collections import defaultdict
 from datetime import datetime, timezone
 from enum import Enum
 
@@ -19,12 +20,29 @@ class DatabaseManager:
         self.updated_html_table_name = os.environ.get(DBTable.Updated_HTML_Table.value)
         self.html_user_relation_table_name = os.environ.get(DBTable.HTML_User_Relation_Table_Name.value)
 
-    def update_tables_with_scrape_response(self, scraping_response: ScrapingResponseObject):
+    # expensive method !!!
+    def update_tables_chron_job(self) -> dict:
+        from Presentation_Layer.Flask_API_Routing import website_scraper
+        all_relations = self.fetch_all_relations()  # dict {email:[link]}
+
+        for email, link_lis in all_relations.items():
+            # get scraping response
+            for link in link_lis:
+                request_object = RequestObject(email, link)
+                response_object = website_scraper.scrape_request(request_object)
+
+                # update tables with response
+                self.update_tables_with_scrape_response(response_object)
+        return all_relations
+
+    # TODO: don't need to update if already exists in table
+    def update_tables_with_scrape_response(self, scraping_response: ScrapingResponseObject) -> dict:
         # must create user before html entry because of foreign key relation
         html_object = self.__update_html_table(scraping_response)
         user_object = self.__update_user_table(scraping_response)
         relation_object = self.__update_relation_table(html_object, user_object)
-        return True
+
+        return relation_object.__dict__
 
     def __update_html_table(self, scraping_response: ScrapingResponseObject):
         html_response = self.__fetch_html_data_entry_with_link(scraping_response.link)
@@ -105,6 +123,27 @@ class DatabaseManager:
                     logging.info(f'Got Error: {e}, Retrying {retry + 1}. . .')
             raise Exception
 
+    ''' Public Interface Methods '''
+
+    # TODO: maybe don't need?
+    # TODO: need to type dict
+    def fetch_all_users(self):
+        response_objects = []
+        response = self.supabase.table(self.user_table_name).select('*', count='exact').execute()
+        if response.count:
+            for data in response.data:
+                response_objects.append(DBUserObject.from_json(data))
+        return response_objects
+
+    def fetch_all_relations(self) -> dict:  # dict {email:[link]}
+        all_relations_raw_response = self.__fetch_all_relations()
+        all_relations = defaultdict(list)
+        if all_relations_raw_response.count:
+            for raw_data in all_relations_raw_response.data:
+                data = DBHTMLUserRelationObject.from_json(raw_data)
+                all_relations[data.email].append(data.link)
+        return all_relations
+
     ''' Helper Methods '''
 
     # USER TABLE
@@ -130,6 +169,9 @@ class DatabaseManager:
         return self.supabase.table(self.html_user_relation_table_name).select('*', count='exact').eq('email',
                                                                                                      user_entry.email).eq(
             'link', html_entry.link).execute()
+
+    def __fetch_all_relations(self):
+        return self.supabase.table(self.html_user_relation_table_name).select('*', count='exact').execute()
 
     def __insert_relation(self, entry):
         return self.supabase.table(self.html_user_relation_table_name).insert(entry.__dict__, count='exact').execute()

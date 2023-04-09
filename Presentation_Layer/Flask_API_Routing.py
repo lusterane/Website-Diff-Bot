@@ -1,4 +1,4 @@
-from flask import request, abort
+from flask import request, abort, make_response
 import logging
 from Persistence_Layer.Models import RequestObject
 from Service_Layer.Flask_Initialization_Service import Flask_Initialization_Service
@@ -7,9 +7,10 @@ from Service_Layer.Flask_Initialization_Service import Flask_Initialization_Serv
 init_object = Flask_Initialization_Service()
 app = init_object.app
 website_scraper = init_object.website_scraper
-dm = init_object.website_scraper
+dm = init_object.dm
 
 
+# if email or link doesn't exist, it will insert
 @app.route('/all/updateTableWithEmailAndLink', methods=['POST'])
 def update_table_with_email_and_link():
     email = request.args.get('email', type=str)
@@ -17,8 +18,25 @@ def update_table_with_email_and_link():
 
     try:
         request_object = RequestObject(email, link)
-        response_object = website_scraper.scrape_request(request_object)
-        return f"{response_object}"
+        scraping_response = website_scraper.scrape_request(request_object)
+
+        response_json = dm.update_tables_with_scrape_response(scraping_response)
+
+        response = make_response(response_json, 200)
+        return response
+    except Exception as e:
+        abort(404, description=e)
+
+
+# may need to protect this endpoint
+# send email or do webhook on database
+@app.route('/all/updateAllHTMLEntries', methods=['POST'])
+def updateAllHTMLEntries():
+    try:
+        response_json = dm.update_tables_chron_job()
+
+        response = make_response(response_json, 200)
+        return response
     except Exception as e:
         abort(404, description=e)
 
