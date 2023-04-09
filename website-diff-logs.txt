@@ -60,3 +60,21 @@
 2023-04-09 12:04:05,324 - root - INFO - Putting into DB . . .
 2023-04-09 12:04:05,667 - root - INFO - Found Diff in https://www.op.gg !!!
 2023-04-09 12:04:17,650 - root - INFO - DB Querying Success!
+2023-04-09 12:24:59,566 - root - INFO - Starting Scraping . . .
+2023-04-09 12:25:00,919 - root - INFO - Scraping Success!
+2023-04-09 12:25:00,919 - root - INFO - Putting into DB . . .
+2023-04-09 12:25:01,448 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-09 12:25:13,673 - root - INFO - DB Querying Success!
+2023-04-09 12:25:16,047 - root - INFO - Starting Scraping . . .
+2023-04-09 12:25:17,226 - root - INFO - Scraping Success!
+2023-04-09 12:25:17,226 - root - INFO - Putting into DB . . .
+2023-04-09 12:25:17,680 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-09 12:25:29,571 - root - INFO - DB Querying Success!
+2023-04-09 12:25:32,015 - root - INFO - Starting Scraping . . .
+2023-04-09 12:25:33,429 - root - INFO - Scraping Success!
+2023-04-09 12:25:33,429 - root - INFO - Putting into DB . . .
+2023-04-09 12:25:34,791 - root - INFO - DB Querying Success!
+2023-04-09 12:26:20,684 - root - INFO - Starting Scraping . . .
+2023-04-09 12:26:21,869 - root - INFO - Scraping Success!
+2023-04-09 12:26:21,869 - root - INFO - Putting into DB . . .
+2023-04-09 12:26:23,319 - root - INFO - DB Querying Success!

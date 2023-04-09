@@ -7,7 +7,7 @@ from enum import Enum
 from postgrest.exceptions import APIError
 from supabase import create_client
 
-from Models import *
+from Persistence_Layer.Models import *
 
 
 class DatabaseManager:
@@ -32,11 +32,8 @@ class DatabaseManager:
             # if exists update html and datetime
             existing_entry = DBHTMLObject.from_json(html_response.data[0])
 
-            # TODO: Integrate Email API
-            # IMPORTANT #
-            # Send alert if there's a difference in HTML
-            old_html, new_html = existing_entry.html_data, scraping_response.html_data[
-                                                           0:len(existing_entry.html_data) - 20]
+            # TODO: Webhook table with email api
+            old_html, new_html = existing_entry.html_data, scraping_response.html_data
             if old_html != new_html:
                 logging.info(f'Found Diff in {scraping_response.link} !!!')
                 html_diff = self.__get_html_diff(old_html, new_html)

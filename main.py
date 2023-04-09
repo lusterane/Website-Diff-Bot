@@ -1,9 +1,9 @@
 import logging
 import os.path
 
-from DatabaseManager import DatabaseManager
-from Models import RequestObject
-from Website_Scraper import Website_Scraper
+from Persistence_Layer.Models import RequestObject
+from Service_Layer.Database_Manager import DatabaseManager
+from Service_Layer.Website_Scraper import Website_Scraper
 
 TESTING = False
 
