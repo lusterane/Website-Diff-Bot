@@ -29,7 +29,7 @@ def main():
 
     logging.info('Starting Scraping . . .')
     # response htmls from requests
-    response_object = website_scraper.scrape_request(request_objects[2])
+    response_object = website_scraper.scrape_request(request_objects[0])
 
     if not response_object:
         logging.info('Scraping Failed . . .')

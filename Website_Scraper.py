@@ -1,5 +1,4 @@
 import logging
-
 import certifi
 import urllib3
 from urllib3 import exceptions as urllib3_exceptions
@@ -26,19 +25,17 @@ class Website_Scraper:
             response = http.request('GET', url)
             return response.data.decode('utf-8')
         except urllib3_exceptions.MaxRetryError as e:
-            print("Failed with: ", e)
+            logging.info(f"Failed with: {e}")
             # try with insecure connection
             pass
         except Exception as e:
-            print("Failed with: ", e)
-            print("\nThrow Error ...")
+            logging.info(f"Failed with: {e}")
             raise urllib3_exceptions.MaxRetryError
         try:
-            print("\nWill try again with non-secure connection ...")
+            logging.info("Will try again with non-secure connection ...")
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_NONE')
             response = http.request('GET', url)
             return str(response.data.decode('utf-8'))
         except Exception as e:
-            print("Failed with: ", e)
-            print("\nThrow Error ...")
+            logging.info(f"Failed with: {e}")
             raise urllib3_exceptions.MaxRetryError
