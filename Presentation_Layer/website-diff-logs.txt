@@ -1,0 +1,9 @@
+2023-04-09 13:14:27,046 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-09 13:14:27,046 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-09 13:14:27,047 - werkzeug - INFO -  * Restarting with stat
+2023-04-09 13:14:27,534 - werkzeug - WARNING -  * Debugger is active!
+2023-04-09 13:14:27,537 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-09 13:14:33,519 - root - INFO - Starting Scraping . . .
+2023-04-09 13:14:34,196 - root - INFO - Scraping Success!
+2023-04-09 13:14:34,197 - werkzeug - INFO - 127.0.0.1 - - [09/Apr/2023 13:14:34] "POST /all/updateTableWithEmailAndLink?email=tobychow98@gmail.com&link=https://www.animeboston.com/artists/artists_alley/ HTTP/1.1" 200 -

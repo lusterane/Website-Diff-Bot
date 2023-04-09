@@ -4,11 +4,11 @@ Checks updates on websites and will notify user by email if there is an update.
 
 ## Technologies:
 
-Front-end: TBD (Web app)
+Front-end: TBD (React prob)
 <br />
-Back-end/Business Logic: Python
+API Routing: Flask
 <br />
-Hosting: TBD
+Hosting: TBD (Heroku prob)
 <br />
 Cloud Services: Supabase
 <br />

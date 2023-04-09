@@ -1,11 +1,12 @@
 import logging
 import os.path
 
+import Presentation_Layer.Flask_API_Routing as flask_app
 from Persistence_Layer.Models import RequestObject
 from Service_Layer.Database_Manager import DatabaseManager
 from Service_Layer.Website_Scraper import Website_Scraper
 
-TESTING = False
+TESTING = os.environ.get("TESTING")
 
 
 def initialize_logger():
@@ -41,16 +42,16 @@ def main():
                                      link='https://www.sascassnime.ssscom/vendors-and-artists/artist-alley/artist-alley-registration/'),
                        RequestObject(email='daniel98@gmail.com',
                                      link='https://www.op.gg'),
-                       RequestObject(email='joycezhao1@gmail.com',
+                       RequestObject(email='tobychow98@gmail.com',
                                      link='https://www.animeboston.com/artists/artists_alley/')]
     initialize_logger()
 
-    logging.info('Starting Scraping . . .')
+    # TODO: try except here
+
     # response htmls from requests
     response_object = website_scraper.scrape_request(request_objects[1])
 
     if not response_object:
-        logging.info('Scraping Failed . . .')
         return
     logging.info('Scraping Success!')
     logging.info('Putting into DB . . .')
@@ -64,12 +65,12 @@ def main():
 
 def testing_main():
     print('TESTING MAIN')
-
+    flask_app.app.run(debug=True)
     # Email_Manager.test_email()
 
 
 if __name__ == '__main__':
-    if TESTING:
+    if TESTING == '1':
         testing_main()
     else:
         main()
