@@ -16,11 +16,11 @@ def main():
     # initialize variables
     website_scraper = Website_Scraper()
     dm = DatabaseManager()
-    request_objects = [RequestObject(name='Joyce', email='tobychow98@gmail.com',
+    request_objects = [RequestObject(email='tobychow98@gmail.com',
                                      link='https://www.sascassnime.ssscom/vendors-and-artists/artist-alley/artist-alley-registration/'),
-                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                       RequestObject(email='tobychow98@gmail.com',
                                      link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
-                       RequestObject(name='Joyce', email='tobychow98@gmail.com',
+                       RequestObject(email='tobychow98@gmail.com',
                                      link='https://www.animeboston.com/artists/artists_alley/')]
     initialize_logger()
 
@@ -39,28 +39,6 @@ def main():
         return
 
     logging.info('DB Querying Success!')
-
-    # save data locally
-    # test_save_results_locally(encodedDictHTMLEntryModels)
-    # encodedDictHTMLEntryModels = test_get_dict_from_local_results()
-    # print(encodedDictHTMLEntryModels)
-
-
-def test_save_results_locally(encodedDictHTMLEntryModels):
-    count = 0
-    for json_model in encodedDictHTMLEntryModels:
-        with open(f"model_{str(count)}.json", 'wb') as write_file:
-            pickle.dump(json_model, write_file, protocol=pickle.HIGHEST_PROTOCOL)
-        count += 1
-
-
-def test_get_dict_from_local_results():
-    encodedDictHTMLEntryModels = []
-    for count in range(3):
-        with open(f"model_{str(count)}.json", 'rb') as read_file:
-            encodedDictHTMLEntryModels.append(pickle.load(read_file))
-    return encodedDictHTMLEntryModels
-
 
 if __name__ == '__main__':
     main()

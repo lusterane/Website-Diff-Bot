@@ -12,3 +12,15 @@
 2023-04-08 15:53:43,076 - root - INFO - Scraping Success!
 2023-04-08 15:53:43,076 - root - INFO - Putting into DB . . .
 2023-04-08 15:53:43,718 - root - INFO - DB Querying Success!
+2023-04-08 20:09:38,435 - root - INFO - Starting Scraping . . .
+2023-04-08 20:09:39,006 - root - INFO - Scraping Failed . . .
+2023-04-08 20:10:22,100 - root - INFO - Starting Scraping . . .
+2023-04-08 20:10:22,539 - root - INFO - Scraping Failed . . .
+2023-04-08 20:10:30,900 - root - INFO - Starting Scraping . . .
+2023-04-08 20:10:52,830 - root - INFO - Starting Scraping . . .
+2023-04-08 20:11:43,060 - root - INFO - Starting Scraping . . .
+2023-04-08 20:11:43,695 - root - INFO - Scraping Success!
+2023-04-08 20:11:43,695 - root - INFO - Putting into DB . . .
+2023-04-08 20:12:19,544 - root - INFO - Starting Scraping . . .
+2023-04-08 20:12:22,693 - root - INFO - Scraping Success!
+2023-04-08 20:12:22,693 - root - INFO - Putting into DB . . .

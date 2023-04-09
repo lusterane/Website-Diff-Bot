@@ -1,7 +1,7 @@
 import certifi
 import urllib3
 from urllib3 import exceptions as urllib3_exceptions
-import Models
+from Models import *
 
 
 class Website_Scraper:
@@ -10,8 +10,7 @@ class Website_Scraper:
     def scrape_request(self, request_object):
         try:
             raw_html = self.__get_raw_html_from_link(request_object.link)
-            return Models.ScrapingResponseObject(link=request_object.link,
-                                                 name=request_object.name,
+            return ScrapingResponseObject(link=request_object.link,
                                                  html_data=raw_html,
                                                  email=request_object.email)
         except:
