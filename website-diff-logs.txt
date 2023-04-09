@@ -9,3 +9,16 @@
 2023-04-08 23:39:10,024 - root - INFO - Will try again with non-secure connection ...
 2023-04-08 23:39:10,024 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000252FFC070F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
 2023-04-08 23:39:10,024 - root - INFO - Scraping Failed . . .
+2023-04-08 23:48:02,679 - root - INFO - Starting Scraping . . .
+2023-04-08 23:48:02,753 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001ABB2770D30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-08 23:48:02,753 - root - INFO - Will try again with non-secure connection ...
+2023-04-08 23:48:02,753 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001ABB2770DA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-08 23:48:02,754 - root - INFO - Scraping Failed . . .
+2023-04-08 23:55:23,523 - root - INFO - Starting Scraping . . .
+2023-04-08 23:55:24,767 - root - INFO - Scraping Success!
+2023-04-08 23:55:24,767 - root - INFO - Putting into DB . . .
+2023-04-08 23:55:26,453 - root - INFO - DB Querying Success!
+2023-04-09 00:30:49,655 - root - INFO - Starting Scraping . . .
+2023-04-09 00:30:51,106 - root - INFO - Scraping Success!
+2023-04-09 00:30:51,106 - root - INFO - Putting into DB . . .
+2023-04-09 00:32:46,150 - root - INFO - DB Querying Success!

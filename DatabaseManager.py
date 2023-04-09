@@ -31,6 +31,11 @@ class DatabaseManager:
             # if exists update html and datetime
             existing_entry = DBHTMLObject.from_json(html_response.data[0])
 
+            # TODO: Integrate Email API
+            # IMPORTANT #
+            # Send alert if there's a difference in HTML
+
+
             existing_entry.html_data = scraping_response.html_data
             existing_entry.last_updated = self.current_datetime
 
