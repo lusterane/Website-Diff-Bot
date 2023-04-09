@@ -1,13 +1,3 @@
-'''
-Users:
-pk, email, name, link_pk
-
-HTML_DATA_TABLE:
-pk, link, html_data
-
-'''
-
-
 class ScrapingResponseObject:
     def __init__(self, link, html_data, email):
         self.link = link

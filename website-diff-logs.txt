@@ -1,0 +1,11 @@
+2023-04-08 23:39:07,977 - root - INFO - The file website-diff-logs.txt has been cleared.
+2023-04-08 23:39:07,977 - root - INFO - Starting Scraping . . .
+2023-04-08 23:39:08,040 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F924FA6198>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-08 23:39:08,040 - root - INFO - Will try again with non-secure connection ...
+2023-04-08 23:39:08,040 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F924FA6160>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-08 23:39:08,042 - root - INFO - Scraping Failed . . .
+2023-04-08 23:39:10,020 - root - INFO - Starting Scraping . . .
+2023-04-08 23:39:10,023 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000252FFC07128>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-08 23:39:10,024 - root - INFO - Will try again with non-secure connection ...
+2023-04-08 23:39:10,024 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000252FFC070F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-08 23:39:10,024 - root - INFO - Scraping Failed . . .
