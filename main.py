@@ -1,8 +1,9 @@
-import pickle
+import logging
+
 from DatabaseManager import DatabaseManager
 from Models import RequestObject
 from Website_Scraper import Website_Scraper
-import logging
+
 
 def initialize_logger():
     handler = logging.FileHandler('Website-Diff-Bot Logger')
@@ -12,6 +13,8 @@ def initialize_logger():
     handler.setFormatter(formatter)
 
     logging.getLogger().addHandler(handler)
+
+
 def main():
     # initialize variables
     website_scraper = Website_Scraper()
@@ -20,13 +23,13 @@ def main():
                                      link='https://www.sascassnime.ssscom/vendors-and-artists/artist-alley/artist-alley-registration/'),
                        RequestObject(email='tobychow98@gmail.com',
                                      link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
-                       RequestObject(email='tobychow98@gmail.com',
+                       RequestObject(email='joycezhao@gmail.com',
                                      link='https://www.animeboston.com/artists/artists_alley/')]
     initialize_logger()
 
     logging.info('Starting Scraping . . .')
     # response htmls from requests
-    response_object = website_scraper.scrape_request(request_objects[1])
+    response_object = website_scraper.scrape_request(request_objects[2])
 
     if not response_object:
         logging.info('Scraping Failed . . .')
@@ -39,6 +42,7 @@ def main():
         return
 
     logging.info('DB Querying Success!')
+
 
 if __name__ == '__main__':
     main()

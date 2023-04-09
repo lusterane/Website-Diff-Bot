@@ -1,18 +1,20 @@
 import certifi
 import urllib3
 from urllib3 import exceptions as urllib3_exceptions
+
 from Models import *
 
 
 class Website_Scraper:
     def __init__(self):
         urllib3.disable_warnings()
+
     def scrape_request(self, request_object):
         try:
             raw_html = self.__get_raw_html_from_link(request_object.link)
             return ScrapingResponseObject(link=request_object.link,
-                                                 html_data=raw_html,
-                                                 email=request_object.email)
+                                          html_data=raw_html,
+                                          email=request_object.email)
         except:
             return None
 
