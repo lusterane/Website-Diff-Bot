@@ -23,7 +23,7 @@ def main():
                                      link='https://www.sascassnime.ssscom/vendors-and-artists/artist-alley/artist-alley-registration/'),
                        RequestObject(email='tobychow98@gmail.com',
                                      link='https://animefest.org/e/AF2023/Activities/BizarreBazaar'),
-                       RequestObject(email='joycezhao@gmail.com',
+                       RequestObject(email='joycezhao1@gmail.com',
                                      link='https://www.animeboston.com/artists/artists_alley/')]
     initialize_logger()
 

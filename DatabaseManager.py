@@ -1,8 +1,10 @@
+import logging
 import os
 import random
 from datetime import datetime, timezone
 from enum import Enum
 
+from postgrest.exceptions import APIError
 from supabase import create_client
 
 from Models import *
@@ -40,7 +42,6 @@ class DatabaseManager:
             new_entry = DBHTMLObject(link=scraping_response.link,
                                      html_data=scraping_response.html_data, last_updated=self.current_datetime)
             self.__insert_html(new_entry)
-            # TODO: throw error if primary key same as existing
             return new_entry
 
     def __update_user_table(self, scraping_response: ScrapingResponseObject) -> DBUserObject:
@@ -52,7 +53,6 @@ class DatabaseManager:
             # create new entry
             new_entry = DBUserObject(email=scraping_response.email)
             self.__insert_user(new_entry)
-            # TODO: throw error if primary key same as existing
             return new_entry
 
     def __update_relation_table(self, html_object: DBHTMLObject, user_object: DBUserObject):
@@ -62,11 +62,15 @@ class DatabaseManager:
             return DBHTMLUserRelationObject.from_json(relation_response.data[0])
         else:
             # create new relation
-            new_entry = DBHTMLUserRelationObject(id=self.__get_random_primary_key(), link=html_object.link,
-                                                 email=user_object.email)
-            self.__insert_relation(new_entry)
-            # TODO: throw error if primary key same as existing
-            return new_entry
+            for retry in range(3):  # 3 retries in-case of same primary key
+                try:
+                    new_entry = DBHTMLUserRelationObject(id=self.__get_random_primary_key(), link=html_object.link,
+                                                         email=user_object.email)
+                    self.__insert_relation(new_entry)
+                    return new_entry
+                except APIError as e:
+                    logging.info(f'Got Error: {e}, Retrying {retry + 1}. . .')
+            raise Exception
 
     ''' Helper Methods '''
 

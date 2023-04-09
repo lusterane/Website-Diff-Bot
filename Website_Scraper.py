@@ -1,3 +1,5 @@
+import logging
+
 import certifi
 import urllib3
 from urllib3 import exceptions as urllib3_exceptions
