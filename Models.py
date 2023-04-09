@@ -47,3 +47,18 @@ class DBHTMLUserRelationObject:
         return DBHTMLUserRelationObject(json_dct['id'],
                                         json_dct['email'],
                                         json_dct['link'])
+
+
+class DBUpdatedHTMLObject:
+    def __init__(self, id, updated_on, html_diff, link):
+        self.id = id
+        self.html_diff = html_diff
+        self.updated_on = updated_on
+        self.link = link
+
+    @staticmethod
+    def from_json(json_dct):
+        return DBUpdatedHTMLObject(json_dct['id'],
+                                   json_dct['html_diff'],
+                                   json_dct['updated_on'],
+                                   json_dct['link'])

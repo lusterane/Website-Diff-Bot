@@ -4,9 +4,9 @@ import os.path
 from DatabaseManager import DatabaseManager
 from Models import RequestObject
 from Website_Scraper import Website_Scraper
-import Email_Manager
 
-TESTING = True
+TESTING = False
+
 
 def initialize_logger():
     # file handler initialization
@@ -61,10 +61,12 @@ def main():
 
     logging.info('DB Querying Success!')
 
+
 def testing_main():
     print('TESTING MAIN')
 
     # Email_Manager.test_email()
+
 
 if __name__ == '__main__':
     if TESTING:

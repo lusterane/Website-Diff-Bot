@@ -22,3 +22,41 @@
 2023-04-09 00:30:51,106 - root - INFO - Scraping Success!
 2023-04-09 00:30:51,106 - root - INFO - Putting into DB . . .
 2023-04-09 00:32:46,150 - root - INFO - DB Querying Success!
+2023-04-09 11:58:25,095 - root - INFO - Starting Scraping . . .
+2023-04-09 11:58:26,677 - root - INFO - Scraping Success!
+2023-04-09 11:58:26,677 - root - INFO - Putting into DB . . .
+2023-04-09 11:58:28,368 - root - INFO - DB Querying Success!
+2023-04-09 11:59:18,856 - root - INFO - Starting Scraping . . .
+2023-04-09 11:59:20,045 - root - INFO - Scraping Success!
+2023-04-09 11:59:20,045 - root - INFO - Putting into DB . . .
+2023-04-09 11:59:32,375 - root - INFO - DB Querying Success!
+2023-04-09 12:00:24,648 - root - INFO - Starting Scraping . . .
+2023-04-09 12:00:26,309 - root - INFO - Scraping Success!
+2023-04-09 12:00:26,309 - root - INFO - Putting into DB . . .
+2023-04-09 12:00:26,918 - root - INFO - Found Diff in https://www.op.gg!!!
+2023-04-09 12:00:38,976 - root - INFO - DB Querying Success!
+2023-04-09 12:01:39,948 - root - INFO - Starting Scraping . . .
+2023-04-09 12:01:41,137 - root - INFO - Scraping Success!
+2023-04-09 12:01:41,137 - root - INFO - Putting into DB . . .
+2023-04-09 12:01:41,673 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-09 12:01:53,770 - root - INFO - DB Querying Success!
+2023-04-09 12:02:29,739 - root - INFO - Starting Scraping . . .
+2023-04-09 12:02:30,948 - root - INFO - Scraping Success!
+2023-04-09 12:02:30,949 - root - INFO - Putting into DB . . .
+2023-04-09 12:02:31,472 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-09 12:02:43,745 - root - INFO - DB Querying Success!
+2023-04-09 12:02:50,106 - root - INFO - Starting Scraping . . .
+2023-04-09 12:02:51,312 - root - INFO - Scraping Success!
+2023-04-09 12:02:51,312 - root - INFO - Putting into DB . . .
+2023-04-09 12:02:51,800 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-09 12:03:03,357 - root - INFO - DB Querying Success!
+2023-04-09 12:03:42,921 - root - INFO - Starting Scraping . . .
+2023-04-09 12:03:44,135 - root - INFO - Scraping Success!
+2023-04-09 12:03:44,135 - root - INFO - Putting into DB . . .
+2023-04-09 12:03:44,601 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-09 12:03:56,278 - root - INFO - DB Querying Success!
+2023-04-09 12:04:04,034 - root - INFO - Starting Scraping . . .
+2023-04-09 12:04:05,324 - root - INFO - Scraping Success!
+2023-04-09 12:04:05,324 - root - INFO - Putting into DB . . .
+2023-04-09 12:04:05,667 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-09 12:04:17,650 - root - INFO - DB Querying Success!
