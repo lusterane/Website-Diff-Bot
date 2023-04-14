@@ -46,21 +46,21 @@ def main():
                                      link='https://www.animeboston.com/artists/artists_alley/')]
     initialize_logger()
 
-    # TODO: try except here
-
+    res = website_scraper.scrape_request(request_objects[2])
+    print(res)
     # response htmls from requests
-    response_object = website_scraper.scrape_request(request_objects[1])
-
-    if not response_object:
-        return
-    logging.info('Scraping Success!')
-    logging.info('Putting into DB . . .')
-    # place into database
-    if not dm.update_tables_with_scrape_response(response_object):
-        logging.info('DB Querying Failed . . .')
-        return
-
-    logging.info('DB Querying Success!')
+    # response_object = website_scraper.scrape_request(request_objects[1])
+    #
+    # if not response_object:
+    #     return
+    # logging.info('Scraping Success!')
+    # logging.info('Putting into DB . . .')
+    # # place into database
+    # if not dm.update_tables_with_scrape_response(response_object):
+    #     logging.info('DB Querying Failed . . .')
+    #     return
+    #
+    # logging.info('DB Querying Success!')
 
 
 def testing_main():

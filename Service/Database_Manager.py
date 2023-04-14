@@ -29,7 +29,7 @@ class DatabaseManager:
                 existing_html_db_entry = DBHTMLObject.from_json(
                     self.db_gate.fetch_html_data_entry_with_link(link).data[0])  # index 0 because there will always be one result
 
-                old_html, new_html = scraping_response_object.html_data, existing_html_db_entry.html_data
+                old_html, new_html = existing_html_db_entry.html_data, scraping_response_object.html_data
 
                 # update in html table
                 self.__update_entry_in_html_table(existing_html_db_entry, new_html)
@@ -37,7 +37,6 @@ class DatabaseManager:
                 # check diffs
                 if old_html != new_html:
                     logging.info(f'Found Diff in {link} !!!')
-                    # TODO: only diff of beautiful soup text
                     html_diff = self.__get_html_diff(old_html, new_html)
 
                     existing_html_diff_entry = self.db_gate.fetch_html_diff_entry_with_link(link)

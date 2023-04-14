@@ -80,5 +80,5 @@ def get_truncated_html_data(html_data):
     n = len(html_data)
     max_len_text = 200
     if n >= max_len_text:
-        return html_data[:max_len_text] + '...'
+        return html_data[:max_len_text] + ' ...'
     return html_data

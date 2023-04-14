@@ -12,7 +12,7 @@ class Database_Gateway:
         self.supabase = create_client(os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY"))
         self.user_table_name = os.environ.get(DBTable.User_Table_Name.value)
         self.html_table_name = os.environ.get(DBTable.HTML_Table_Name.value)
-        self.updated_html_table_name = os.environ.get(DBTable.Updated_HTML_Table.value)
+        self.updated_html_table_name = os.environ.get(DBTable.HTML_Diff_Table_Name.value)
         self.html_user_relation_table_name = os.environ.get(DBTable.HTML_User_Relation_Table_Name.value)
 
     # USER TABLE
@@ -74,4 +74,4 @@ class DBTable(Enum):
     HTML_Table_Name = "HTML_Table_Name"
     User_Table_Name = "Users_Table_Name"
     HTML_User_Relation_Table_Name = "HTML_User_Relation_Table_Name"
-    Updated_HTML_Table = "Updated_HTML_Table"
+    HTML_Diff_Table_Name = "HTML_Diff_Table_Name"
