@@ -1081,3 +1081,32 @@ Last Updated: 2023-04-14 19:16:40.433030+00:00
 2023-04-14 15:23:19,238 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
 2023-04-14 15:23:19,600 - root - INFO - DB calling fetch_user_with_email with tobychow98@gmail.com
 2023-04-14 15:23:19,795 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 15:23:19] "[35m[1mPOST /all/insertEmailAndLink?email=tobychow98@gmail.com&link=https://time.is/ HTTP/1.1[0m" 202 -
+2023-04-14 15:28:30,325 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 15:28:30,363 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 15:28:30,974 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 15:28:30,978 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 15:29:50,870 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 15:29:50,905 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 15:30:31,682 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 15:30:31,682 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 15:30:31,683 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 15:30:32,261 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 15:30:32,264 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 15:30:35,339 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 15:30:35,339 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 15:30:35,804 - root - INFO - DB calling fetch_user_with_email with tobychow98@gmail.com
+2023-04-14 15:30:36,000 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 15:30:36] "[35m[1mPOST /all/insertEmailAndLink?email=tobychow98@gmail.com&link=https://time.is/ HTTP/1.1[0m" 202 -
+2023-04-14 15:31:02,997 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 15:31:03,030 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 15:31:03,688 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 15:31:03,692 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 15:31:04,731 - root - INFO - API: Call getAllRelations
+2023-04-14 15:31:04,731 - root - INFO - DB calling fetch_all_relations
+2023-04-14 15:31:05,113 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 15:31:05] "GET /all/getAllRelations HTTP/1.1" 200 -
+2023-04-14 15:33:27,300 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 15:33:27,334 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 15:33:27,944 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 15:33:27,948 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 15:35:23,661 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 15:35:23,695 - werkzeug - INFO -  * Restarting with stat

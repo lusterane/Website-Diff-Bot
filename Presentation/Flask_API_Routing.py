@@ -1,5 +1,7 @@
-from flask import request, abort, make_response
 import logging
+
+from flask import request, abort, make_response
+
 from Service.Flask_Initialization_Service import Flask_Initialization_Service
 
 # initialization
@@ -39,50 +41,31 @@ def updateAllExistingEntries():
         abort(404, description=e)
 
 
+@app.route('/all/getAllRelations', methods=['GET'])
+def getAllRelations():
+    __api_log(f'Call {getAllRelations.__name__}')
+    try:
+        response_json = dm.get_all_relations()
+        return make_response(response_json, 200)
+    except Exception as e:
+        __api_log(e)
+        abort(404, description=e)
+
+
+# @app.route('/users/getAllUsers', methods=['GET'])
+# def getAllUsers():
+#     __api_log(f'Call {getAllUsers.__name__}')
+#     try:
+#         response_json = dm.get_all_relations()
+#         return make_response(response_json, 200)
+#     except Exception as e:
+#         __api_log(e)
+#         abort(404, description=e)
+
+
 def __api_log(e):
     logging.info(f'API: {e}')
 
-
-# @app.route('/books/<int:book_id>', methods=['GET'])
-# def get_book(book_id):
-#     book = Book.query.filter_by(id=book_id).first()
-#     if book:
-#         return jsonify({'id': book.id, 'title': book.title, 'author': book.author})
-#     else:
-#         return jsonify({'error': 'Book not found'}), 404
-#
-#
-# @app.route('/books', methods=['POST'])
-# def add_book():
-#     data = request.get_json()
-#     book = Book(title=data['title'], author=data['author'])
-#     db.session.add(book)
-#     db.session.commit()
-#     return jsonify({'id': book.id, 'title': book.title, 'author': book.author}), 201
-#
-#
-# @app.route('/books/<int:book_id>', methods=['PUT'])
-# def update_book(book_id):
-#     book = Book.query.filter_by(id=book_id).first()
-#     if book:
-#         data = request.get_json()
-#         book.title = data['title']
-#         book.author = data['author']
-#         db.session.commit()
-#         return jsonify({'id': book.id, 'title': book.title, 'author': book.author})
-#     else:
-#         return jsonify({'error': 'Book not found'}), 404
-#
-#
-# @app.route('/books/<int:book_id>', methods=['DELETE'])
-# def delete_book(book_id):
-#     book = Book.query.filter_by(id=book_id).first()
-#     if book:
-#         db.session.delete(book)
-#         db.session.commit()
-#         return '', 204
-#     else:
-#         return jsonify({'error': 'Book not found'}), 404
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,3 +1,4 @@
+import inspect
 import logging
 import random
 import re
@@ -5,11 +6,10 @@ from collections import defaultdict
 from datetime import datetime, timezone
 
 from postgrest.exceptions import APIError
-from Service.Helper.Exception_Helper import Exception_Helper
-import inspect
 
 from Persistence.Models import *
 from Service.Database_Gateway import Database_Gateway
+from Service.Helper.Exception_Helper import Exception_Helper
 from Service.Website_Scraper import Website_Scraper
 
 
@@ -50,6 +50,10 @@ class DatabaseManager:
                     else:  # doesn't exist
                         self.__insert_entry_in_updated_html_table(html_diff, link)
 
+        return all_relations
+
+    def get_all_relations(self) -> dict:
+        all_relations = self.__convert_relations_to_dict(self.db_gate.fetch_all_relations())  # dict {email:[link]}
         return all_relations
 
     # return false if both html and email exists

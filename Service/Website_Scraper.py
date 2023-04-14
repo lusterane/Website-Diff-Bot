@@ -1,12 +1,14 @@
+import inspect
 import logging
 import re
+
 import certifi
 import urllib3
-from urllib3 import exceptions as urllib3_exceptions
 from bs4 import BeautifulSoup
+from urllib3 import exceptions as urllib3_exceptions
+
 from Persistence.Models import *
 from Service.Helper.Exception_Helper import Exception_Helper
-import inspect
 
 
 class Website_Scraper:
