@@ -1,5 +1,6 @@
 import logging
 import random
+import re
 from collections import defaultdict
 from datetime import datetime, timezone
 
@@ -37,10 +38,9 @@ class DatabaseManager:
                 self.__update_entry_in_html_table(existing_html_db_entry, new_html)
 
                 # check diffs
-                if old_html != new_html:
-                    logging.info(f'Found Diff in {link} !!!')
-                    html_diff = self.__get_html_diff(old_html, new_html)
-
+                html_diff = self.__get_html_diff(old_html, new_html)
+                if html_diff:
+                    logging.info(f'Found Diff in {link}\n{html_diff}')
                     existing_html_diff_entry = self.db_gate.fetch_html_diff_entry_with_link(link)
 
                     if existing_html_diff_entry.count:  # exists
@@ -66,13 +66,14 @@ class DatabaseManager:
                 html_data = self.website_scraper.scrape_request(request_object).html_data
             except Exception as e:
                 Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+                return False
 
             self.db_gate.insert_into_html_table(DBHTMLObject(link, html_data, self.current_datetime))
         if not email_response.count:
             self.db_gate.insert_into_user_table(DBUserObject(email))
 
         # build relation since one of the entries doesn't exist
-        self.db_gate.insert_relation(DBHTMLUserRelationObject(self.__get_random_primary_key(), link, email))
+        self.db_gate.insert_relation(DBHTMLUserRelationObject(self.__get_random_primary_key(), email, link))
         return True
 
     ''' Helper Methods '''
@@ -107,20 +108,16 @@ class DatabaseManager:
                 return new_entry
             except APIError as e:
                 logging.info(f'Got Error: {e}, Retrying {retry + 1}. . .')
-        Exception_Helper.raise_exception('Retried 3 times to insert entry', inspect)
-
-    # def fetch_all_users(self):
-    #     response_objects = []
-    #     response = self.supabase.table(self.user_table_name).select('*', count='exact').execute()
-    #     if response.count:
-    #         for data in response.data:
-    #             response_objects.append(DBUserObject.from_json(data))
-    #     return response_objects
+        Exception_Helper.raise_exception('Retried 3 times to insert entry', inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
     def __get_random_primary_key(self):
         return random.randint(0, 99999)
 
     def __get_html_diff(self, str1, str2) -> str:
+        # if there's no diff, give empty string
+        if str1 == str2:
+            return ''
+
         from difflib import SequenceMatcher
 
         matcher = SequenceMatcher(None, str1, str2)
@@ -128,13 +125,36 @@ class DatabaseManager:
         str_diffs = []
         for opcode, i1, i2, j1, j2 in diff:
             if opcode == 'delete':
-                str_diffs.append('- %s' % str1[i1:i2])
+                processed_str = self.__preprocess_diff(str1[i1:i2])
+                if not processed_str:
+                    continue
+                str_diffs.append('- %s' % processed_str)
             elif opcode == 'insert':
-                str_diffs.append('+ %s' % str2[j1:j2])
+                processed_str = self.__preprocess_diff(str2[j1:j2])
+                if not processed_str:
+                    continue
+                str_diffs.append('+ %s' % processed_str)
             elif opcode == 'replace':
-                str_diffs.append('- %s' % str1[i1:i2])
-                str_diffs.append('+ %s' % str2[j1:j2])
+                processed_str1 = self.__preprocess_diff(str2[i1:i2])
+                processed_str2 = self.__preprocess_diff(str2[j1:j2])
+                if not processed_str1 or not processed_str2:
+                    continue
+                str_diffs.append('- %s' % processed_str1)
+                str_diffs.append('+ %s' % processed_str2)
         return '\n'.join(str_diffs)
+
+    def __preprocess_diff(self, diff):
+        new_diff = diff.strip()
+
+        # remove all spaces and see if it is a digit
+        if re.sub(r'\s+', '', new_diff).isdigit():
+            return ''
+
+        for content in new_diff.split(','):
+            # if any are not numbers, then content is valid
+            if not content.isdigit():
+                return new_diff
+        return ''
 
     def __convert_relations_to_dict(self, all_relations_api_response):
         all_relations = defaultdict(list)

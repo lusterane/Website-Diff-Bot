@@ -1,0 +1,1083 @@
+2023-04-14 14:05:32,126 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:05:32,126 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:05:32,127 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:05:32,683 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:05:32,686 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:06:16,062 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:06:16,063 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:06:16,063 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:06:16,633 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:06:16,637 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:06:16,772 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:06:16,773 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:06:17,197 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:06:17,645 - root - INFO - Scraping Success!
+2023-04-14 14:06:17,646 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:06:17,835 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:06:16.606536+00:00
+
+2023-04-14 14:06:18,010 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:06:18,364 - root - INFO - Scraping Success!
+2023-04-14 14:06:18,364 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:06:18,552 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:06:16.606536+00:00
+
+2023-04-14 14:06:18,721 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:06:18,968 - root - INFO - Scraping Success!
+2023-04-14 14:06:18,968 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:06:19,079 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 06 23PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:06:16.606536+00:00
+
+2023-04-14 14:06:19,524 - root - INFO - Found Diff in https://time.is/
+
+2023-04-14 14:06:19,524 - root - INFO - DB calling fetch_html_diff_entry_with_link with https://time.is/
+2023-04-14 14:06:19,644 - root - INFO - DB calling update_html_diff_entry_matching_link with 
+ID: 65541
+HTML Diff: 
+Updated On: 2023-04-14 19:06:16.606536+00:00
+Link: https://time.is/
+
+2023-04-14 14:06:19,749 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:06:20,079 - root - INFO - Scraping Success!
+2023-04-14 14:06:20,079 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:06:20,183 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:06:16.606536+00:00
+
+2023-04-14 14:06:20,313 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:06:20,675 - root - INFO - Scraping Success!
+2023-04-14 14:06:20,675 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:06:20,777 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:06:16.606536+00:00
+
+2023-04-14 14:06:20,892 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:06:20] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:08:13,480 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 14:08:13,518 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:08:14,085 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:08:14,089 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:08:24,385 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 14:08:24,421 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:08:24,999 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:08:25,003 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:08:29,044 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:08:29,044 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:08:29,045 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:08:29,633 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:08:29,637 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:08:30,953 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:08:30,953 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:08:31,404 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:08:31,824 - root - INFO - Scraping Success!
+2023-04-14 14:08:31,824 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:08:32,011 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:32,112 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:08:32,468 - root - INFO - Scraping Success!
+2023-04-14 14:08:32,468 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:08:32,580 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:32,819 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:08:33,062 - root - INFO - Scraping Success!
+2023-04-14 14:08:33,062 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:08:33,182 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 08 37PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:33,623 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:08:33,952 - root - INFO - Scraping Success!
+2023-04-14 14:08:33,953 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:08:34,060 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:34,223 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:08:34,550 - root - INFO - Scraping Success!
+2023-04-14 14:08:34,550 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:08:34,677 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:34,799 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:08:34] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:08:45,755 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:08:45,755 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:08:46,233 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:08:46,619 - root - INFO - Scraping Success!
+2023-04-14 14:08:46,619 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:08:46,812 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:46,998 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:08:47,317 - root - INFO - Scraping Success!
+2023-04-14 14:08:47,317 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:08:47,450 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:47,690 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:08:47,899 - root - INFO - Scraping Success!
+2023-04-14 14:08:47,899 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:08:48,071 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 08 51PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:48,533 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:08:48,872 - root - INFO - Scraping Success!
+2023-04-14 14:08:48,873 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:08:48,983 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:49,214 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:08:49,528 - root - INFO - Scraping Success!
+2023-04-14 14:08:49,529 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:08:49,634 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:49,783 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:08:49] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:08:56,974 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:08:56,974 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:08:57,329 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:08:57,776 - root - INFO - Scraping Success!
+2023-04-14 14:08:57,776 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:08:57,970 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:58,155 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:08:58,473 - root - INFO - Scraping Success!
+2023-04-14 14:08:58,473 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:08:58,596 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:58,742 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:08:59,079 - root - INFO - Scraping Success!
+2023-04-14 14:08:59,080 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:08:59,218 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 09 03PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:08:59,716 - root - INFO - Found Diff in https://time.is/
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+2023-04-14 14:08:59,716 - root - INFO - DB calling fetch_html_diff_entry_with_link with https://time.is/
+2023-04-14 14:08:59,831 - root - INFO - DB calling update_html_diff_entry_matching_link with 
+ID: 65541
+HTML Diff: - 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+- 9 03
++ 9 03
+Updated On: 2023-04-14 19:08:29.606281+00:00
+Link: https://time.is/
+
+2023-04-14 14:08:59,966 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:09:00,300 - root - INFO - Scraping Success!
+2023-04-14 14:09:00,300 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:09:00,421 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:09:00,540 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:09:00,868 - root - INFO - Scraping Success!
+2023-04-14 14:09:00,868 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:09:00,987 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:09:01,099 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:09:01] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:10:11,563 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:10:11,563 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:10:12,069 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:10:12,478 - root - INFO - Scraping Success!
+2023-04-14 14:10:12,478 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:10:12,667 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:10:12,825 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:10:13,183 - root - INFO - Scraping Success!
+2023-04-14 14:10:13,184 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:10:13,361 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:10:13,548 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:10:13,793 - root - INFO - Scraping Success!
+2023-04-14 14:10:13,793 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:10:14,005 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 10 17PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:10:14,499 - root - INFO - Found Diff in https://time.is/
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+2023-04-14 14:10:14,500 - root - INFO - DB calling fetch_html_diff_entry_with_link with https://time.is/
+2023-04-14 14:10:14,669 - root - INFO - DB calling update_html_diff_entry_matching_link with 
+ID: 65541
+HTML Diff: - 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+- 10 17
++ 10 17
+Updated On: 2023-04-14 19:08:29.606281+00:00
+Link: https://time.is/
+
+2023-04-14 14:10:14,799 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:10:15,142 - root - INFO - Scraping Success!
+2023-04-14 14:10:15,143 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:10:15,343 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:10:15,486 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:10:15,812 - root - INFO - Scraping Success!
+2023-04-14 14:10:15,812 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:10:15,977 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:08:29.606281+00:00
+
+2023-04-14 14:10:16,101 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:10:16] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:13:47,640 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 14:13:47,693 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:13:48,298 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:13:48,302 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:13:53,616 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:13:53,617 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:13:53,617 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:13:54,213 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:13:54,216 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:13:56,545 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:13:56,545 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:13:56,940 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:13:57,443 - root - INFO - Scraping Success!
+2023-04-14 14:13:57,443 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:13:57,553 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:13:54.186549+00:00
+
+2023-04-14 14:13:57,641 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:13:58,082 - root - INFO - Scraping Success!
+2023-04-14 14:13:58,082 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:13:58,195 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:13:54.186549+00:00
+
+2023-04-14 14:13:58,429 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:13:58,663 - root - INFO - Scraping Success!
+2023-04-14 14:13:58,663 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:13:58,776 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 14 02PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:13:54.186549+00:00
+
+2023-04-14 14:13:59,183 - root - INFO - Found Diff in https://time.is/
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+2023-04-14 14:13:59,183 - root - INFO - DB calling fetch_html_diff_entry_with_link with https://time.is/
+2023-04-14 14:13:59,370 - root - INFO - DB calling update_html_diff_entry_matching_link with 
+ID: 65541
+HTML Diff: - 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+- 4 02
++ 4 02
+Updated On: 2023-04-14 19:13:54.186549+00:00
+Link: https://time.is/
+
+2023-04-14 14:13:59,485 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:13:59,808 - root - INFO - Scraping Success!
+2023-04-14 14:13:59,808 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:13:59,924 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:13:54.186549+00:00
+
+2023-04-14 14:14:00,064 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:14:00,389 - root - INFO - Scraping Success!
+2023-04-14 14:14:00,389 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:14:00,572 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:13:54.186549+00:00
+
+2023-04-14 14:14:00,696 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:14:00] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:14:13,704 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 14:14:13,738 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:14:14,329 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:14:14,333 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:14:17,107 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:14:17,107 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:14:17,108 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:14:17,690 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:14:17,694 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:14:20,486 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:14:20,487 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:14:21,698 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:14:22,627 - root - INFO - Scraping Success!
+2023-04-14 14:14:22,627 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:14:23,118 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:23,427 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:14:24,330 - root - INFO - Scraping Success!
+2023-04-14 14:14:24,330 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:14:24,894 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:25,456 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:14:26,469 - root - INFO - Scraping Success!
+2023-04-14 14:14:26,469 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:14:27,047 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 14 30PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:27,632 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:14:29,185 - root - INFO - Scraping Success!
+2023-04-14 14:14:29,185 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:14:29,955 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:33,388 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:14:34,829 - root - INFO - Scraping Success!
+2023-04-14 14:14:34,830 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:14:34,942 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:35,060 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:14:35] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:14:47,744 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:14:47,744 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:14:48,030 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:14:48,428 - root - INFO - Scraping Success!
+2023-04-14 14:14:48,428 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:14:48,543 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:48,650 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:14:48,999 - root - INFO - Scraping Success!
+2023-04-14 14:14:48,999 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:14:49,102 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:49,255 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:14:49,456 - root - INFO - Scraping Success!
+2023-04-14 14:14:49,456 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:14:49,577 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 14 53PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:50,029 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:14:50,354 - root - INFO - Scraping Success!
+2023-04-14 14:14:50,354 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:14:50,463 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:50,586 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:14:50,920 - root - INFO - Scraping Success!
+2023-04-14 14:14:50,920 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:14:51,027 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:14:51,163 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:14:51] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:15:10,317 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:15:10,317 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:15:10,576 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:15:11,002 - root - INFO - Scraping Success!
+2023-04-14 14:15:11,002 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:15:11,149 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:11,271 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:11,673 - root - INFO - Scraping Success!
+2023-04-14 14:15:11,673 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:11,805 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:11,947 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:12,167 - root - INFO - Scraping Success!
+2023-04-14 14:15:12,168 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:15:12,265 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 15 16PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:12,680 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:15:13,019 - root - INFO - Scraping Success!
+2023-04-14 14:15:13,019 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:13,120 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:13,253 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:15:13,601 - root - INFO - Scraping Success!
+2023-04-14 14:15:13,601 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:13,709 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:13,835 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:15:13] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:15:20,742 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:15:20,742 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:15:21,228 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:15:21,655 - root - INFO - Scraping Success!
+2023-04-14 14:15:21,655 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:15:21,828 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:22,010 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:22,344 - root - INFO - Scraping Success!
+2023-04-14 14:15:22,344 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:22,517 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:22,681 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:23,017 - root - INFO - Scraping Success!
+2023-04-14 14:15:23,017 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:15:23,133 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 15 27PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:23,537 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:15:23,875 - root - INFO - Scraping Success!
+2023-04-14 14:15:23,875 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:23,991 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:24,107 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:15:24,437 - root - INFO - Scraping Success!
+2023-04-14 14:15:24,437 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:24,555 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:24,681 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:15:24] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:15:32,836 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:15:32,836 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:15:33,061 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:15:33,429 - root - INFO - Scraping Success!
+2023-04-14 14:15:33,430 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:15:33,537 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:33,643 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:33,989 - root - INFO - Scraping Success!
+2023-04-14 14:15:33,990 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:34,099 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:34,233 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:34,557 - root - INFO - Scraping Success!
+2023-04-14 14:15:34,557 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:15:34,682 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 15 38PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:35,061 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:15:35,381 - root - INFO - Scraping Success!
+2023-04-14 14:15:35,382 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:35,489 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:35,609 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:15:35,932 - root - INFO - Scraping Success!
+2023-04-14 14:15:35,932 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:36,071 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:36,195 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:15:36] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:15:41,064 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:15:41,064 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:15:41,172 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:15:41,520 - root - INFO - Scraping Success!
+2023-04-14 14:15:41,520 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:15:41,653 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:41,747 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:42,150 - root - INFO - Scraping Success!
+2023-04-14 14:15:42,150 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:42,275 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:42,413 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:42,623 - root - INFO - Scraping Success!
+2023-04-14 14:15:42,623 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:15:42,746 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 15 46PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:43,111 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:15:43,439 - root - INFO - Scraping Success!
+2023-04-14 14:15:43,439 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:43,561 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:43,675 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:15:44,010 - root - INFO - Scraping Success!
+2023-04-14 14:15:44,010 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:44,133 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:14:17.664468+00:00
+
+2023-04-14 14:15:44,253 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:15:44] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:15:48,414 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 14:15:48,460 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:15:49,064 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:15:49,068 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:15:50,280 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:15:50,281 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:15:50,529 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:15:50,968 - root - INFO - Scraping Success!
+2023-04-14 14:15:50,968 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:15:51,113 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:15:49.037302+00:00
+
+2023-04-14 14:15:51,247 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:51,584 - root - INFO - Scraping Success!
+2023-04-14 14:15:51,584 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:51,725 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:15:49.037302+00:00
+
+2023-04-14 14:15:51,874 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:52,212 - root - INFO - Scraping Success!
+2023-04-14 14:15:52,212 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:15:52,315 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 15 56PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:15:49.037302+00:00
+
+2023-04-14 14:15:52,696 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:15:53,025 - root - INFO - Scraping Success!
+2023-04-14 14:15:53,025 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:53,149 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:15:49.037302+00:00
+
+2023-04-14 14:15:53,283 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:15:53,611 - root - INFO - Scraping Success!
+2023-04-14 14:15:53,611 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:53,731 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:15:49.037302+00:00
+
+2023-04-14 14:15:53,877 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:15:53] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:15:57,466 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:15:57,466 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:15:57,467 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:15:58,034 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:15:58,038 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:15:58,172 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:15:58,172 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:15:58,535 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:15:58,900 - root - INFO - Scraping Success!
+2023-04-14 14:15:58,900 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:15:59,083 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:15:58.002952+00:00
+
+2023-04-14 14:15:59,261 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:15:59,643 - root - INFO - Scraping Success!
+2023-04-14 14:15:59,643 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:15:59,848 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:15:58.002952+00:00
+
+2023-04-14 14:16:00,094 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:16:00,320 - root - INFO - Scraping Success!
+2023-04-14 14:16:00,321 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:16:00,430 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 16 04PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:15:58.002952+00:00
+
+2023-04-14 14:16:00,892 - root - INFO - Found Diff in https://time.is/
+- 5 5
+- 5 5
+- 5 5
+- 5 5
+- 5 5
+- 5 5
++ 6 04PMPMThe clock will update automatically if you turn on JavaScript in your browser The clock will update automatically if you turn on JavaScript in your browser Friday  April 14  2023Sun    07 0
++ AM   07
++ 8PM  12h 53m    More info   Make Austin time default   Add to favorite locationsSun    07 05AM   07 58PM  12h 53m    More info  07 05AM   07 58PM  12h 53m More infoMake Austin time defaultMake Austin time defaultAdd to favorite locationsAdd to favorite locationsTokyo04 16AMBeijing03 16AMKyiv10 1
+- MThe clock will update automatically if you turn on JavaScript in your browser The clock will update automatically if you turn on JavaScript in your browser Friday  April 14  2023Sun    07 05AM   07 58
++ aris09 16
+- 12h 53m    More info   Make Austin time default   Add to favorite locationsSun    07 05AM   07 5
++ London0
+- 12h 5
++ New York0
+- h 53m
++ 16P
+- ore infoMa
++ To
+- e Austin time defaultMake Austin time defaultAdd to favorite locationsAdd to favorite locationsTok
+- ndon08 16
++ s Angeles12 16
+- London08 15PM08 15PMNew York03 15PMNew York03 15PM03 15PMLos Angeles
+2023-04-14 14:16:00,892 - root - INFO - DB calling fetch_html_diff_entry_with_link with https://time.is/
+2023-04-14 14:16:01,066 - root - INFO - DB calling insert_html_diff with 
+ID: 47427
+HTML Diff: - 5 5
+- 5 5
+- 5 5
+- 5 5
+- 5 5
+- 5 5
++ 6 04PMPMThe clock will update automatically if you turn on JavaScript in your browser The clock will update automatically if you turn on JavaScript in your browse ...
+Updated On: 2023-04-14 19:15:58.002952+00:00
+Link: https://time.is/
+
+2023-04-14 14:16:01,257 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:16:01,594 - root - INFO - Scraping Success!
+2023-04-14 14:16:01,595 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:01,782 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:15:58.002952+00:00
+
+2023-04-14 14:16:01,997 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:16:02,324 - root - INFO - Scraping Success!
+2023-04-14 14:16:02,324 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:02,529 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:15:58.002952+00:00
+
+2023-04-14 14:16:02,682 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:16:02] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:16:12,509 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:16:12,510 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:16:12,511 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:16:13,108 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:16:13,112 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:16:13,210 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:16:13,210 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:16:13,491 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:16:13,963 - root - INFO - Scraping Success!
+2023-04-14 14:16:13,963 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:16:14,170 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:16:13.082872+00:00
+
+2023-04-14 14:16:14,278 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:16:14,653 - root - INFO - Scraping Success!
+2023-04-14 14:16:14,653 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:14,766 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:13.082872+00:00
+
+2023-04-14 14:16:14,978 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:16:15,195 - root - INFO - Scraping Success!
+2023-04-14 14:16:15,195 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:16:15,322 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 16 19PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:16:13.082872+00:00
+
+2023-04-14 14:16:15,697 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:16:16,024 - root - INFO - Scraping Success!
+2023-04-14 14:16:16,024 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:16,157 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:13.082872+00:00
+
+2023-04-14 14:16:16,294 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:16:16,625 - root - INFO - Scraping Success!
+2023-04-14 14:16:16,625 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:16,772 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:13.082872+00:00
+
+2023-04-14 14:16:16,942 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:16:16] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:16:39,879 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 14:16:39,880 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 14:16:39,881 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 14:16:40,460 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 14:16:40,464 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 14:16:54,406 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:16:54,406 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:16:54,843 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:16:55,250 - root - INFO - Scraping Success!
+2023-04-14 14:16:55,250 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:16:55,373 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:16:55,471 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:16:55,846 - root - INFO - Scraping Success!
+2023-04-14 14:16:55,846 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:56,029 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:16:56,169 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:16:56,375 - root - INFO - Scraping Success!
+2023-04-14 14:16:56,375 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:16:56,589 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 17 00PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:16:57,010 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:16:57,323 - root - INFO - Scraping Success!
+2023-04-14 14:16:57,323 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:57,437 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:16:57,694 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:16:58,030 - root - INFO - Scraping Success!
+2023-04-14 14:16:58,030 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:16:58,141 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:16:58,258 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:16:58] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:18:03,426 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:18:03,426 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:18:03,817 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:18:05,257 - root - INFO - Scraping Success!
+2023-04-14 14:18:05,258 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:18:05,423 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:18:05,576 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:18:05,951 - root - INFO - Scraping Success!
+2023-04-14 14:18:05,951 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:18:06,164 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:18:06,406 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:18:06,666 - root - INFO - Scraping Success!
+2023-04-14 14:18:06,667 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:18:06,865 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 18 10PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:18:07,375 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:18:07,699 - root - INFO - Scraping Success!
+2023-04-14 14:18:07,699 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:18:07,883 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:18:08,016 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:18:08,338 - root - INFO - Scraping Success!
+2023-04-14 14:18:08,339 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:18:08,549 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:18:08,683 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:18:08] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 14:19:03,386 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 14:19:03,386 - root - INFO - DB calling fetch_all_relations
+2023-04-14 14:19:03,744 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 14:19:04,196 - root - INFO - Scraping Success!
+2023-04-14 14:19:04,196 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 14:19:04,387 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:19:04,513 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 14:19:04,890 - root - INFO - Scraping Success!
+2023-04-14 14:19:04,890 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:19:05,009 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:19:05,182 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 14:19:05,544 - root - INFO - Scraping Success!
+2023-04-14 14:19:05,544 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 14:19:05,667 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 02 19 09PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:19:06,072 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 14:19:06,395 - root - INFO - Scraping Success!
+2023-04-14 14:19:06,395 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:19:06,520 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:19:06,679 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 14:19:07,029 - root - INFO - Scraping Success!
+2023-04-14 14:19:07,029 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 14:19:07,154 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 14:19:07,275 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 14:19:07] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 15:15:13,086 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 15:15:13,086 - root - INFO - DB calling fetch_all_relations
+2023-04-14 15:15:13,567 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 15:15:14,129 - root - INFO - Scraping Success!
+2023-04-14 15:15:14,129 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 15:15:14,256 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:15:14,430 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 15:15:15,915 - root - INFO - Scraping Success!
+2023-04-14 15:15:15,915 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 15:15:16,124 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:15:16,285 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 15:15:16,518 - root - INFO - Scraping Success!
+2023-04-14 15:15:16,518 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 15:15:16,653 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 03 15 20PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:15:17,070 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 15:15:17,389 - root - INFO - Scraping Success!
+2023-04-14 15:15:17,390 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 15:15:17,581 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:15:17,710 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 15:15:18,060 - root - INFO - Scraping Success!
+2023-04-14 15:15:18,061 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 15:15:18,167 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:15:18,293 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 15:15:18] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 15:23:06,586 - root - INFO - API: Call updateAllExistingEntries
+2023-04-14 15:23:06,586 - root - INFO - DB calling fetch_all_relations
+2023-04-14 15:23:06,987 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 15:23:07,568 - root - INFO - Scraping Success!
+2023-04-14 15:23:07,568 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-14 15:23:07,760 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://animefest.org/e/AF2023/Activities/BizarreBazaar
+HTML Data: Bizarre Bazaar   AnimeFest 2023 Register Activities Guests Location 0 Login Create Account AnimeFest 2023 AnimeFest Convention July 28th   31st 2023 Sheraton Dallas Hotel Home About Us Convention Rule ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:23:07,866 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 15:23:08,296 - root - INFO - Scraping Success!
+2023-04-14 15:23:08,296 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 15:23:08,411 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:23:08,653 - root - INFO - Starting Scraping https://time.is/ for tobychow98@gmail.com. . .
+2023-04-14 15:23:08,909 - root - INFO - Scraping Success!
+2023-04-14 15:23:08,909 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 15:23:09,114 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://time.is/
+HTML Data: Time is   exact time  any time zone   Time is Exact time now  Time in Austin  Texas  United States now 03 23 13PMThe clock will update automatically if you turn on JavaScript in your browser Friday  A ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:23:09,566 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 15:23:09,892 - root - INFO - Scraping Success!
+2023-04-14 15:23:09,892 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 15:23:10,009 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:23:10,150 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 15:23:10,473 - root - INFO - Scraping Success!
+2023-04-14 15:23:10,474 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.animeboston.com/artists/artists_alley/
+2023-04-14 15:23:10,579 - root - INFO - DB calling update_html_data_entry_matching_link with 
+Link: https://www.animeboston.com/artists/artists_alley/
+HTML Data: Anime Boston   The Northeast s Largest Anime Convention Toggle navigation REGISTERONLINEBOOK YOURHOTELCOVIDPOLICY Home Convention Info Con Info Home About Us Contact Us Convention Schedule Hours of Op ...
+Last Updated: 2023-04-14 19:16:40.433030+00:00
+
+2023-04-14 15:23:10,735 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 15:23:10] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 15:23:19,238 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 15:23:19,238 - root - INFO - DB calling fetch_html_data_entry_with_link with https://time.is/
+2023-04-14 15:23:19,600 - root - INFO - DB calling fetch_user_with_email with tobychow98@gmail.com
+2023-04-14 15:23:19,795 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 15:23:19] "[35m[1mPOST /all/insertEmailAndLink?email=tobychow98@gmail.com&link=https://time.is/ HTTP/1.1[0m" 202 -

@@ -63,7 +63,13 @@ class Website_Scraper:
     def __text_preprocessor(self, raw_content):
         # general string preprocessing
         new_content = raw_content.strip()
-        new_content = re.sub(r'\n+', r'\n', new_content)
+
+        # replace multiple occurrences
+        new_content = re.sub(r'\n+', '\n', new_content)
+        new_content = re.sub(r'\s+', ' ', new_content)
+
+        # remove symbols
+        new_content = re.sub(r'[^\w\s]', ' ', new_content)
 
         # check if entire string is digit
         if new_content.isdigit():

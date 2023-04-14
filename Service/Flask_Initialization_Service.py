@@ -18,7 +18,7 @@ class Flask_Initialization_Service:
     def __initialize_logger(self, ):
         # file handler initialization
         log_file_name = 'website-diff-logs.txt'
-        log_file_path = f'../{log_file_name}'
+        log_file_path = f'../logs/{log_file_name}'
         handler = logging.FileHandler(log_file_path)
         handler.setLevel(logging.INFO)
 
