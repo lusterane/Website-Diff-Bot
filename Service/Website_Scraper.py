@@ -4,7 +4,7 @@ import certifi
 import urllib3
 from urllib3 import exceptions as urllib3_exceptions
 
-from Persistence_Layer.Models import *
+from Persistence.Models import *
 
 
 class Website_Scraper:

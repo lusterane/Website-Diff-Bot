@@ -1,7 +1,6 @@
 from flask import request, abort, make_response
-import logging
-from Persistence_Layer.Models import RequestObject
-from Service_Layer.Flask_Initialization_Service import Flask_Initialization_Service
+
+from Service.Flask_Initialization_Service import Flask_Initialization_Service
 
 # initialization
 init_object = Flask_Initialization_Service()
@@ -11,32 +10,27 @@ dm = init_object.dm
 
 
 # if email or link doesn't exist, it will insert
-@app.route('/all/updateTableWithEmailAndLink', methods=['POST'])
-def update_table_with_email_and_link():
-    email = request.args.get('email', type=str)
-    link = request.args.get('link', type=str)
-
+# if already exists, return 202
+@app.route('/all/insertEmailAndLink', methods=['POST'])
+def insertEmailAndLink():
     try:
-        request_object = RequestObject(email, link)
-        scraping_response = website_scraper.scrape_request(request_object)
-
-        response_json = dm.update_tables_with_scrape_response(scraping_response)
-
-        response = make_response(response_json, 200)
-        return response
+        email = request.args.get('email', type=str)
+        link = request.args.get('link', type=str)
+        response = dm.insert_email_link_into_tables(email, link)
+        if response:
+            return make_response({'body': f'Inserted {link} for {email} into table'}, 200)
+        return make_response({'body': f'Did not insert {link} for {email}'}, 202)
     except Exception as e:
         abort(404, description=e)
 
 
 # may need to protect this endpoint
 # send email or do webhook on database
-@app.route('/all/updateAllHTMLEntries', methods=['POST'])
-def updateAllHTMLEntries():
+@app.route('/all/updateAllExistingEntries', methods=['POST'])
+def updateAllExistingEntries():
     try:
         response_json = dm.update_tables_chron_job()
-
-        response = make_response(response_json, 200)
-        return response
+        return make_response(response_json, 200)
     except Exception as e:
         abort(404, description=e)
 

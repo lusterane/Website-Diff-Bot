@@ -3,11 +3,11 @@ import os
 
 from flask import Flask
 
-from Service_Layer.Database_Manager import DatabaseManager
-from Service_Layer.Website_Scraper import Website_Scraper
+from Service.Database_Manager import DatabaseManager
+from Service.Website_Scraper import Website_Scraper
 
 
-class Flask_Initialization_Service():
+class Flask_Initialization_Service:
     def __init__(self):
         self.app = Flask(__name__)
 
@@ -19,7 +19,7 @@ class Flask_Initialization_Service():
         # file handler initialization
         log_file_name = 'website-diff-logs.txt'
         log_file_path = f'../{log_file_name}'
-        handler = logging.FileHandler(log_file_name)
+        handler = logging.FileHandler(log_file_path)
         handler.setLevel(logging.INFO)
 
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

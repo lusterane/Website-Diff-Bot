@@ -1,10 +1,10 @@
 import logging
 import os.path
 
-import Presentation_Layer.Flask_API_Routing as flask_app
-from Persistence_Layer.Models import RequestObject
-from Service_Layer.Database_Manager import DatabaseManager
-from Service_Layer.Website_Scraper import Website_Scraper
+import Presentation.Flask_API_Routing as flask_app
+from Persistence.Models import RequestObject
+from Service.Database_Manager import DatabaseManager
+from Service.Website_Scraper import Website_Scraper
 
 TESTING = os.environ.get("TESTING")
 
