@@ -1,5 +1,5 @@
 from flask import request, abort, make_response
-
+import logging
 from Service.Flask_Initialization_Service import Flask_Initialization_Service
 
 # initialization
@@ -13,6 +13,7 @@ dm = init_object.dm
 # if already exists, return 202
 @app.route('/all/insertEmailAndLink', methods=['POST'])
 def insertEmailAndLink():
+    logging.info(f'API Call {insertEmailAndLink.__name__}')
     try:
         email = request.args.get('email', type=str)
         link = request.args.get('link', type=str)
@@ -28,6 +29,7 @@ def insertEmailAndLink():
 # send email or do webhook on database
 @app.route('/all/updateAllExistingEntries', methods=['POST'])
 def updateAllExistingEntries():
+    logging.info(f'API Call {updateAllExistingEntries.__name__}')
     try:
         response_json = dm.update_tables_chron_job()
         return make_response(response_json, 200)
