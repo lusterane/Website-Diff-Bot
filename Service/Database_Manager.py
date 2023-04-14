@@ -25,7 +25,10 @@ class DatabaseManager:
                 scraping_request_object = RequestObject(email, link)
                 scraping_response_object = self.website_scraper.scrape_request(scraping_request_object)
 
-                existing_html_db_entry = DBHTMLObject.from_json(self.db_gate.fetch_html_data_entry_with_link(link))
+                # should always exist
+                existing_html_db_entry = DBHTMLObject.from_json(
+                    self.db_gate.fetch_html_data_entry_with_link(link).data[
+                        0])  # index 0 because there will always be one result
 
                 old_html, new_html = scraping_response_object.html_data, existing_html_db_entry.html_data
 
@@ -36,19 +39,19 @@ class DatabaseManager:
                 if old_html != new_html:
                     logging.info(f'Found Diff in {link} !!!')
                     html_diff = self.__get_html_diff(old_html, new_html)
+
                     existing_html_diff_entry = self.db_gate.fetch_html_diff_entry_with_link(link)
 
                     if existing_html_diff_entry.count:  # exists
-                        self.__update_entry_in_updated_html_table(existing_html_diff_entry, html_diff)
+                        self.__update_entry_in_updated_html_table(
+                            DBUpdatedHTMLObject.from_json(existing_html_diff_entry.data[0]),
+                            html_diff)
                     else:  # doesn't exist
                         self.__insert_entry_in_updated_html_table(html_diff, link)
 
         return all_relations
 
-    '''
-    return false if both html and email exists
-    '''
-
+    # return false if both html and email exists
     def insert_email_link_into_tables(self, email, link) -> bool:
         html_response = self.db_gate.fetch_html_data_entry_with_link(link)
         email_response = self.db_gate.fetch_user_with_email(email)
@@ -67,6 +70,8 @@ class DatabaseManager:
         # build relation since one of the entries doesn't exist
         self.db_gate.insert_relation(DBHTMLUserRelationObject(self.__get_random_primary_key(), link, email))
         return True
+
+    ''' Helper Methods '''
 
     # update existing html table
     def __update_entry_in_html_table(self, existing_html_db_entry: DBHTMLObject, new_html_data) -> DBHTMLObject:
@@ -108,12 +113,10 @@ class DatabaseManager:
     #             response_objects.append(DBUserObject.from_json(data))
     #     return response_objects
 
-    ''' Helper Methods '''
-
     def __get_random_primary_key(self):
         return random.randint(0, 99999)
 
-    def __get_html_diff(self, str1, str2):
+    def __get_html_diff(self, str1, str2) -> str:
         from difflib import SequenceMatcher
 
         matcher = SequenceMatcher(None, str1, str2)

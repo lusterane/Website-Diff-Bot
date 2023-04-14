@@ -1,89 +1,211 @@
-2023-04-08 23:39:07,977 - root - INFO - The file website-diff-logs.txt has been cleared.
-2023-04-08 23:39:07,977 - root - INFO - Starting Scraping . . .
-2023-04-08 23:39:08,040 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F924FA6198>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
-2023-04-08 23:39:08,040 - root - INFO - Will try again with non-secure connection ...
-2023-04-08 23:39:08,040 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F924FA6160>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
-2023-04-08 23:39:08,042 - root - INFO - Scraping Failed . . .
-2023-04-08 23:39:10,020 - root - INFO - Starting Scraping . . .
-2023-04-08 23:39:10,023 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000252FFC07128>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
-2023-04-08 23:39:10,024 - root - INFO - Will try again with non-secure connection ...
-2023-04-08 23:39:10,024 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000252FFC070F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
-2023-04-08 23:39:10,024 - root - INFO - Scraping Failed . . .
-2023-04-08 23:48:02,679 - root - INFO - Starting Scraping . . .
-2023-04-08 23:48:02,753 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001ABB2770D30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
-2023-04-08 23:48:02,753 - root - INFO - Will try again with non-secure connection ...
-2023-04-08 23:48:02,753 - root - INFO - Failed with: HTTPSConnectionPool(host='www.sascassnime.ssscom', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001ABB2770DA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
-2023-04-08 23:48:02,754 - root - INFO - Scraping Failed . . .
-2023-04-08 23:55:23,523 - root - INFO - Starting Scraping . . .
-2023-04-08 23:55:24,767 - root - INFO - Scraping Success!
-2023-04-08 23:55:24,767 - root - INFO - Putting into DB . . .
-2023-04-08 23:55:26,453 - root - INFO - DB Querying Success!
-2023-04-09 00:30:49,655 - root - INFO - Starting Scraping . . .
-2023-04-09 00:30:51,106 - root - INFO - Scraping Success!
-2023-04-09 00:30:51,106 - root - INFO - Putting into DB . . .
-2023-04-09 00:32:46,150 - root - INFO - DB Querying Success!
-2023-04-09 11:58:25,095 - root - INFO - Starting Scraping . . .
-2023-04-09 11:58:26,677 - root - INFO - Scraping Success!
-2023-04-09 11:58:26,677 - root - INFO - Putting into DB . . .
-2023-04-09 11:58:28,368 - root - INFO - DB Querying Success!
-2023-04-09 11:59:18,856 - root - INFO - Starting Scraping . . .
-2023-04-09 11:59:20,045 - root - INFO - Scraping Success!
-2023-04-09 11:59:20,045 - root - INFO - Putting into DB . . .
-2023-04-09 11:59:32,375 - root - INFO - DB Querying Success!
-2023-04-09 12:00:24,648 - root - INFO - Starting Scraping . . .
-2023-04-09 12:00:26,309 - root - INFO - Scraping Success!
-2023-04-09 12:00:26,309 - root - INFO - Putting into DB . . .
-2023-04-09 12:00:26,918 - root - INFO - Found Diff in https://www.op.gg!!!
-2023-04-09 12:00:38,976 - root - INFO - DB Querying Success!
-2023-04-09 12:01:39,948 - root - INFO - Starting Scraping . . .
-2023-04-09 12:01:41,137 - root - INFO - Scraping Success!
-2023-04-09 12:01:41,137 - root - INFO - Putting into DB . . .
-2023-04-09 12:01:41,673 - root - INFO - Found Diff in https://www.op.gg !!!
-2023-04-09 12:01:53,770 - root - INFO - DB Querying Success!
-2023-04-09 12:02:29,739 - root - INFO - Starting Scraping . . .
-2023-04-09 12:02:30,948 - root - INFO - Scraping Success!
-2023-04-09 12:02:30,949 - root - INFO - Putting into DB . . .
-2023-04-09 12:02:31,472 - root - INFO - Found Diff in https://www.op.gg !!!
-2023-04-09 12:02:43,745 - root - INFO - DB Querying Success!
-2023-04-09 12:02:50,106 - root - INFO - Starting Scraping . . .
-2023-04-09 12:02:51,312 - root - INFO - Scraping Success!
-2023-04-09 12:02:51,312 - root - INFO - Putting into DB . . .
-2023-04-09 12:02:51,800 - root - INFO - Found Diff in https://www.op.gg !!!
-2023-04-09 12:03:03,357 - root - INFO - DB Querying Success!
-2023-04-09 12:03:42,921 - root - INFO - Starting Scraping . . .
-2023-04-09 12:03:44,135 - root - INFO - Scraping Success!
-2023-04-09 12:03:44,135 - root - INFO - Putting into DB . . .
-2023-04-09 12:03:44,601 - root - INFO - Found Diff in https://www.op.gg !!!
-2023-04-09 12:03:56,278 - root - INFO - DB Querying Success!
-2023-04-09 12:04:04,034 - root - INFO - Starting Scraping . . .
-2023-04-09 12:04:05,324 - root - INFO - Scraping Success!
-2023-04-09 12:04:05,324 - root - INFO - Putting into DB . . .
-2023-04-09 12:04:05,667 - root - INFO - Found Diff in https://www.op.gg !!!
-2023-04-09 12:04:17,650 - root - INFO - DB Querying Success!
-2023-04-09 12:24:59,566 - root - INFO - Starting Scraping . . .
-2023-04-09 12:25:00,919 - root - INFO - Scraping Success!
-2023-04-09 12:25:00,919 - root - INFO - Putting into DB . . .
-2023-04-09 12:25:01,448 - root - INFO - Found Diff in https://www.op.gg !!!
-2023-04-09 12:25:13,673 - root - INFO - DB Querying Success!
-2023-04-09 12:25:16,047 - root - INFO - Starting Scraping . . .
-2023-04-09 12:25:17,226 - root - INFO - Scraping Success!
-2023-04-09 12:25:17,226 - root - INFO - Putting into DB . . .
-2023-04-09 12:25:17,680 - root - INFO - Found Diff in https://www.op.gg !!!
-2023-04-09 12:25:29,571 - root - INFO - DB Querying Success!
-2023-04-09 12:25:32,015 - root - INFO - Starting Scraping . . .
-2023-04-09 12:25:33,429 - root - INFO - Scraping Success!
-2023-04-09 12:25:33,429 - root - INFO - Putting into DB . . .
-2023-04-09 12:25:34,791 - root - INFO - DB Querying Success!
-2023-04-09 12:26:20,684 - root - INFO - Starting Scraping . . .
-2023-04-09 12:26:21,869 - root - INFO - Scraping Success!
-2023-04-09 12:26:21,869 - root - INFO - Putting into DB . . .
-2023-04-09 12:26:23,319 - root - INFO - DB Querying Success!
-2023-04-09 12:38:12,677 - root - INFO - Starting Scraping . . .
-2023-04-09 12:38:14,284 - root - INFO - Scraping Success!
-2023-04-09 12:38:14,284 - root - INFO - Putting into DB . . .
-2023-04-09 13:13:23,110 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2023-04-14 01:17:04,585 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2023-04-09 13:13:23,110 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2023-04-09 13:13:23,111 - werkzeug - INFO -  * Restarting with stat
-2023-04-09 13:13:23,618 - werkzeug - WARNING -  * Debugger is active!
-2023-04-09 13:13:23,621 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:17:04,586 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:17:04,587 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:17:05,074 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:17:05,078 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:18:23,541 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:18:23,541 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:18:23,542 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:18:24,055 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:18:24,059 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:18:31,687 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:18:31] "[35m[1mPOST /all/insertEmailAndLink?email=tobsa@gmail.com&link=https://www.google.com/ HTTP/1.1[0m" 202 -
+2023-04-14 01:21:36,129 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:21:36] "POST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.google.com/ HTTP/1.1" 200 -
+2023-04-14 01:22:29,683 - root - INFO - Starting Scraping https://www.google.com/1 for test1@gmail.com. . .
+2023-04-14 01:22:29,936 - root - INFO - Scraping Success!
+2023-04-14 01:22:30,220 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:22:30] "POST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.google.com/1 HTTP/1.1" 200 -
+2023-04-14 01:23:22,432 - root - INFO - Starting Scraping https://www.google.com/12 for test1@gmail.com. . .
+2023-04-14 01:23:22,708 - root - INFO - Scraping Success!
+2023-04-14 01:23:22,971 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:23:22] "POST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.google.com/12 HTTP/1.1" 200 -
+2023-04-14 01:24:39,699 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:24:39,729 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:24:40,219 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:24:40,223 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:24:48,457 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:24:48,484 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:24:48,976 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:24:48,980 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:28:05,540 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:28:05,569 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:28:06,109 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:28:06,113 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:29:04,992 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:29:05,918 - root - INFO - Scraping Success!
+2023-04-14 01:29:06,108 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:29:06] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:29:26,869 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:29:27,209 - root - INFO - Scraping Success!
+2023-04-14 01:29:27,409 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:29:27] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:29:41,928 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:29:42,552 - root - INFO - Scraping Success!
+2023-04-14 01:29:42,660 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:29:42] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:29:53,574 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:29:53,574 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:29:53,574 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:29:54,770 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:29:54,780 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:30:24,076 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:30:24,826 - root - INFO - Scraping Success!
+2023-04-14 01:31:17,823 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:31:17,823 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:31:17,823 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:31:19,091 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:31:19,101 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:31:22,864 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:31:23,424 - root - INFO - Scraping Success!
+2023-04-14 01:32:37,919 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:32:37,919 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:32:37,922 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:32:39,223 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:32:39,229 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:32:39,709 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:32:40,163 - root - INFO - Scraping Success!
+2023-04-14 01:32:51,998 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:32:52,055 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:32:53,655 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:32:53,655 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:32:53,656 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:32:54,166 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:32:54,170 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:32:57,178 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:32:57,548 - root - INFO - Scraping Success!
+2023-04-14 01:32:57,670 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:32:57] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:33:13,963 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:33:13,963 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:33:13,973 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:33:15,116 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:33:15,126 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:33:18,357 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:33:18,767 - root - INFO - Scraping Success!
+2023-04-14 01:33:22,192 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:33:22] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:33:31,283 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:33:31,283 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:33:31,293 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:33:32,434 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:33:32,444 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:33:35,659 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:33:36,008 - root - INFO - Scraping Success!
+2023-04-14 01:34:52,021 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:34:52,061 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:34:53,318 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:34:53,318 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:35:15,316 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:35:15,366 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:35:16,649 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:35:16,649 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:35:28,232 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:35:28,272 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:35:29,429 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:35:29,429 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:35:33,215 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:35:33,215 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:35:33,216 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:35:33,764 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:35:33,768 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:35:35,102 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:35:35,740 - root - INFO - Scraping Success!
+2023-04-14 01:35:36,122 - root - INFO - Found Diff in https://animefest.org/e/AF2023/Activities/BizarreBazaar !!!
+2023-04-14 01:35:36,435 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 01:35:37,072 - root - INFO - Scraping Success!
+2023-04-14 01:35:37,315 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 01:35:37,632 - root - INFO - Scraping Success!
+2023-04-14 01:35:37,960 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 01:35:38,252 - root - INFO - Scraping Success!
+2023-04-14 01:35:38,542 - root - INFO - Starting Scraping https://www.op.gg for daniel98@gmail.com. . .
+2023-04-14 01:35:39,921 - root - INFO - Scraping Success!
+2023-04-14 01:35:40,583 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-14 01:36:00,656 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:36:00] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:36:41,808 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:36:41,808 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:36:41,808 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:36:43,055 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:36:43,065 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:36:43,516 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:36:43,936 - root - INFO - Scraping Success!
+2023-04-14 01:36:44,296 - root - INFO - Found Diff in https://animefest.org/e/AF2023/Activities/BizarreBazaar !!!
+2023-04-14 01:37:04,319 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:37:04] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:37:16,701 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:37:16,747 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:37:18,005 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:37:18,005 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:38:54,857 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:38:55,394 - root - INFO - Scraping Success!
+2023-04-14 01:38:55,883 - root - INFO - Found Diff in https://animefest.org/e/AF2023/Activities/BizarreBazaar !!!
+2023-04-14 01:40:11,477 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:40:11,522 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:40:12,743 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:40:12,753 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:40:42,070 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:40:42,107 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:40:43,269 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:40:43,269 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:40:44,416 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:40:44,416 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:40:44,417 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:40:45,011 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:40:45,015 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:40:47,357 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:40:48,076 - root - INFO - Scraping Success!
+2023-04-14 01:40:48,356 - root - INFO - Found Diff in https://animefest.org/e/AF2023/Activities/BizarreBazaar !!!
+2023-04-14 01:40:48,650 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:40:48] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-14 01:41:05,183 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:41:05,183 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:41:05,183 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:41:06,380 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:41:06,390 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:41:06,904 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:41:07,254 - root - INFO - Scraping Success!
+2023-04-14 01:41:07,560 - root - INFO - Found Diff in https://animefest.org/e/AF2023/Activities/BizarreBazaar !!!
+2023-04-14 01:41:25,017 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:41:25,018 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:41:25,020 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:41:26,263 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:41:26,269 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:41:26,792 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:41:27,184 - root - INFO - Scraping Success!
+2023-04-14 01:41:27,572 - root - INFO - Found Diff in https://animefest.org/e/AF2023/Activities/BizarreBazaar !!!
+2023-04-14 01:42:09,691 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 01:42:09,739 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:42:12,861 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 01:42:12,861 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 01:42:12,862 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 01:42:13,425 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 01:42:13,429 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 01:42:15,206 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar for tobychow98@gmail.com. . .
+2023-04-14 01:42:15,627 - root - INFO - Scraping Success!
+2023-04-14 01:42:15,989 - root - INFO - Found Diff in https://animefest.org/e/AF2023/Activities/BizarreBazaar !!!
+2023-04-14 01:42:16,469 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 01:42:16,908 - root - INFO - Scraping Success!
+2023-04-14 01:42:17,217 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao@gmail.com. . .
+2023-04-14 01:42:17,524 - root - INFO - Scraping Success!
+2023-04-14 01:42:17,828 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for joycezhao1@gmail.com. . .
+2023-04-14 01:42:18,167 - root - INFO - Scraping Success!
+2023-04-14 01:42:18,480 - root - INFO - Starting Scraping https://www.op.gg for daniel98@gmail.com. . .
+2023-04-14 01:42:19,805 - root - INFO - Scraping Success!
+2023-04-14 01:42:20,577 - root - INFO - Found Diff in https://www.op.gg !!!
+2023-04-14 01:42:40,468 - root - INFO - Starting Scraping https://www.google.com/ for tobs@gmail.com. . .
+2023-04-14 01:42:40,646 - root - INFO - Scraping Success!
+2023-04-14 01:42:40,940 - root - INFO - Found Diff in https://www.google.com/ !!!
+2023-04-14 01:42:41,443 - root - INFO - Starting Scraping https://www.google.com/ for tobsa@gmail.com. . .
+2023-04-14 01:42:41,590 - root - INFO - Scraping Success!
+2023-04-14 01:42:41,825 - root - INFO - Found Diff in https://www.google.com/ !!!
+2023-04-14 01:42:42,221 - root - INFO - Starting Scraping https://www.google.com/ for test1@gmail.com. . .
+2023-04-14 01:42:42,431 - root - INFO - Scraping Success!
+2023-04-14 01:42:42,656 - root - INFO - Found Diff in https://www.google.com/ !!!
+2023-04-14 01:42:43,041 - root - INFO - Starting Scraping https://www.google.com/1 for test1@gmail.com. . .
+2023-04-14 01:42:43,297 - root - INFO - Scraping Success!
+2023-04-14 01:42:43,507 - root - INFO - Starting Scraping https://www.google.com/12 for test1@gmail.com. . .
+2023-04-14 01:42:43,748 - root - INFO - Scraping Success!
+2023-04-14 01:42:43,967 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 01:42:43] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
