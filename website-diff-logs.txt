@@ -3336,3 +3336,329 @@ Last Updated: 2023-04-14 17:13:46.421205+00:00
 2023-04-14 12:13:56,441 - root - INFO - Scraping Success!
 2023-04-14 12:13:56,441 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.op.gg
 2023-04-14 12:13:57,178 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:13:57] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-14 12:16:05,007 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:16:05,074 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:16:05,729 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:16:05,734 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:16:18,037 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:16:18,069 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:16:18,643 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:16:18,646 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:16:39,194 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:16:39,229 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:16:39,832 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:16:39,836 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:16:53,145 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:16:53,187 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:16:53,787 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:16:53,791 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:17:06,091 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:17:06,123 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:17:06,687 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:17:06,691 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:17:07,745 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:17:07,783 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:17:08,468 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:17:08,472 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:27:34,304 - root - INFO - Starting Scraping https://www.animeboston.com/artists/artists_alley/ for tobychow98@gmail.com. . .
+2023-04-14 12:27:34,688 - root - INFO - Scraping Success!
+2023-04-14 12:27:44,327 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:27:44,327 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:27:44,328 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:27:44,902 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:27:44,906 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:27:46,437 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:27:46,437 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:27:46,878 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:27:47,070 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:27:47,151 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020D0A4E6DD8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:27:47,151 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:27:47,151 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020D0A4E6B38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:27:47,151 - root - INFO - Scraping Failed . . .
+2023-04-14 12:27:47,152 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:27:47] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:30:41,111 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 12:30:41,148 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:30:41,726 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:30:41,730 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:30:44,030 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:30:44,030 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:30:44,030 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:30:44,590 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:30:44,594 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:30:44,909 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:30:44,909 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:30:45,379 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:30:45,575 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:30:45,622 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000013313AE4E48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:30:45,622 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:30:45,624 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000013313AE4940>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:30:45,624 - root - INFO - Scraping Failed . . .
+2023-04-14 12:30:45,625 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:30:45] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:30:57,587 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:30:57,587 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:30:57,589 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:30:58,943 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:30:58,949 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:31:08,857 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:31:08,858 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:31:08,860 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:31:10,260 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:31:10,266 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:31:10,330 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:31:10,331 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:31:10,623 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:31:15,093 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:31:15,095 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000018CF4D12F60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:31:15,095 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:31:15,096 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000018CF4D12F60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:31:17,072 - root - INFO - Scraping Failed . . .
+2023-04-14 12:32:02,453 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:32:02] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:32:17,860 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:32:17,860 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:32:17,862 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:32:19,231 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:32:19,237 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:32:19,306 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:32:19,306 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:32:19,645 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:32:19,857 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:32:19,914 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001EAA0989CC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:32:19,914 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:32:19,915 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001EAA0989CC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:32:19,916 - root - INFO - Scraping Failed . . .
+2023-04-14 12:33:29,282 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Website_Scraper.py', reloading
+2023-04-14 12:33:29,335 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:33:30,670 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:33:30,676 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:33:46,489 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:33:46,489 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:33:46,490 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:33:47,945 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:33:47,952 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:33:48,016 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:33:48,017 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:33:48,443 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:33:48,575 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:33:48,633 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001E6CF78ADA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:33:48,633 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:33:48,634 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001E6CF78ADA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:33:48,634 - root - INFO - Scraping Failed . . .
+2023-04-14 12:34:29,407 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:34:29] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:34:49,488 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 12:34:49,539 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:34:51,171 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:34:51,172 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:34:51,173 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:34:51,751 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:34:51,756 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:34:51,992 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:34:51,992 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:34:52,392 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:34:52,578 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:34:52,629 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001868BAB4BE0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:34:52,629 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:34:52,629 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001868BAB4E48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:34:52,629 - root - INFO - Scraping Failed . . .
+2023-04-14 12:34:52,630 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:34:52] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:34:58,968 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 12:34:59,005 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:35:00,421 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:35:00,421 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:35:00,422 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:35:01,028 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:35:01,032 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:35:01,619 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:35:01,619 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:35:01,987 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:35:02,190 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:35:02,191 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DDE57F4E48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:35:02,191 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:35:02,192 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DDE57F4AC8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:35:02,192 - root - INFO - Scraping Failed . . .
+2023-04-14 12:35:02,192 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:35:02] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:35:25,660 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 12:35:25,693 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:35:27,071 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:35:27,071 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:35:27,072 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:35:27,635 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:35:27,639 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:35:29,614 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:35:29,614 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:35:30,146 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:35:30,331 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:35:30,380 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000234B9C03C88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:35:30,380 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:35:30,381 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000234B9C03C88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:35:30,381 - root - INFO - Scraping Failed . . .
+2023-04-14 12:35:30,381 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:35:30] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:36:02,564 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 12:36:02,596 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:36:03,177 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:36:03,180 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:36:04,558 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:36:04,558 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:36:04,559 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:36:05,119 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:36:05,123 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:36:08,715 - root - INFO - API Call insertEmailAndLink
+2023-04-14 12:36:08,715 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:36:09,133 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:36:09,277 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:36:09,363 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000029EF8904CC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:36:09,363 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:36:09,363 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000029EF8904BE0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:36:09,364 - root - INFO - Scraping Failed . . .
+2023-04-14 12:36:09,364 - root - INFO - Error HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000029EF8904BE0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) occurred in scrape_request() at line 26.
+2023-04-14 12:36:09,364 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:36:09] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:37:49,723 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\Flask_API_Routing.py', reloading
+2023-04-14 12:37:49,758 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:37:50,344 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:37:50,348 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:37:52,350 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:37:52,350 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:37:52,351 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:37:52,917 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:37:52,921 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:37:53,515 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 12:37:53,515 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:37:53,942 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:37:54,134 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:37:54,182 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002205051FC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:37:54,182 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:37:54,182 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002205051FC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:37:54,183 - root - INFO - Scraping Failed . . .
+2023-04-14 12:37:54,183 - root - INFO - API: Error HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002205051FC50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) occurred in scrape_request() at line 26.
+2023-04-14 12:37:54,183 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:37:54] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:38:31,891 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:38:31,930 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:38:32,506 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:38:32,509 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:38:33,391 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 12:38:33,392 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:38:33,856 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:38:34,042 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:38:34,115 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001D7B0EB8CC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:38:34,115 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:38:34,115 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001D7B0EB8CC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:38:34,116 - root - INFO - Scraping Failed . . .
+2023-04-14 12:38:34,116 - root - INFO - API: Error  scrape_request() at line 26 ... HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001D7B0EB8CC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:38:34,116 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:38:34] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:38:48,604 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:38:48,604 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:38:48,605 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:38:49,179 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:38:49,185 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:38:49,208 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 12:38:49,209 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:38:49,654 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:38:49,835 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:38:49,837 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000276D2B34D68>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:38:49,837 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:38:49,837 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000276D2B34B00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:38:49,837 - root - INFO - Scraping Failed . . .
+2023-04-14 12:38:49,837 - root - INFO - API: Error in scrape_request() at line 26 ... HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000276D2B34B00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:38:49,838 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:38:49] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:39:35,338 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Website_Scraper.py', reloading
+2023-04-14 12:39:35,373 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:39:35,925 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:39:35,928 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:39:38,013 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Website_Scraper.py', reloading
+2023-04-14 12:39:38,050 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:39:38,615 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:39:38,619 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:40:01,214 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Website_Scraper.py', reloading
+2023-04-14 12:40:01,258 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:40:01,834 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:40:01,837 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:40:44,883 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Database_Manager.py', reloading
+2023-04-14 12:40:44,918 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:40:45,549 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:40:45,553 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:40:55,908 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:40:55,908 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:40:55,909 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:40:56,511 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:40:56,515 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:40:57,155 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 12:40:57,156 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:40:57,545 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:40:57,733 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:40:57,782 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CFEBEF3BE0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:40:57,782 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:40:57,783 - root - INFO - Scraping Failed . . .
+2023-04-14 12:40:57,783 - root - INFO - API: Error in insert_email_link_into_tables() at line 68 ... Error in scrape_request() at line 26 ... Error in __get_raw_html_from_link() at line 47 ... HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CFEBEF3EB8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:40:57,783 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:40:57] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:41:39,651 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:41:39,690 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:41:40,261 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:41:40,264 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:41:41,268 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:41:41,268 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:41:41,269 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:41:41,853 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:41:41,857 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:41:43,140 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 12:41:43,140 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:41:43,561 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:41:43,773 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:41:43,832 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000021897B74CF8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:41:43,832 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:41:43,833 - root - INFO - Scraping Failed . . .
+2023-04-14 12:41:43,833 - root - INFO - API: Error in insert_email_link_into_tables() at line 68 ... 
+Error in scrape_request() at line 26 ... 
+Error in __get_raw_html_from_link() at line 47 ... 
+HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000021897B74CF8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:41:43,833 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:41:43] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:42:20,832 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\Helper\\Exception_Helper.py', reloading
+2023-04-14 12:42:20,865 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:42:21,700 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:42:21,701 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:42:21,701 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:42:22,407 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:42:22,411 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:42:22,434 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 12:42:22,435 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:42:22,843 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:42:23,022 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:42:23,067 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000284F2BEA630>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:42:23,067 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:42:23,068 - root - INFO - Scraping Failed . . .
+2023-04-14 12:42:23,068 - root - INFO - API: Error in insert_email_link_into_tables() at line 68 ... 
+		Error in scrape_request() at line 26 ... 
+		Error in __get_raw_html_from_link() at line 47 ... 
+		HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000284F48E4CF8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:42:23,069 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:42:23] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -
+2023-04-14 12:42:44,537 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-14 12:42:44,538 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-14 12:42:44,539 - werkzeug - INFO -  * Restarting with stat
+2023-04-14 12:42:45,129 - werkzeug - WARNING -  * Debugger is active!
+2023-04-14 12:42:45,132 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-14 12:42:45,154 - root - INFO - API: Call insertEmailAndLink
+2023-04-14 12:42:45,154 - root - INFO - DB calling fetch_html_data_entry_with_link with https://www.gasdasdas.csom
+2023-04-14 12:42:45,562 - root - INFO - DB calling fetch_user_with_email with test1@gmail.com
+2023-04-14 12:42:45,748 - root - INFO - Starting Scraping https://www.gasdasdas.csom for test1@gmail.com. . .
+2023-04-14 12:42:45,750 - root - INFO - Failed with: HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000014BAB98FC88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:42:45,750 - root - INFO - Will try again with non-secure connection ...
+2023-04-14 12:42:45,750 - root - INFO - Scraping Failed . . .
+2023-04-14 12:42:45,750 - root - INFO - API: Error in insert_email_link_into_tables() at line 68 ... 
+				Error in scrape_request() at line 26 ... 
+				Error in __get_raw_html_from_link() at line 47 ... 
+				HTTPSConnectionPool(host='www.gasdasdas.csom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000014BAB98FDD8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-14 12:42:45,751 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2023 12:42:45] "[33mPOST /all/insertEmailAndLink?email=test1@gmail.com&link=https://www.gasdasdas.csom HTTP/1.1[0m" 404 -

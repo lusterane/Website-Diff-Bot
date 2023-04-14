@@ -4,6 +4,8 @@ from collections import defaultdict
 from datetime import datetime, timezone
 
 from postgrest.exceptions import APIError
+from Service.Helper.Exception_Helper import Exception_Helper
+import inspect
 
 from Persistence.Models import *
 from Service.Database_Gateway import Database_Gateway
@@ -60,7 +62,10 @@ class DatabaseManager:
         if not html_response.count:
             # if html entry doesn't exist, do scraping and insert everything to table
             request_object = RequestObject(email, link)
-            html_data = self.website_scraper.scrape_request(request_object).html_data
+            try:
+                html_data = self.website_scraper.scrape_request(request_object).html_data
+            except Exception as e:
+                Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
             self.db_gate.insert_into_html_table(DBHTMLObject(link, html_data, self.current_datetime))
         if not email_response.count:
@@ -102,7 +107,7 @@ class DatabaseManager:
                 return new_entry
             except APIError as e:
                 logging.info(f'Got Error: {e}, Retrying {retry + 1}. . .')
-        raise Exception
+        Exception_Helper.raise_exception('Retried 3 times to insert entry', inspect)
 
     # def fetch_all_users(self):
     #     response_objects = []

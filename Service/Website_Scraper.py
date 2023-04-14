@@ -5,6 +5,8 @@ import urllib3
 from urllib3 import exceptions as urllib3_exceptions
 from bs4 import BeautifulSoup
 from Persistence.Models import *
+from Service.Helper.Exception_Helper import Exception_Helper
+import inspect
 
 
 class Website_Scraper:
@@ -21,7 +23,7 @@ class Website_Scraper:
                                           email=request_object.email)
         except Exception as e:
             logging.info('Scraping Failed . . .')
-            raise e
+            Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
     def __get_raw_html_from_link(self, url):
         try:
@@ -34,8 +36,7 @@ class Website_Scraper:
             # try with insecure connection
             pass
         except Exception as e:
-            logging.info(f"Failed with: {e}")
-            raise e
+            Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
         try:
             logging.info("Will try again with non-secure connection ...")
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_NONE')
@@ -43,8 +44,7 @@ class Website_Scraper:
             raw_html_data = response.data.decode('utf-8')
             return self.__parse_with_beautiful_soup(raw_html_data)
         except Exception as e:
-            logging.info(f"Failed with: {e}")
-            raise e
+            Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
     def __parse_with_beautiful_soup(self, raw_html_data):
         soup = BeautifulSoup(raw_html_data, 'html.parser')
