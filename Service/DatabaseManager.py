@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 
 from postgrest.exceptions import APIError
 
-from Persistence.Models import *
+from Persistence.DBGateway import *
 from Service.DatabaseGateway import DatabaseGateway
 from Service.Helper.ExceptionHelper import ExceptionHelper
 from Service.WebsiteScraper import WebsiteScraper

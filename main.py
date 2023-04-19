@@ -1,12 +1,7 @@
 import logging
 import os.path
 
-import Presentation.FlaskAPIRouting as flask_app
-from Persistence.Models import RequestObject
-from Service.DatabaseManager import DatabaseManager
-from Service.WebsiteScraper import WebsiteScraper
-
-TESTING = os.environ.get("TESTING")
+import Persistence.DBGateway as flask_app
 
 
 def initialize_logger():
@@ -35,36 +30,9 @@ def initialize_logger():
 
 
 def main():
-    # initialize variables
-    website_scraper = WebsiteScraper()
-    dm = DatabaseManager()
-    initialize_logger()
-
-    res = website_scraper.scrape_link('https://www.animeboston.com/artists/artists_alley/')
-    print(res)
-    # response htmls from requests
-    # response_object = website_scraper.scrape_link(request_objects[1])
-    #
-    # if not response_object:
-    #     return
-    # logging.info('Scraping Success!')
-    # logging.info('Putting into DB . . .')
-    # # place into database
-    # if not dm.update_tables_with_scrape_response(response_object):
-    #     logging.info('DB Querying Failed . . .')
-    #     return
-    #
-    # logging.info('DB Querying Success!')
-
-
-def testing_main():
-    print('TESTING MAIN')
     flask_app.app.run(debug=True)
-    # Email_Manager.test_email()
+    pass
 
 
 if __name__ == '__main__':
-    if TESTING == '1':
-        testing_main()
-    else:
-        main()
+    main()

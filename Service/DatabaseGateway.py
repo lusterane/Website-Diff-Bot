@@ -4,7 +4,7 @@ from enum import Enum
 
 from supabase import create_client
 
-from Persistence.Models import *
+from Persistence.DBGateway import *
 
 
 class DatabaseGateway:

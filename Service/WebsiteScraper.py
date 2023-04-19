@@ -7,7 +7,7 @@ import urllib3
 from bs4 import BeautifulSoup
 from urllib3 import exceptions as urllib3_exceptions
 
-from Persistence.Models import *
+from Persistence.DBGateway import *
 from Service.Helper.ExceptionHelper import ExceptionHelper
 
 
