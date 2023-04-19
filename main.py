@@ -31,7 +31,7 @@ def initialize_logger():
 
 
 def main():
-    current_time = datetime.now()
+    current_time = datetime.datetime.now()
     job_data = {
         'j_id': None,
         'job_name': 'UPDATED test job name',
@@ -42,9 +42,12 @@ def main():
         'p_id': '1',
         's_id': '1',
         'up_id': '1'
-
     }
-    print(Job.get_by_id(3))
+    print(Profile.create_profile('tobychow98@gmail.com'))
+    print(ScrapedData.create_scraped_data('this is test scraped data'))
+    print(Update.create_update('this is test update'))
+    print(Job.create_job(job_data))
+    print(Job.get_job_by_id(2))
     pass
 
 
