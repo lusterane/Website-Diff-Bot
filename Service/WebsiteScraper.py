@@ -6,31 +6,29 @@ import certifi
 import urllib3
 from bs4 import BeautifulSoup
 from urllib3 import exceptions as urllib3_exceptions
-
-from Persistence.DBGateway import *
-from Service.Helper.ExceptionHelper import ExceptionHelper
+from Service.ExceptionHelper import ExceptionHelper
 
 
 class WebsiteScraper:
-    def __init__(self):
-        urllib3.disable_warnings()
-
-    def scrape_link(self, link):
+    @staticmethod
+    def scrape_link(link):
         logging.info(f'Starting Scraping {link}. . .')
+        urllib3.disable_warnings()
         try:
-            raw_html = self.__get_raw_html_from_link(link)
+            raw_html = WebsiteScraper.__get_raw_html_from_link(link)
             logging.info('Scraping Success!')
             return raw_html
         except Exception as e:
             logging.info('Scraping Failed . . .')
             ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
+    @staticmethod
     def __get_raw_html_from_link(self, url):
         try:
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
             response = http.request('GET', url)
             raw_html_data = response.data.decode('utf-8')
-            return self.__parse_with_beautiful_soup(raw_html_data)
+            return WebsiteScraper.__parse_with_beautiful_soup(raw_html_data)
         except urllib3_exceptions.MaxRetryError as e:
             logging.info(f"Failed with: {e}")
             # try with insecure connection
@@ -46,12 +44,14 @@ class WebsiteScraper:
         except Exception as e:
             ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
-    def __parse_with_beautiful_soup(self, raw_html_data):
+    @staticmethod
+    def __parse_with_beautiful_soup(raw_html_data):
         soup = BeautifulSoup(raw_html_data, 'html.parser')
         raw_content = soup.get_text()
-        return self.__text_preprocessor(raw_content)
+        return WebsiteScraper.__text_preprocessor__(raw_content)
 
-    def __text_preprocessor(self, raw_content):
+    @staticmethod
+    def __text_preprocessor__(raw_content):
         # general string preprocessing
         new_content = raw_content.strip()
 

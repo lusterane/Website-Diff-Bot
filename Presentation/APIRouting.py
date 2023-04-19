@@ -1,34 +1,26 @@
 import logging
 
-from flask import request, abort, make_response
+from flask import abort, make_response, Flask
 
-from Service.FlaskInitializationService import FlaskInitializationService
-
-# initialization
-init_object = FlaskInitializationService()
-app = init_object.app
-website_scraper = init_object.website_scraper
-dm = init_object.dm
+app = Flask(__name__)
 
 
 # if email or link doesn't exist, it will insert
 # if already exists, return 202
-@app.route('/all/insertEmailAndLink', methods=['POST'])
-def insertEmailAndLink():
-    __api_log(f'Call {insertEmailAndLink.__name__}')
+@app.route('/hi', methods=['GET'])
+def test():
+    # __api_log__(f'Call {test.__name__}')
     try:
-        email = request.args.get('email', type=str)
-        link = request.args.get('link', type=str)
-        response = dm.insert_email_link_into_tables(email, link)
-        if response:
-            return make_response({'body': f'Inserted {link} for {email} into table'}, 200)
-        return make_response({'body': f'Did not insert {link} for {email}'}, 202)
+        return make_response({'response': 'hi'}, 200)
     except Exception as e:
-        __api_log(e)
+        # __api_log__(e)
         abort(404, description=e)
 
 
-def __api_log(e):
+''' Helpers '''
+
+
+def __api_log__(e):
     logging.info(f'API: {e}')
 
 

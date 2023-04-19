@@ -1,31 +1,24 @@
 import logging
 import os
 
-from flask import Flask
 
-from Service.DatabaseManager import DatabaseManager
-from Service.WebsiteScraper import WebsiteScraper
-
-
-class FlaskInitializationService:
-    def __init__(self):
-        self.app = Flask(__name__)
-
-        self.__initialize_logger()
-        self.website_scraper = WebsiteScraper()
-        self.dm = DatabaseManager()
-
-    def __initialize_logger(self, ):
+class LoggerLauncher:
+    @staticmethod
+    def launch():
         # file handler initialization
         log_file_name = 'website-diff-logs.txt'
-        log_file_path = f'../logs/{log_file_name}'
+        log_file_path = f'logs/{log_file_name}'
         handler = logging.FileHandler(log_file_path)
         handler.setLevel(logging.INFO)
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
 
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
+        console_handler.setFormatter(formatter)
 
         logging.getLogger().addHandler(handler)
+        logging.getLogger().addHandler(console_handler)
 
         # clear log file if too large
         if os.path.exists(log_file_path):

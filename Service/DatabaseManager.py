@@ -1,14 +1,7 @@
-import inspect
-import logging
-import random
 import re
-from collections import defaultdict
 from datetime import datetime, timezone
 
-from postgrest.exceptions import APIError
-
 from Persistence.DBGateway import *
-from Service.Helper.ExceptionHelper import ExceptionHelper
 from Service.WebsiteScraper import WebsiteScraper
 
 
