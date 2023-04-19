@@ -2700,3 +2700,46 @@ Convention Policie ...
 Last Updated: 2023-04-19 00:44:27.082566+00:00
 
 2023-04-18 19:49:42,070 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2023 19:49:42] "POST /all/updateAllExistingEntries HTTP/1.1" 200 -
+2023-04-18 19:52:19,024 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\main.py', reloading
+2023-04-18 19:52:19,072 - werkzeug - INFO -  * Restarting with stat
+2023-04-18 19:52:19,697 - werkzeug - WARNING -  * Debugger is active!
+2023-04-18 19:52:19,700 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-18 19:52:47,441 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\main.py', reloading
+2023-04-18 19:52:47,476 - werkzeug - INFO -  * Restarting with stat
+2023-04-18 19:52:48,064 - werkzeug - WARNING -  * Debugger is active!
+2023-04-18 19:52:48,067 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-18 19:53:06,561 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\DatabaseManager.py', reloading
+2023-04-18 19:53:06,598 - werkzeug - INFO -  * Restarting with stat
+2023-04-18 19:53:07,241 - werkzeug - WARNING -  * Debugger is active!
+2023-04-18 19:53:07,245 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-18 19:53:23,712 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Persistence\\Models.py', reloading
+2023-04-18 19:53:23,751 - werkzeug - INFO -  * Restarting with stat
+2023-04-18 19:53:24,401 - werkzeug - WARNING -  * Debugger is active!
+2023-04-18 19:53:24,405 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-18 19:53:30,855 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-18 19:53:30,855 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-18 19:53:30,857 - werkzeug - INFO -  * Restarting with stat
+2023-04-18 19:53:31,444 - werkzeug - WARNING -  * Debugger is active!
+2023-04-18 19:53:31,448 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-18 19:57:01,981 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-18 19:57:01,981 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-04-18 19:57:01,982 - werkzeug - INFO -  * Restarting with stat
+2023-04-18 19:57:02,572 - werkzeug - WARNING -  * Debugger is active!
+2023-04-18 19:57:02,576 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-18 19:57:11,762 - root - INFO - API: Call insertEmailAndLink
+2023-04-18 19:57:11,762 - root - INFO - DB calling fetch_html_data_entry_with_link with https://lusterane.github.io/
+2023-04-18 19:57:12,326 - root - INFO - DB calling fetch_user_with_email with tobychow98@gmail.com
+2023-04-18 19:57:12,535 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2023 19:57:12] "[35m[1mPOST /all/insertEmailAndLink?email=tobychow98@gmail.com&link=https://lusterane.github.io/ HTTP/1.1[0m" 202 -
+2023-04-18 19:57:14,401 - root - INFO - API: Call updateAllExistingEntries
+2023-04-18 19:57:14,401 - root - INFO - DB calling fetch_all_relations
+2023-04-18 19:57:14,588 - root - INFO - Starting Scraping https://animefest.org/e/AF2023/Activities/BizarreBazaar. . .
+2023-04-18 19:57:15,070 - root - INFO - Scraping Success!
+2023-04-18 19:57:15,070 - root - INFO - DB calling fetch_html_data_entry_with_link with https://animefest.org/e/AF2023/Activities/BizarreBazaar
+2023-04-18 19:57:15,180 - root - INFO - API: 'str' object has no attribute 'html_data'
+2023-04-18 19:57:15,180 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2023 19:57:15] "[33mPOST /all/updateAllExistingEntries HTTP/1.1[0m" 404 -
+2023-04-18 19:58:25,731 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\DatabaseManager.py', reloading
+2023-04-18 19:58:25,769 - werkzeug - INFO -  * Restarting with stat
+2023-04-18 19:58:26,436 - werkzeug - WARNING -  * Debugger is active!
+2023-04-18 19:58:26,440 - werkzeug - INFO -  * Debugger PIN: 478-208-579

@@ -28,41 +28,6 @@ def insertEmailAndLink():
         abort(404, description=e)
 
 
-# may need to protect this endpoint
-# send email or do webhook on database
-@app.route('/all/updateAllExistingEntries', methods=['POST'])
-def updateAllExistingEntries():
-    __api_log(f'Call {updateAllExistingEntries.__name__}')
-    try:
-        response_json = dm.update_tables_chron_job()
-        return make_response(response_json, 200)
-    except Exception as e:
-        __api_log(e)
-        abort(404, description=e)
-
-
-@app.route('/all/getAllRelations', methods=['GET'])
-def getAllRelations():
-    __api_log(f'Call {getAllRelations.__name__}')
-    try:
-        response_json = dm.get_all_relations()
-        return make_response(response_json, 200)
-    except Exception as e:
-        __api_log(e)
-        abort(404, description=e)
-
-
-# @app.route('/users/getAllUsers', methods=['GET'])
-# def getAllUsers():
-#     __api_log(f'Call {getAllUsers.__name__}')
-#     try:
-#         response_json = dm.get_all_relations()
-#         return make_response(response_json, 200)
-#     except Exception as e:
-#         __api_log(e)
-#         abort(404, description=e)
-
-
 def __api_log(e):
     logging.info(f'API: {e}')
 

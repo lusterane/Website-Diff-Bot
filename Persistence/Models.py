@@ -1,19 +1,3 @@
-class ScrapingResponseObject:
-    def __init__(self, link, html_data, email):
-        self.link = link
-        self.html_data = html_data
-        self.email = email
-
-    def __repr__(self):
-        return f'\nLink: {self.link}\nEmail: {self.email}\nHtml Data: {get_truncated_html_data(self.html_data)}\n'
-
-
-class RequestObject:
-    def __init__(self, email, link):
-        self.email = email
-        self.link = link
-
-
 class DBHTMLObject:
     def __init__(self, link, html_data, last_updated='1990-01-01T00:00:00.965861+00:00'):
         self.link = link

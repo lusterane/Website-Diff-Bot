@@ -15,14 +15,12 @@ class WebsiteScraper:
     def __init__(self):
         urllib3.disable_warnings()
 
-    def scrape_request(self, request_object):
-        logging.info(f'Starting Scraping {request_object.link} for {request_object.email}. . .')
+    def scrape_link(self, link):
+        logging.info(f'Starting Scraping {link}. . .')
         try:
-            raw_html = self.__get_raw_html_from_link(request_object.link)
+            raw_html = self.__get_raw_html_from_link(link)
             logging.info('Scraping Success!')
-            return ScrapingResponseObject(link=request_object.link,
-                                          html_data=raw_html,
-                                          email=request_object.email)
+            return raw_html
         except Exception as e:
             logging.info('Scraping Failed . . .')
             ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
