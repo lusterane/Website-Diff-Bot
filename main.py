@@ -1,7 +1,8 @@
 import logging
 import os.path
+from datetime import datetime
 
-import Persistence.DBGateway as flask_app
+from Persistence.DBGateway import *
 
 
 def initialize_logger():
@@ -30,7 +31,20 @@ def initialize_logger():
 
 
 def main():
-    flask_app.app.run(debug=True)
+    current_time = datetime.now()
+    job_data = {
+        'j_id': None,
+        'job_name': 'UPDATED test job name',
+        'link': 'https://google.com/',
+        'frequency': '100',
+        'last_updated': current_time,
+        'next_update': current_time,
+        'p_id': '1',
+        's_id': '1',
+        'up_id': '1'
+
+    }
+    print(Job.get_by_id(3))
     pass
 
 
