@@ -1,10 +1,10 @@
 import logging
 import os.path
 
-import Presentation.Flask_API_Routing as flask_app
+import Presentation.FlaskAPIRouting as flask_app
 from Persistence.Models import RequestObject
-from Service.Database_Manager import DatabaseManager
-from Service.Website_Scraper import Website_Scraper
+from Service.DatabaseManager import DatabaseManager
+from Service.WebsiteScraper import WebsiteScraper
 
 TESTING = os.environ.get("TESTING")
 
@@ -36,7 +36,7 @@ def initialize_logger():
 
 def main():
     # initialize variables
-    website_scraper = Website_Scraper()
+    website_scraper = WebsiteScraper()
     dm = DatabaseManager()
     request_objects = [RequestObject(email='tobychow98@gmail.com',
                                      link='https://www.sascassnime.ssscom/vendors-and-artists/artist-alley/artist-alley-registration/'),

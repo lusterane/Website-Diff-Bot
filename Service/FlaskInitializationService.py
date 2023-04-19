@@ -3,16 +3,16 @@ import os
 
 from flask import Flask
 
-from Service.Database_Manager import DatabaseManager
-from Service.Website_Scraper import Website_Scraper
+from Service.DatabaseManager import DatabaseManager
+from Service.WebsiteScraper import WebsiteScraper
 
 
-class Flask_Initialization_Service:
+class FlaskInitializationService:
     def __init__(self):
         self.app = Flask(__name__)
 
         self.__initialize_logger()
-        self.website_scraper = Website_Scraper()
+        self.website_scraper = WebsiteScraper()
         self.dm = DatabaseManager()
 
     def __initialize_logger(self, ):
@@ -30,8 +30,8 @@ class Flask_Initialization_Service:
         # clear log file if too large
         if os.path.exists(log_file_path):
             file_size = os.path.getsize(log_file_path)
-            half_megabyte = 500000
-            if file_size > half_megabyte:
+            five_megabytes = 5000000
+            if file_size > five_megabytes:
                 try:
                     with open(log_file_path, 'w') as f:
                         f.truncate(0)

@@ -2,10 +2,10 @@ import logging
 
 from flask import request, abort, make_response
 
-from Service.Flask_Initialization_Service import Flask_Initialization_Service
+from Service.FlaskInitializationService import FlaskInitializationService
 
 # initialization
-init_object = Flask_Initialization_Service()
+init_object = FlaskInitializationService()
 app = init_object.app
 website_scraper = init_object.website_scraper
 dm = init_object.dm

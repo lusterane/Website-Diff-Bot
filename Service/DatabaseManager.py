@@ -8,16 +8,16 @@ from datetime import datetime, timezone
 from postgrest.exceptions import APIError
 
 from Persistence.Models import *
-from Service.Database_Gateway import Database_Gateway
-from Service.Helper.Exception_Helper import Exception_Helper
-from Service.Website_Scraper import Website_Scraper
+from Service.DatabaseGateway import DatabaseGateway
+from Service.Helper.ExceptionHelper import ExceptionHelper
+from Service.WebsiteScraper import WebsiteScraper
 
 
 class DatabaseManager:
     def __init__(self):
         self.current_datetime = str(datetime.now(timezone.utc))
-        self.db_gate = Database_Gateway()
-        self.website_scraper = Website_Scraper()
+        self.db_gate = DatabaseGateway()
+        self.website_scraper = WebsiteScraper()
 
     # expensive method !!!
     def update_tables_chron_job(self) -> dict:
@@ -69,7 +69,7 @@ class DatabaseManager:
             try:
                 html_data = self.website_scraper.scrape_request(request_object).html_data
             except Exception as e:
-                Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+                ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
                 return False
 
             self.db_gate.insert_into_html_table(DBHTMLObject(link, html_data, self.current_datetime))
@@ -112,7 +112,7 @@ class DatabaseManager:
                 return new_entry
             except APIError as e:
                 logging.info(f'Got Error: {e}, Retrying {retry + 1}. . .')
-        Exception_Helper.raise_exception('Retried 3 times to insert entry', inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+        ExceptionHelper.raise_exception('Retried 3 times to insert entry', inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
     def __get_random_primary_key(self):
         return random.randint(0, 99999)

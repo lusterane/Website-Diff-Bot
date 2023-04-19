@@ -8,10 +8,10 @@ from bs4 import BeautifulSoup
 from urllib3 import exceptions as urllib3_exceptions
 
 from Persistence.Models import *
-from Service.Helper.Exception_Helper import Exception_Helper
+from Service.Helper.ExceptionHelper import ExceptionHelper
 
 
-class Website_Scraper:
+class WebsiteScraper:
     def __init__(self):
         urllib3.disable_warnings()
 
@@ -25,7 +25,7 @@ class Website_Scraper:
                                           email=request_object.email)
         except Exception as e:
             logging.info('Scraping Failed . . .')
-            Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+            ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
     def __get_raw_html_from_link(self, url):
         try:
@@ -38,7 +38,7 @@ class Website_Scraper:
             # try with insecure connection
             pass
         except Exception as e:
-            Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+            ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
         try:
             logging.info("Will try again with non-secure connection ...")
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_NONE')
@@ -46,32 +46,23 @@ class Website_Scraper:
             raw_html_data = response.data.decode('utf-8')
             return self.__parse_with_beautiful_soup(raw_html_data)
         except Exception as e:
-            Exception_Helper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+            ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
     def __parse_with_beautiful_soup(self, raw_html_data):
         soup = BeautifulSoup(raw_html_data, 'html.parser')
-        content = ''
-        for tag in soup.find_all():
-            raw_content = tag.text
-
-            # preprocessing
-            processed_content = self.__text_preprocessor(raw_content)
-
-            if not processed_content:
-                continue
-            content += processed_content
-        return content
+        raw_content = soup.get_text()
+        return self.__text_preprocessor(raw_content)
 
     def __text_preprocessor(self, raw_content):
         # general string preprocessing
         new_content = raw_content.strip()
 
         # replace multiple occurrences
-        new_content = re.sub(r'\n+', '\n', new_content)
-        new_content = re.sub(r'\s+', ' ', new_content)
+        new_content = re.sub(' +', ' ', new_content)
+        new_content = re.sub('\n+', '\n', new_content)
 
         # remove symbols
-        new_content = re.sub(r'[^\w\s]', ' ', new_content)
+        # new_content = re.sub(r'[^\w\s]', ' ', new_content)
 
         # check if entire string is digit
         if new_content.isdigit():
@@ -79,7 +70,7 @@ class Website_Scraper:
 
         # preprocess numbers with symbols
         for content in new_content.split(','):
-            # if any are not numbers, then content is valid
+            # if any ar e not numbers, then content is valid
             if not content.isdigit():
                 return new_content
         return ''

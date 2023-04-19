@@ -7,7 +7,7 @@ from supabase import create_client
 from Persistence.Models import *
 
 
-class Database_Gateway:
+class DatabaseGateway:
     def __init__(self):
         self.supabase = create_client(os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY"))
         self.user_table_name = os.environ.get(DBTable.User_Table_Name.value)
