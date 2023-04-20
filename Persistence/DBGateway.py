@@ -13,7 +13,7 @@ class TableNames(Enum):
     JOBS_TABLE = 'JobsTable'
     PROFILES_TABLE = 'ProfilesTable'
     SCRAPED_DATA_TABLE = 'ScrapedDataTable'
-    UPDATE_TABLE = 'UpdateTable'
+    UPDATE_TABLE = 'UpdatesTable'
 
 
 class Job(db.Model):
