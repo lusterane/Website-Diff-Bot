@@ -310,7 +310,7 @@ class Check(db.Model):
         return {
             'c_id': self.c_id,
             'status': self.status,
-            'checked_on': self.checked_on.isofortmat(),
+            'checked_on': self.checked_on.isoformat(),
             's_id': self.s_id
         }
 

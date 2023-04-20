@@ -10,7 +10,7 @@ class APIUtils:
     def get_jobs_from_profile_id(profile_id) -> []:
         profile = Profile.get_profile_by_id(profile_id)
         if not profile:
-            raise Exception(f'No profile found with profile id {profile_id}')
+            raise Exception(f'Profile ID {profile_id} does not exist')
         jobs = profile.jobs
         return APIUtils.__jsonify_instrument_list__(jobs)
 
@@ -23,9 +23,17 @@ class APIUtils:
     def get_diffs_from_job_id(job_id) -> []:
         job = Job.get_job_by_id(job_id)
         if not job:
-            raise Exception(f'No job found with job id {job_id}')
+            raise Exception(f'Job ID {job_id} does not exist')
         diffs = job.scraped_data.diffs
         return APIUtils.__jsonify_instrument_list__(diffs)
+
+    @staticmethod
+    def get_checks_from_job_id(job_id) -> []:
+        job = Job.get_job_by_id(job_id)
+        if not job:
+            raise Exception(f'Job ID {job_id} does not exist')
+        checks = job.scraped_data.checks
+        return APIUtils.__jsonify_instrument_list__(checks)
 
     ''' Helper Methods '''
 

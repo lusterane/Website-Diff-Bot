@@ -56,3 +56,18 @@
 2023-04-20 05:46:30,334 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - [Errno 22] Invalid argument
 2023-04-20 05:51:32,288 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - 'datetime.datetime' object has no attribute 'isofortmat'
 2023-04-20 05:51:36,365 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - 'datetime.datetime' object has no attribute 'isofortmat'
+2023-04-20 05:55:47,083 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - 'datetime.datetime' object has no attribute 'isofortmat'
+2023-04-20 05:56:41,630 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - No job found with job id 4
+2023-04-20 11:19:42,199 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT "JobsTable".j_id AS "JobsTable_j_id", "JobsTable".job_name AS "JobsTable_job_name", "JobsTable".link AS "JobsTable_link", "JobsTable".frequency AS "JobsTable_frequency", "JobsTable".last_updated AS "JobsTable_last_updated", "JobsTable".next_update AS "JobsTable_next_update", "JobsTable".p_id AS "JobsTable_p_id", "JobsTable".s_id AS "JobsTable_s_id" 
+FROM "JobsTable" 
+WHERE "JobsTable".j_id = %(pk_1)s]
+[parameters: {'pk_1': '4'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-20 11:20:31,269 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - Job ID 4 does not exist

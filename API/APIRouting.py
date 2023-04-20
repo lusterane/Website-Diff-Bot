@@ -44,6 +44,24 @@ def get_diffs_from_job_id():
 
 
 '''
+GET api/checks/{job_id}
+Description: get all Checks from a job
+'''
+
+
+@app.route('/api/checks', methods=['GET'])
+def get_checks_from_job_id():
+    try:
+        job_id = request.args.get('job_id')
+
+        checks = APIUtils.get_checks_from_job_id(job_id)
+        return make_response({f'checks': checks}, 200)
+    except Exception as e:
+        logger.error(e)
+        abort(404, description=e)
+
+
+'''
 GET /api/profiles/all
 Description: get all profiles
 '''
