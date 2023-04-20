@@ -7,11 +7,13 @@ import urllib3
 from bs4 import BeautifulSoup
 from urllib3 import exceptions as urllib3_exceptions
 from Service.ExceptionHelper import ExceptionHelper
+from Service.LoggerContext import logger
 
 
 class WebsiteScraper:
     @staticmethod
     def scrape_link(link):
+        logger.info('scrape link  loll')
         logging.info(f'Starting Scraping {link}. . .')
         urllib3.disable_warnings()
         try:
@@ -23,10 +25,10 @@ class WebsiteScraper:
             ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 
     @staticmethod
-    def __get_raw_html_from_link(self, url):
+    def __get_raw_html_from_link(link):
         try:
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
-            response = http.request('GET', url)
+            response = http.request('GET', link)
             raw_html_data = response.data.decode('utf-8')
             return WebsiteScraper.__parse_with_beautiful_soup(raw_html_data)
         except urllib3_exceptions.MaxRetryError as e:
@@ -38,9 +40,9 @@ class WebsiteScraper:
         try:
             logging.info("Will try again with non-secure connection ...")
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_NONE')
-            response = http.request('GET', url)
+            response = http.request('GET', link)
             raw_html_data = response.data.decode('utf-8')
-            return self.__parse_with_beautiful_soup(raw_html_data)
+            return WebsiteScraper.__parse_with_beautiful_soup(raw_html_data)
         except Exception as e:
             ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
 

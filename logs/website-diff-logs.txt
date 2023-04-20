@@ -1,67 +1,10 @@
-2023-04-19 16:56:04,379 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-04-19 16:56:04,380 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2023-04-19 16:56:04,380 - werkzeug - INFO -  * Restarting with stat
-2023-04-19 16:56:06,123 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 16:56:06,127 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 16:56:10,882 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2023 16:56:10] "GET /hi HTTP/1.1" 200 -
-2023-04-19 16:59:44,896 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-04-19 16:59:44,896 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2023-04-19 16:59:44,897 - werkzeug - INFO -  * Restarting with stat
-2023-04-19 16:59:46,558 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 16:59:46,562 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:00:08,049 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\APIRouting.py', reloading
-2023-04-19 17:00:08,093 - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:00:09,941 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:00:09,945 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:00:17,153 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\APIRouting.py', reloading
-2023-04-19 17:00:17,201 - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:00:19,011 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:00:19,014 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:00:28,085 - root - CRITICAL - mlao
-2023-04-19 17:00:28,086 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2023 17:00:28] "GET /hi HTTP/1.1" 200 -
-2023-04-19 17:01:29,717 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\LoggerLauncher.py', reloading
-2023-04-19 17:01:29,761 - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:01:32,802 - website-diff-logs.txt - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-04-19 17:01:32,803 - website-diff-logs.txt - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2023-04-19 17:01:32,804 - website-diff-logs.txt - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:01:34,487 - website-diff-logs.txt - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:01:34,490 - website-diff-logs.txt - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:01:58,071 - website-diff-logs.txt - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\LoggerLauncher.py', reloading
-2023-04-19 17:01:58,115 - website-diff-logs.txt - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:02:00,412 - 17 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-04-19 17:02:00,413 - 17 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2023-04-19 17:02:00,414 - 17 - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:02:02,132 - 17 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:02:02,136 - 17 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:02:04,933 - 17 - root - CRITICAL - mlao
-2023-04-19 17:02:04,933 - 17 - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2023 17:02:04] "GET /hi HTTP/1.1" 200 -
-2023-04-19 17:02:17,502 - 17 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\LoggerLauncher.py', reloading
-2023-04-19 17:02:17,547 - 17 - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:02:20,679 - launch - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-04-19 17:02:20,679 - launch - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2023-04-19 17:02:20,680 - launch - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:02:22,364 - launch - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:02:22,367 - launch - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:02:26,791 - launch - root - CRITICAL - mlao
-2023-04-19 17:02:26,792 - launch - werkzeug - INFO - 127.0.0.1 - - [19/Apr/2023 17:02:26] "GET /hi HTTP/1.1" 200 -
-2023-04-19 17:05:35,786 - launch - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\LoggerLauncher.py', reloading
-2023-04-19 17:05:35,836 - launch - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:05:37,769 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:05:37,773 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:06:15,610 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\ExceptionHelper.py', reloading
-2023-04-19 17:06:15,676 - launch - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:06:17,495 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:06:17,499 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:06:28,768 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Service\\ExceptionHelper.py', reloading
-2023-04-19 17:06:28,811 - launch - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:06:30,562 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:06:30,566 - werkzeug - INFO -  * Debugger PIN: 478-208-579
-2023-04-19 17:06:34,694 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tobyc\\PycharmProjects\\Website-Diff-Bot\\Presentation\\APIRouting.py', reloading
-2023-04-19 17:06:34,743 - launch - werkzeug - INFO -  * Restarting with stat
-2023-04-19 17:06:36,465 - werkzeug - WARNING -  * Debugger is active!
-2023-04-19 17:06:36,470 - werkzeug - INFO -  * Debugger PIN: 478-208-579
+2023-04-19 21:23:04,349 - Service.LoggerLauncher - INFO - info message
+2023-04-19 21:24:07,963 - Service.LoggerLauncher - INFO - info message - 31
+2023-04-19 21:24:37,772 - Service.LoggerLauncher on line 31 - INFO - info message
+2023-04-19 21:25:33,037 - launch in Service.LoggerLauncher on line 31 - INFO - info message
+2023-04-19 21:27:21,146 - def launch in Service.LoggerLauncher on line 31 - INFO - logger . info
+2023-04-19 21:33:20,345 - def main in Service.LoggerLauncher on line 12 - INFO - from main
+2023-04-19 21:34:26,075 - def main in Service.LoggerContext on line 11 - INFO - from main
+2023-04-19 21:35:24,117 - def test in Service.LoggerContext on line 10 - INFO - from test
+2023-04-19 21:36:29,221 - def scrape_link in Service.LoggerContext on line 16 - INFO - scrape link  loll
+2023-04-19 21:37:45,681 - Service.LoggerContext.scrape_link() on line 16 - INFO - scrape link  loll
