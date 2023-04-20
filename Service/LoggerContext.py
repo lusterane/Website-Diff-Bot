@@ -3,7 +3,7 @@ import os
 
 logger = logging.getLogger(__name__)
 
-log_file_name = 'website-diff-logs.txt'
+log_file_name = 'project-logs.txt'
 log_file_path = f'logs/{log_file_name}'
 logger.setLevel(logging.DEBUG)
 # Create a file handler

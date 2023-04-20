@@ -1,0 +1,16 @@
+2023-04-19 21:40:48,105 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.op.gg/. . .
+2023-04-19 21:40:49,660 - Service.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-19 21:40:58,408 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 21:40:58,543 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000261624AF860>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:40:58,543 - Service.LoggerContext.__get_raw_html_from_link() on line 38 - INFO - Will try again with non-secure connection ...
+2023-04-19 21:40:58,544 - Service.LoggerContext.scrape_link() on line 21 - ERROR - Scraping Failed . . .
+2023-04-19 21:41:51,629 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 21:41:51,780 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002195B8DFF98>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:41:51,782 - Service.LoggerContext.__get_raw_html_from_link() on line 38 - INFO - Will try again with non-secure connection ...
+2023-04-19 21:41:51,782 - Service.LoggerContext.scrape_link() on line 21 - CRITICAL - Scraping Failed . . .
+2023-04-19 21:41:51,782 - Service.LoggerContext.main() on line 15 - ERROR - HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002195B8DFF98>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:42:43,979 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 21:42:44,118 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001FB64460F28>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:42:44,118 - Service.LoggerContext.__get_raw_html_from_link() on line 33 - WARNING - Will try again with non-secure connection ...
+2023-04-19 21:42:44,119 - Service.LoggerContext.scrape_link() on line 21 - CRITICAL - Scraping Failed . . .
+2023-04-19 21:42:44,119 - Service.LoggerContext.main() on line 15 - ERROR - HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001FB62874B00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))

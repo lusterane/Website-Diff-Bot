@@ -9,7 +9,10 @@ from Service.LoggerContext import logger
 def main():
     # api_flask_app.run(debug=True)
     # logger.info('from main')
-    WebsiteScraper.scrape_link('https://www.op.gg/')
+    try:
+        WebsiteScraper.scrape_link('https://www.aasdsdop.gg/')
+    except Exception as e:
+        logger.error(e)
     pass
 
 

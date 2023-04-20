@@ -1,28 +1,25 @@
 import inspect
-import logging
 import re
 
 import certifi
 import urllib3
 from bs4 import BeautifulSoup
 from urllib3 import exceptions as urllib3_exceptions
-from Service.ExceptionHelper import ExceptionHelper
 from Service.LoggerContext import logger
 
 
 class WebsiteScraper:
     @staticmethod
     def scrape_link(link):
-        logger.info('scrape link  loll')
-        logging.info(f'Starting Scraping {link}. . .')
+        logger.info(f'Starting Scraping {link}. . .')
         urllib3.disable_warnings()
         try:
             raw_html = WebsiteScraper.__get_raw_html_from_link(link)
-            logging.info('Scraping Success!')
+            logger.info('Scraping Success!')
             return raw_html
         except Exception as e:
-            logging.info('Scraping Failed . . .')
-            ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+            logger.critical('Scraping Failed . . .')
+            raise e
 
     @staticmethod
     def __get_raw_html_from_link(link):
@@ -32,19 +29,19 @@ class WebsiteScraper:
             raw_html_data = response.data.decode('utf-8')
             return WebsiteScraper.__parse_with_beautiful_soup(raw_html_data)
         except urllib3_exceptions.MaxRetryError as e:
-            logging.info(f"Failed with: {e}")
+            logger.warning(f"Failed with: {e}")
+            logger.warning("Will try again with non-secure connection ...")
             # try with insecure connection
             pass
         except Exception as e:
-            ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+            raise e
         try:
-            logging.info("Will try again with non-secure connection ...")
             http = urllib3.PoolManager(retries=0, cert_reqs='CERT_NONE')
             response = http.request('GET', link)
             raw_html_data = response.data.decode('utf-8')
             return WebsiteScraper.__parse_with_beautiful_soup(raw_html_data)
         except Exception as e:
-            ExceptionHelper.raise_exception(str(e), inspect.currentframe().f_lineno, inspect.currentframe().f_code.co_name)
+            raise e
 
     @staticmethod
     def __parse_with_beautiful_soup(raw_html_data):
