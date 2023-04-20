@@ -1,18 +1,13 @@
 from datetime import datetime
-from Presentation.APIRouting import app as api_flask_app
 from Persistence.DBGateway import Profile, ScrapedData, Update, Job
 import datetime
+from Presentation.APIRouting import app
 from Service.WebsiteScraper import WebsiteScraper
 from Service.LoggerContext import logger
 
 
 def main():
-    # api_flask_app.run(debug=True)
-    # logger.info('from main')
-    try:
-        WebsiteScraper.scrape_link('https://www.aasdsdop.gg/')
-    except Exception as e:
-        logger.error(e)
+    app.run(debug=True)
     pass
 
 

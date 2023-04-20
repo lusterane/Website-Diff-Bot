@@ -1,14 +1,11 @@
 import datetime
-import os
 from enum import Enum
 
-from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("SUPABASE_CONNECTION_STRING")
-db = SQLAlchemy(app)
+from Service.FlaskAppInstance import app
 
+db = SQLAlchemy(app)
 app.app_context().push()
 
 
@@ -77,6 +74,19 @@ class Job(db.Model):
             refresh_session_if_needed(job)
         return job
 
+    def __json__(self):
+        return {
+            'j_id': self.j_id,
+            'job_name': self.job_name,
+            'link': self.link,
+            'frequency': self.frequency,
+            'last_updated': self.last_updated.isoformat(),
+            'next_update': self.next_update.isoformat(),
+            'p_id': self.p_id,
+            's_id': self.s_id,
+            'up_id': self.up_id,
+        }
+
     def __repr__(self):
         return f"Job(j_id={self.j_id}, job_name='{self.job_name}', link='{self.link}', frequency={self.frequency}, last_updated='{self.last_updated}', " \
                f"next_update='{self.next_update}', p_id={self.p_id}, s_id={self.s_id}, up_id={self.up_id})"
@@ -86,7 +96,7 @@ class Profile(db.Model):
     __tablename__ = TableNames.PROFILES_TABLE.value
 
     p_id = db.Column(db.BigInteger, primary_key=True)
-    email = db.Column(db.Text, nullable=False)
+    email = db.Column(db.Text, nullable=False, unique=True)
     jobs = db.relationship('Job', backref='profile', lazy=True)
 
     @staticmethod
@@ -124,6 +134,12 @@ class Profile(db.Model):
             db.session.commit()
             refresh_session_if_needed(profile)
         return profile
+
+    def __json__(self):
+        return {
+            'p_id': self.p_id,
+            'email': self.email,
+        }
 
     def __repr__(self):
         return f"Profile(p_id={self.p_id}, email='{self.email}')"
@@ -171,6 +187,12 @@ class ScrapedData(db.Model):
             db.session.commit()
             refresh_session_if_needed(scraped_data)
         return scraped_data
+
+    def __json__(self):
+        return {
+            's_id': self.s_id,
+            'scraped_data': self.scraped_data,
+        }
 
     def __repr__(self):
         return f"ScrapedData(s_id={self.s_id}, scraped_data='{get_truncated_html_data(self.scraped_data)}')"
@@ -222,6 +244,13 @@ class Update(db.Model):
             db.session.commit()
             refresh_session_if_needed(update)
         return update
+
+    def __json__(self):
+        return {
+            'up_id': self.up_id,
+            'scraped_diff': self.scraped_diff,
+            'updated_on': self.updated_on.isofortmat()
+        }
 
     def __repr__(self):
         return f"Update(up_id={self.up_id}, scraped_diff='{self.scraped_diff}', updated_on='{self.updated_on}')"
