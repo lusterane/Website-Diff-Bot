@@ -3,7 +3,7 @@ from enum import Enum
 
 from flask_sqlalchemy import SQLAlchemy
 
-from Service.FlaskAppInstance import app
+from Services.FlaskAppInstance import app
 
 db = SQLAlchemy(app)
 app.app_context().push()

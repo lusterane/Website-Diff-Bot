@@ -1,8 +1,8 @@
-from flask import abort, make_response, request, Flask, jsonify
+from flask import abort, make_response, request
 
-from Persistence.DBGateway import Profile, Job
-from Service.LoggerContext import logger
-from Service.FlaskAppInstance import app
+from Models.DBGateway import Profile
+from Services.FlaskAppInstance import app
+from Services.LoggerContext import logger
 
 '''
 GET /api/jobs/{profile_id}

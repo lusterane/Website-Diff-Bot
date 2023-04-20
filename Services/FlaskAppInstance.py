@@ -1,5 +1,6 @@
-from flask import Flask, make_response
 import os
+
+from flask import Flask
 
 app = Flask(__name__)
 

@@ -1,11 +1,11 @@
-import inspect
 import re
 
 import certifi
 import urllib3
 from bs4 import BeautifulSoup
 from urllib3 import exceptions as urllib3_exceptions
-from Service.LoggerContext import logger
+
+from Services.LoggerContext import logger
 
 
 class WebsiteScraper:

@@ -1,8 +1,8 @@
 import re
 from datetime import datetime, timezone
 
-from Persistence.DBGateway import *
-from Service.WebsiteScraper import WebsiteScraper
+from Models.DBGateway import *
+from Services.WebsiteScraper import WebsiteScraper
 
 
 class DatabaseManager:

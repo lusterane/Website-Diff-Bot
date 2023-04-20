@@ -1,9 +1,8 @@
-from datetime import datetime
-from Persistence.DBGateway import Profile, ScrapedData, Update, Job
 import datetime
-from Presentation.APIRouting import app
-from Service.WebsiteScraper import WebsiteScraper
-from Service.LoggerContext import logger
+from datetime import datetime
+
+from API.APIRouting import app
+from Models.DBGateway import Profile, ScrapedData, Update, Job
 
 
 def main():

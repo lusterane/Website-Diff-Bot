@@ -2,7 +2,7 @@
 # import unittest
 # from datetime import datetime
 #
-# from Persistence.DBGateway import app, db, Job, Profile, ScrapedData, Update
+# from Models.DBGateway import app, db, Job, Profile, ScrapedData, Update
 #
 #
 # class TestModels(unittest.TestCase):
