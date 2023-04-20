@@ -2,14 +2,11 @@ import re
 from datetime import datetime, timezone
 
 from Models.DBGateway import *
-from Services.WebsiteScraper import WebsiteScraper
 
 
 class DatabaseManager:
     def __init__(self):
         self.current_datetime = str(datetime.now(timezone.utc))
-        self.db_gate = DatabaseGateway()
-        self.website_scraper = WebsiteScraper()
 
     ''' Helper Methods '''
 
