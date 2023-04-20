@@ -3,15 +3,12 @@ from flask import abort, make_response, request
 from Models.DBGateway import Profile
 from Services.FlaskAppInstance import app
 from Services.LoggerContext import logger
+from Services.APIUtils import APIUtils
 
 '''
 GET /api/jobs/{profile_id}
 Description: get all jobs associated to a profile_id
 Notes: will return empty jobs list if there are no jobs associated
-
-200 -> profile found
-300 -> profile not found
-
 '''
 
 
@@ -19,36 +16,28 @@ Notes: will return empty jobs list if there are no jobs associated
 def get_jobs_from_profile_id():
     try:
         profile_id = request.args.get('profile_id')
-        profile = Profile.get_profile_by_id(profile_id)
-        if profile:
-            jobs = [job.__json__() for job in profile.jobs]
-            return make_response({f'jobs': jobs}, 200)
-        return make_response({'message': f'Profile id {profile_id} not found.'}, 300)
+
+        jobs = APIUtils.get_jobs_from_profile_id(profile_id)
+        return make_response({f'jobs': jobs}, 200)
+
     except Exception as e:
         logger.error(e)
         abort(404, description=e)
 
 
 '''
-GET /updates/{job_id}
-Description: get all Updates from a job
-
-200 -> job found
-300 -> job not found
-FKKKK 
-M:M Job and Update table??
+GET api/diffs/{job_id}
+Description: get all Diffs from a job
 '''
 
 
-@app.route('/api/updates', methods=['GET'])
-def get_updates_from_job_id():
+@app.route('/api/diffs', methods=['GET'])
+def get_diffs_from_job_id():
     try:
-        # job_id = request.args.get('job_id')
-        # job = Job.get_job_by_id(job_id)
-        # if job:
-        #     updates = [job.__json__() for job in profile.jobs]
-        #     return make_response({f'jobs': jobs}, 200)
-        return make_response({'message': f'Job id {job_id} not found.'}, 300)
+        job_id = request.args.get('job_id')
+
+        diffs = APIUtils.get_diffs_from_job_id(job_id)
+        return make_response({f'diffs': diffs}, 200)
     except Exception as e:
         logger.error(e)
         abort(404, description=e)
@@ -63,7 +52,7 @@ Description: get all profiles
 @app.route('/api/profiles/all')
 def get_all_profiles():
     try:
-        profiles = [profile.__json__() for profile in Profile.get_all_profiles()]
+        profiles = APIUtils.get_all_profiles()
         return make_response({f'profiles': profiles}, 200)
     except Exception as e:
         logger.error(e)

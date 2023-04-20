@@ -148,12 +148,12 @@ class ScrapedData(db.Model):
 
     s_id = db.Column(db.BigInteger, primary_key=True)
     scraped_data = db.Column(db.Text, nullable=False)
-    jobs = db.relationship('Job', backref='scrapeddata', lazy=True)
-    diffs = db.relationship('Diff', backref='scrapeddata', lazy=True)
-    checks = db.relationship('Check', backref='scrapeddata', lazy=True)
+    jobs = db.relationship('Job', backref='scraped_data', lazy=True)
+    diffs = db.relationship('Diff', backref='scraped_data', lazy=True)
+    checks = db.relationship('Check', backref='scraped_data', lazy=True)
 
     @staticmethod
-    def get_scraped_data():
+    def get_all_scraped_data():
         scraped_data = ScrapedData.query.all()
         return scraped_data
 
@@ -250,7 +250,7 @@ class Diff(db.Model):
         return {
             'd_id': self.d_id,
             'scraped_diff': self.scraped_diff,
-            'updated_on': self.updated_on.isofortmat(),
+            'updated_on': self.updated_on.isoformat(),
             's_id': self.s_id
         }
 
