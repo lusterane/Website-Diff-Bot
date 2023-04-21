@@ -1,0 +1,139 @@
+2023-04-19 21:40:48,105 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.op.gg/. . .
+2023-04-19 21:40:49,660 - Service.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-19 21:40:58,408 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 21:40:58,543 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000261624AF860>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:40:58,543 - Service.LoggerContext.__get_raw_html_from_link() on line 38 - INFO - Will try again with non-secure connection ...
+2023-04-19 21:40:58,544 - Service.LoggerContext.scrape_link() on line 21 - ERROR - Scraping Failed . . .
+2023-04-19 21:41:51,629 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 21:41:51,780 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002195B8DFF98>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:41:51,782 - Service.LoggerContext.__get_raw_html_from_link() on line 38 - INFO - Will try again with non-secure connection ...
+2023-04-19 21:41:51,782 - Service.LoggerContext.scrape_link() on line 21 - CRITICAL - Scraping Failed . . .
+2023-04-19 21:41:51,782 - Service.LoggerContext.main() on line 15 - ERROR - HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002195B8DFF98>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:42:43,979 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 21:42:44,118 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001FB64460F28>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:42:44,118 - Service.LoggerContext.__get_raw_html_from_link() on line 33 - WARNING - Will try again with non-secure connection ...
+2023-04-19 21:42:44,119 - Service.LoggerContext.scrape_link() on line 21 - CRITICAL - Scraping Failed . . .
+2023-04-19 21:42:44,119 - Service.LoggerContext.main() on line 15 - ERROR - HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001FB62874B00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:47:04,131 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 21:47:04,184 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002548F8D3A20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 21:47:04,184 - Service.LoggerContext.__get_raw_html_from_link() on line 33 - WARNING - Will try again with non-secure connection ...
+2023-04-19 21:47:04,185 - Service.LoggerContext.scrape_link() on line 21 - CRITICAL - Scraping Failed . . .
+2023-04-19 21:47:04,185 - Service.LoggerContext.main() on line 15 - ERROR - HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002548DF846D8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 23:58:26,779 - Service.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping https://www.aasdsdop.gg/. . .
+2023-04-19 23:58:26,817 - Service.LoggerContext.__get_raw_html_from_link() on line 32 - WARNING - Failed with: HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001A32980E0F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 23:58:26,817 - Service.LoggerContext.__get_raw_html_from_link() on line 33 - WARNING - Will try again with non-secure connection ...
+2023-04-19 23:58:26,817 - Service.LoggerContext.scrape_link() on line 21 - CRITICAL - Scraping Failed . . .
+2023-04-19 23:58:26,818 - Service.LoggerContext.main() on line 15 - ERROR - HTTPSConnectionPool(host='www.aasdsdop.gg', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001A3296CF8D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2023-04-19 23:59:44,328 - Service.LoggerContext.test() on line 11 - INFO - got profile id: 1
+2023-04-20 00:03:01,060 - Service.LoggerContext.test() on line 16 - INFO - got profile id: 1
+2023-04-20 00:11:24,888 - Service.LoggerContext.get_jobs_from_profile_id() on line 27 - ERROR - The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2023-04-20 00:26:19,586 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2023-04-20 00:26:51,030 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2023-04-20 00:27:31,900 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2023-04-20 00:29:30,417 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2023-04-20 00:41:44,533 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - Object of type Job is not JSON serializable
+2023-04-20 00:42:00,460 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - Object of type Job is not JSON serializable
+2023-04-20 00:42:05,006 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - Object of type Job is not JSON serializable
+2023-04-20 00:50:57,139 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - Object of type Job is not JSON serializable
+2023-04-20 00:51:10,032 - Service.LoggerContext.get_jobs_from_profile_id() on line 26 - ERROR - Object of type Job is not JSON serializable
+2023-04-20 00:55:01,806 - Service.LoggerContext.get_jobs_from_profile_id() on line 27 - ERROR - Object of type Job is not JSON serializable
+2023-04-20 00:55:36,632 - Service.LoggerContext.get_jobs_from_profile_id() on line 27 - ERROR - Object of type Job is not JSON serializable
+2023-04-20 00:57:30,968 - Service.LoggerContext.get_jobs_from_profile_id() on line 27 - ERROR - Object of type method is not JSON serializable
+2023-04-20 04:56:18,385 - Services.LoggerContext.get_all_profiles() on line 69 - ERROR - Could not determine join condition between parent/child tables on relationship Job.diffs - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2023-04-20 04:59:46,013 - Services.LoggerContext.get_all_profiles() on line 69 - ERROR - When initializing mapper Mapper[Job(JobsTable)], expression 'scrapeddata' failed to locate a name ("name 'scrapeddata' is not defined"). If this is a class name, consider adding this relationship() to the <class 'Models.DBGateway.Job'> class after both dependent classes have been defined.
+2023-04-20 05:01:11,459 - Services.LoggerContext.get_all_profiles() on line 69 - ERROR - When initializing mapper Mapper[Job(JobsTable)], expression 'scraped_data' failed to locate a name ("name 'scraped_data' is not defined"). If this is a class name, consider adding this relationship() to the <class 'Models.DBGateway.Job'> class after both dependent classes have been defined.
+2023-04-20 05:02:13,185 - Services.LoggerContext.get_all_profiles() on line 69 - ERROR - When initializing mapper Mapper[Job(JobsTable)], expression 'scraped_data' failed to locate a name ("name 'scraped_data' is not defined"). If this is a class name, consider adding this relationship() to the <class 'Models.DBGateway.Job'> class after both dependent classes have been defined.
+2023-04-20 05:17:02,221 - Services.LoggerContext.get_jobs_from_profile_id() on line 29 - ERROR - 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2023-04-20 05:20:35,119 - Services.LoggerContext.get_jobs_from_profile_id() on line 28 - ERROR - No profile found for 5
+2023-04-20 05:20:56,495 - Services.LoggerContext.get_jobs_from_profile_id() on line 28 - ERROR - No profile found with profile id 5
+2023-04-20 05:35:00,285 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - Mapper 'Mapper[ScrapedData(ScrapedDataTable)]' has no property 'job'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2023-04-20 05:40:00,981 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - Mapper 'Mapper[ScrapedData(ScrapedDataTable)]' has no property 'job'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2023-04-20 05:41:03,171 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - Mapper 'Mapper[ScrapedData(ScrapedDataTable)]' has no property 'job'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2023-04-20 05:41:05,462 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Job(JobsTable)]'. Original exception was: Mapper 'Mapper[ScrapedData(ScrapedDataTable)]' has no property 'job'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2023-04-20 05:41:54,611 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - Mapper 'Mapper[ScrapedData(ScrapedDataTable)]' has no property 'job'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2023-04-20 05:46:13,814 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - [Errno 22] Invalid argument
+2023-04-20 05:46:18,888 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - [Errno 22] Invalid argument
+2023-04-20 05:46:30,334 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - [Errno 22] Invalid argument
+2023-04-20 05:51:32,288 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - 'datetime.datetime' object has no attribute 'isofortmat'
+2023-04-20 05:51:36,365 - Services.LoggerContext.get_diffs_from_job_id() on line 42 - ERROR - 'datetime.datetime' object has no attribute 'isofortmat'
+2023-04-20 05:55:47,083 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - 'datetime.datetime' object has no attribute 'isofortmat'
+2023-04-20 05:56:41,630 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - No job found with job id 4
+2023-04-20 11:19:42,199 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT "JobsTable".j_id AS "JobsTable_j_id", "JobsTable".job_name AS "JobsTable_job_name", "JobsTable".link AS "JobsTable_link", "JobsTable".frequency AS "JobsTable_frequency", "JobsTable".last_updated AS "JobsTable_last_updated", "JobsTable".next_update AS "JobsTable_next_update", "JobsTable".p_id AS "JobsTable_p_id", "JobsTable".s_id AS "JobsTable_s_id" 
+FROM "JobsTable" 
+WHERE "JobsTable".j_id = %(pk_1)s]
+[parameters: {'pk_1': '4'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-20 11:20:31,269 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - Job ID 4 does not exist
+2023-04-20 11:23:20,598 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - Job ID None does not exist
+2023-04-20 11:44:20,173 - Services.LoggerContext.create_job() on line 109 - ERROR - Profile ID 5 does not exist
+2023-04-20 12:31:12,784 - Services.LoggerContext.create_job() on line 109 - ERROR - Error creating backref 'scraped_data' on relationship 'Job.link': property of that name exists on mapper 'Mapper[ScrapedData(ScrapedDataTable)]'
+2023-04-20 12:31:49,259 - Services.LoggerContext.create_job() on line 109 - ERROR - No module named 'WebsiteScraper'
+2023-04-20 12:32:08,876 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 12:32:09,062 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 12:37:55,362 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 12:37:55,564 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 12:37:57,856 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with link http://example.com/link3 already exists
+2023-04-20 12:38:45,272 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with link http://example.com/link3 already exists
+2023-04-20 12:38:49,556 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 12:38:49,660 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 12:38:58,738 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with job name job1 already exists
+2023-04-20 12:39:03,053 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with job name job1 already exists
+2023-04-20 13:09:45,786 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with job name job1 already exists
+2023-04-20 13:37:43,359 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 13:37:43,473 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 13:37:43,874 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "DiffsTable_pkey"
+DETAIL:  Key (d_id)=(1) already exists.
+
+[SQL: INSERT INTO "DiffsTable" (scraped_diff, updated_on, s_id) VALUES (%(scraped_diff)s, %(updated_on)s, %(s_id)s) RETURNING "DiffsTable".d_id]
+[parameters: {'scraped_diff': '- E\n+ Example Domain\nExample Domain\nT\n- ample Domai\n+ is domain is for use in illustrative examples in documents. You may use t\n- Exa\n+ is\n domain in literature without prior coordination or asking for permission.\nMore information...', 'updated_on': datetime.datetime(2023, 4, 20, 13, 37, 43, 752579), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:32:28,978 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:32:29,090 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:32:29,439 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ChecksTable_pkey"
+DETAIL:  Key (c_id)=(1) already exists.
+
+[SQL: INSERT INTO "ChecksTable" (status, checked_on, s_id) VALUES (%(status)s, %(checked_on)s, %(s_id)s) RETURNING "ChecksTable".c_id]
+[parameters: {'status': 'First Check', 'checked_on': datetime.datetime(2023, 4, 20, 15, 32, 29, 333574), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:32:58,900 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:32:59,006 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:32:59,348 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ChecksTable_pkey"
+DETAIL:  Key (c_id)=(2) already exists.
+
+[SQL: INSERT INTO "ChecksTable" (status, checked_on, s_id) VALUES (%(status)s, %(checked_on)s, %(s_id)s) RETURNING "ChecksTable".c_id]
+[parameters: {'status': 'First Check', 'checked_on': datetime.datetime(2023, 4, 20, 15, 32, 59, 226647), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:33:25,378 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:33:25,481 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:33:25,817 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ChecksTable_pkey"
+DETAIL:  Key (c_id)=(3) already exists.
+
+[SQL: INSERT INTO "ChecksTable" (status, checked_on, s_id) VALUES (%(status)s, %(checked_on)s, %(s_id)s) RETURNING "ChecksTable".c_id]
+[parameters: {'status': 'First Check', 'checked_on': datetime.datetime(2023, 4, 20, 15, 33, 25, 721373), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:39:38,900 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:39:39,012 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:39:39,382 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "DiffsTable_pkey"
+DETAIL:  Key (d_id)=(1) already exists.
+
+[SQL: INSERT INTO "DiffsTable" (scraped_diff, updated_on, s_id) VALUES (%(scraped_diff)s, %(updated_on)s, %(s_id)s) RETURNING "DiffsTable".d_id]
+[parameters: {'scraped_diff': '- E\n+ Example Domain\nExample Domain\nT\n- ample Domai\n+ is domain is for use in illustrative examples in documents. You may use t\n- Exa\n+ is\n domain in literature without prior coordination or asking for permission.\nMore information...', 'updated_on': datetime.datetime(2023, 4, 20, 15, 39, 39, 281599), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:42:29,960 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:42:30,063 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:42:30,781 - Services.LoggerContext.test_send_email_success() on line 41 - INFO - Successfully sent email
+2023-04-20 15:42:30,998 - Services.LoggerContext.create_job() on line 109 - ERROR - unsupported type for timedelta minutes component: str
+2023-04-20 15:46:20,678 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:46:20,784 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:46:21,243 - Services.LoggerContext.create_job() on line 109 - ERROR - unsupported type for timedelta minutes component: str
+2023-04-20 15:47:38,002 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:47:38,108 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:49:09,917 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:49:10,024 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
