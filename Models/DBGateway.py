@@ -47,8 +47,12 @@ class Job(db.Model):
 
     @staticmethod
     def create_job(job_data):
-        job = Job(job_name=job_data['job_name'], frequency=job_data['frequency'],
-                  last_updated=job_data['last_updated'], next_update=job_data['next_update'], date_created=['date_created'], p_id=job_data['p_id'],
+        job = Job(job_name=job_data['job_name'],
+                  frequency=job_data['frequency'],
+                  last_updated=job_data['last_updated'],
+                  next_update=job_data['next_update'],
+                  date_created=job_data['date_created'],
+                  p_id=job_data['p_id'],
                   s_id=job_data['s_id'])
         db.session.add(job)
         db.session.commit()
@@ -93,8 +97,10 @@ class Job(db.Model):
         }
 
     def __repr__(self):
-        return f"Job(j_id={self.j_id}, job_name='{self.job_name}', frequency={self.frequency}, last_updated='{self.last_updated}', " \
-               f"next_update='{self.next_update}', data_created='{self.date_created}', p_id={self.p_id}, s_id={self.s_id})"
+        return f"Job(j_id={self.j_id}, job_name='{self.job_name}', frequency={self.frequency}, last_updated='" \
+               f"{self.last_updated}', " \
+               f"next_update='{self.next_update}', data_created='{self.date_created}', p_id={self.p_id}" \
+               f", s_id={self.s_id})"
 
 
 class Profile(db.Model):
@@ -209,7 +215,8 @@ class ScrapedData(db.Model):
         }
 
     def __repr__(self):
-        return f"ScrapedData(s_id={self.s_id}, scraped_data='{get_truncated_html_data(self.scraped_data)},link='{self.link}')"
+        return f"ScrapedData(s_id={self.s_id}, scraped_data='{get_truncated_html_data(self.scraped_data)}," \
+               f"link='{self.link}')"
 
 
 class Diff(db.Model):
@@ -269,7 +276,8 @@ class Diff(db.Model):
         }
 
     def __repr__(self):
-        return f"Diff(d_id={self.d_id}, scraped_diff='{self.scraped_diff}', updated_on='{self.updated_on}, s_id='{self.s_id}')"
+        return f"Diff(d_id={self.d_id}, scraped_diff='{self.scraped_diff}', updated_on='{self.updated_on}," \
+               f" s_id='{self.s_id}')"
 
 
 class Check(db.Model):

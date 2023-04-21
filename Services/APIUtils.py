@@ -122,6 +122,7 @@ class APIUtils:
                 from Services.EmailManager import EmailManager
                 email_manager = EmailManager()
                 email_manager.test_send_email_success(diff_string=diff_string, email=profile_entity.email, link=link)  # will raise exception if email not sent
+                # TODO: log alert sent
                 return Check.Status.AlertSent
 
             except Exception as e:

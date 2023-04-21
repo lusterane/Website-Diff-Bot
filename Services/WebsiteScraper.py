@@ -11,6 +11,8 @@ from Services.LoggerContext import logger
 class WebsiteScraper:
     @staticmethod
     def scrape_link(link):
+        # TODO: check response code frm server.
+        #  https://www.sacanime.com/vendors-and-artists/artist-alley/artist-alley-registration/ this is a fail
         logger.info(f'Starting Scraping {link}. . .')
         urllib3.disable_warnings()
         try:

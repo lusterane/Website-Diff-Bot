@@ -162,3 +162,243 @@ DETAIL:  Key (d_id)=(1) already exists.
 2023-04-21 14:48:53,660 - Services.LoggerContext.__refresh_diffs_and_send_email__() on line 128 - CRITICAL - Failed to send email Error: No module named 'sib_api_v3_sdk'
 2023-04-21 14:48:54,728 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
 2023-04-21 14:48:54,846 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-21 15:32:43,560 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:32:43,856 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-21 15:32:44,908 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:32:43.857082'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 32, 43, 857082), 'next_update': datetime.datetime(2023, 4, 22, 15, 32, 43, 857082), 'date_created': ['date_created'], 'p_id': '1', 's_id': 4}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:35:55,146 - werkzeug._log() on line 224 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 15:35:55,146 - werkzeug._log() on line 224 - INFO - [33mPress CTRL+C to quit[0m
+2023-04-21 15:35:55,147 - werkzeug._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:35:58,030 - werkzeug._log() on line 224 - WARNING -  * Debugger is active!
+2023-04-21 15:35:58,037 - werkzeug._log() on line 224 - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:36:11,206 - root.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:36:11,206 - urllib3.util.retry.from_int() on line 351 - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:36:11,206 - urllib3.connectionpool._new_conn() on line 228 - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:36:11,409 - urllib3.connectionpool._make_request() on line 456 - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:36:11,411 - root.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-21 15:36:12,450 - root.create_job() on line 109 - ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:36:11.411922'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 36, 11, 411922), 'next_update': datetime.datetime(2023, 4, 22, 15, 36, 11, 411922), 'date_created': ['date_created'], 'p_id': '1', 's_id': 5}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:36:12,451 - werkzeug._log() on line 224 - INFO - 127.0.0.1 - - [21/Apr/2023 15:36:12] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:38:00,380 - werkzeug._log() on line 224 - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/LoggerContext.py', reloading
+2023-04-21 15:38:00,456 - werkzeug._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:38:05,766 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 15:38:05,767 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO - [33mPress CTRL+C to quit[0m
+2023-04-21 15:38:05,768 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:38:08,692 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - WARNING -  * Debugger is active!
+2023-04-21 15:38:08,699 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:38:09,409 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/WebsiteScraper.py.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:38:09,410 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/urllib3/util/retry.py.from_int() on line 351 - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:38:09,410 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py._new_conn() on line 228 - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:38:09,581 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py._make_request() on line 456 - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:38:09,583 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/WebsiteScraper.py.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-21 15:38:10,577 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/API/APIRouting.py.create_job() on line 109 - ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:38:09.583420'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 38, 9, 583420), 'next_update': datetime.datetime(2023, 4, 22, 15, 38, 9, 583420), 'date_created': ['date_created'], 'p_id': '1', 's_id': 6}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:38:10,579 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO - 127.0.0.1 - - [21/Apr/2023 15:38:10] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:38:52,512 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/LoggerContext.py', reloading
+2023-04-21 15:38:52,615 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:38:55,887 - _internal.py._log() on line 224 - WARNING -  * Debugger is active!
+2023-04-21 15:38:55,895 - _internal.py._log() on line 224 - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:38:56,597 - WebsiteScraper.py.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:38:56,597 - retry.py.from_int() on line 351 - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:38:56,598 - connectionpool.py._new_conn() on line 228 - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:38:56,816 - connectionpool.py._make_request() on line 456 - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:38:56,818 - WebsiteScraper.py.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-21 15:38:57,903 - APIRouting.py.create_job() on line 109 - ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:38:56.818693'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 38, 56, 818693), 'next_update': datetime.datetime(2023, 4, 22, 15, 38, 56, 818693), 'date_created': ['date_created'], 'p_id': '1', 's_id': 7}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:38:57,904 - _internal.py._log() on line 224 - INFO - 127.0.0.1 - - [21/Apr/2023 15:38:57] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:40:46,055 - _internal.py._log() on line 224 - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/LoggerContext.py', reloading
+2023-04-21 15:40:46,152 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:40:49,195 - _log() on line 224 in _internal.py- WARNING -  * Debugger is active!
+2023-04-21 15:40:49,202 - _log() on line 224 in _internal.py- INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:40:51,231 - scrape_link() on line 14 in WebsiteScraper.py- INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:40:51,232 - from_int() on line 351 in retry.py- DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:40:51,232 - _new_conn() on line 228 in connectionpool.py- DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:40:51,400 - _make_request() on line 456 in connectionpool.py- DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:40:51,402 - scrape_link() on line 18 in WebsiteScraper.py- INFO - Scraping Success!
+2023-04-21 15:40:52,395 - create_job() on line 109 in APIRouting.py- ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:40:51.403052'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 40, 51, 403052), 'next_update': datetime.datetime(2023, 4, 22, 15, 40, 51, 403052), 'date_created': ['date_created'], 'p_id': '1', 's_id': 8}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:40:52,397 - _log() on line 224 in _internal.py- INFO - 127.0.0.1 - - [21/Apr/2023 15:40:52] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:41:18,412 - _log() on line 224 in _internal.py- INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/LoggerContext.py', reloading
+2023-04-21 15:41:18,486 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:41:21,342 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:41:21,349 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:41:23,080 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:41:23,081 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:41:23,081 - line 228 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:41:23,256 - line 456 in _make_request() in connectionpool.py - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:41:23,258 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 15:41:24,280 - line 109 in create_job() in APIRouting.py - ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:41:23.258549'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 41, 23, 258549), 'next_update': datetime.datetime(2023, 4, 22, 15, 41, 23, 258549), 'date_created': ['date_created'], 'p_id': '1', 's_id': 9}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:41:24,282 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 15:41:24] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:44:19,322 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:44:19,385 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:44:22,651 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:44:22,659 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:47:03,066 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:47:03,140 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:47:06,784 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:47:06,794 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:47:16,062 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:47:16,183 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:47:19,333 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:47:19,342 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:47:48,562 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:47:48,662 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:47:51,914 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:47:51,921 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:48:24,384 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:48:24,457 - /Users/tobychow/Documents/GitHub/Website-Diff-Bot/venv/lib/python3.8/site-packages/werkzeug/_internal.py._log() on line 224 - INFO -  * Restarting with stat
+2023-04-21 15:50:35,577 - line 224 in _log() in _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 15:50:35,577 - line 224 in _log() in _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2023-04-21 15:50:35,578 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 15:50:38,459 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:50:38,466 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:53:49,402 - line 224 in _log() in _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 15:53:49,402 - line 224 in _log() in _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2023-04-21 15:53:49,405 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 15:53:53,043 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:53:53,053 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:53:54,214 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:53:54,215 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:53:54,216 - line 228 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:53:54,409 - line 456 in _make_request() in connectionpool.py - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:53:54,416 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 15:55:13,945 - line 224 in _log() in _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 15:55:13,945 - line 224 in _log() in _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2023-04-21 15:55:13,947 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 15:55:16,815 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:55:16,822 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:55:19,630 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:55:19,630 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:55:19,631 - line 228 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:55:19,804 - line 456 in _make_request() in connectionpool.py - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:55:19,805 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 15:55:20,810 - line 109 in create_job() in APIRouting.py - ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:55:19.805870'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 55, 19, 805870), 'next_update': datetime.datetime(2023, 4, 22, 15, 55, 19, 805870), 'date_created': ['date_created'], 'p_id': '1', 's_id': 11}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:55:20,812 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 15:55:20] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:55:47,304 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:55:47,405 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 15:55:50,602 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:55:50,609 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:55:51,275 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:55:51,275 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:55:51,275 - line 228 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:55:51,438 - line 456 in _make_request() in connectionpool.py - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:55:51,440 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 15:55:52,554 - line 109 in create_job() in APIRouting.py - ERROR - (psycopg2.errors.DatatypeMismatch) column "date_created" is of type timestamp with time zone but expression is of type text[]
+LINE 1: ...mestamp, '2023-04-22T15:55:51.440503'::timestamp, ARRAY['dat...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO "JobsTable" (job_name, frequency, last_updated, next_update, date_created, p_id, s_id) VALUES (%(job_name)s, %(frequency)s, %(last_updated)s, %(next_update)s, %(date_created)s, %(p_id)s, %(s_id)s) RETURNING "JobsTable".j_id]
+[parameters: {'job_name': 'job4', 'frequency': '1440', 'last_updated': datetime.datetime(2023, 4, 21, 15, 55, 51, 440503), 'next_update': datetime.datetime(2023, 4, 22, 15, 55, 51, 440503), 'date_created': ['date_created'], 'p_id': '1', 's_id': 12}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-04-21 15:55:52,556 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 15:55:52] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:56:46,362 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:56:46,454 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 15:56:49,418 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:56:49,426 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:56:54,049 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Models/DBGateway.py', reloading
+2023-04-21 15:56:54,135 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 15:56:57,047 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:56:57,054 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 15:56:57,723 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:56:57,724 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:56:57,724 - line 228 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:56:57,894 - line 456 in _make_request() in connectionpool.py - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:56:57,896 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 15:56:59,278 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 15:56:59] "POST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1" 200 -
+2023-04-21 15:57:06,578 - line 109 in create_job() in APIRouting.py - ERROR - Job with job name job4 already exists
+2023-04-21 15:57:06,677 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 15:57:06] "[31m[1mPOST /api/jobs/create?job_name=job4&frequency=1440&profile_id=1&link=http://example.com/link2 HTTP/1.1[0m" 400 -
+2023-04-21 15:57:16,318 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping https://www.sacanime.com/vendors-and-artists/artist-alley/artist-alley-registration/. . .
+2023-04-21 15:57:16,319 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:57:16,319 - line 1003 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTPS connection (1): www.sacanime.com:443
+2023-04-21 15:57:17,020 - line 32 in __get_raw_html_from_link() in WebsiteScraper.py - WARNING - Failed with: HTTPSConnectionPool(host='www.sacanime.com', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)')))
+2023-04-21 15:57:17,020 - line 33 in __get_raw_html_from_link() in WebsiteScraper.py - WARNING - Will try again with non-secure connection ...
+2023-04-21 15:57:17,021 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:57:17,022 - line 1003 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTPS connection (1): www.sacanime.com:443
+2023-04-21 15:57:17,374 - line 456 in _make_request() in connectionpool.py - DEBUG - https://www.sacanime.com:443 "GET /vendors-and-artists/artist-alley/artist-alley-registration/ HTTP/1.1" 200 212
+2023-04-21 15:57:17,376 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 15:57:19,078 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 15:57:19,078 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 15:57:19,078 - line 228 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTP connection (1): example.com:80
+2023-04-21 15:57:19,233 - line 456 in _make_request() in connectionpool.py - DEBUG - http://example.com:80 "GET /link2 HTTP/1.1" 404 1256
+2023-04-21 15:57:19,235 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 15:57:20,979 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 15:57:20] "POST /api/jobs/all/refresh HTTP/1.1" 200 -
+2023-04-21 15:58:12,330 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/APIUtils.py', reloading
+2023-04-21 15:58:12,424 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 15:58:15,756 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 15:58:15,765 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 16:00:22,129 - line 224 in _log() in _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 16:00:22,129 - line 224 in _log() in _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2023-04-21 16:00:22,130 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 16:00:25,180 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 16:00:25,186 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 16:00:27,568 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 16:00:27] "POST /api/jobs/all/refresh HTTP/1.1" 200 -
+2023-04-21 16:01:05,668 - line 14 in scrape_link() in WebsiteScraper.py - INFO - Starting Scraping https://www.sacanime.com/vendors-and-artists/artist-alley/artist-alley-registration/. . .
+2023-04-21 16:01:05,669 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 16:01:05,669 - line 1003 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTPS connection (1): www.sacanime.com:443
+2023-04-21 16:01:06,382 - line 32 in __get_raw_html_from_link() in WebsiteScraper.py - WARNING - Failed with: HTTPSConnectionPool(host='www.sacanime.com', port=443): Max retries exceeded with url: /vendors-and-artists/artist-alley/artist-alley-registration/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)')))
+2023-04-21 16:01:06,382 - line 33 in __get_raw_html_from_link() in WebsiteScraper.py - WARNING - Will try again with non-secure connection ...
+2023-04-21 16:01:06,383 - line 351 in from_int() in retry.py - DEBUG - Converted retries value: 0 -> Retry(total=0, connect=None, read=None, redirect=0, status=None)
+2023-04-21 16:01:06,383 - line 1003 in _new_conn() in connectionpool.py - DEBUG - Starting new HTTPS connection (1): www.sacanime.com:443
+2023-04-21 16:01:06,757 - line 456 in _make_request() in connectionpool.py - DEBUG - https://www.sacanime.com:443 "GET /vendors-and-artists/artist-alley/artist-alley-registration/ HTTP/1.1" 200 828
+2023-04-21 16:01:06,759 - line 18 in scrape_link() in WebsiteScraper.py - INFO - Scraping Success!
+2023-04-21 16:01:07,968 - line 41 in test_send_email_success() in EmailManager.py - INFO - Successfully sent email !!!
+2023-04-21 16:01:09,293 - line 224 in _log() in _internal.py - INFO - 127.0.0.1 - - [21/Apr/2023 16:01:09] "POST /api/jobs/all/refresh HTTP/1.1" 200 -
+2023-04-21 16:02:00,335 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/WebsiteScraper.py', reloading
+2023-04-21 16:02:00,490 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 16:02:03,665 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 16:02:03,674 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569
+2023-04-21 16:02:11,827 - line 224 in _log() in _internal.py - INFO -  * Detected change in '/Users/tobychow/Documents/GitHub/Website-Diff-Bot/Services/WebsiteScraper.py', reloading
+2023-04-21 16:02:11,928 - line 224 in _log() in _internal.py - INFO -  * Restarting with stat
+2023-04-21 16:02:15,176 - line 224 in _log() in _internal.py - WARNING -  * Debugger is active!
+2023-04-21 16:02:15,183 - line 224 in _log() in _internal.py - INFO -  * Debugger PIN: 504-761-569

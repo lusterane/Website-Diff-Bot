@@ -1,7 +1,7 @@
 import logging
 import os
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger()
 
 log_file_name = 'project-logs.txt'
 log_file_path = f'logs/{log_file_name}'
@@ -15,7 +15,7 @@ console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.DEBUG)
 
 # Create a formatter and add it to the handlers
-formatter = logging.Formatter('%(asctime)s - %(name)s.%(funcName)s() on line %(lineno)d - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(asctime)s - line %(lineno)d in %(funcName)s() in %(filename)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
 console_handler.setFormatter(formatter)
 
