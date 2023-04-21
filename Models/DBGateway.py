@@ -149,7 +149,7 @@ class ScrapedData(db.Model):
 
     s_id = db.Column(db.BigInteger, primary_key=True)
     scraped_data = db.Column(db.Text, nullable=False)
-    link = db.Column(db.Text, nullable=False, unique=True)
+    link = db.Column(db.Text, nullable=False)
     jobs = db.relationship('Job', backref='scraped_data', lazy=True)
     diffs = db.relationship('Diff', backref='scraped_data', lazy=True)
     checks = db.relationship('Check', backref='scraped_data', lazy=True)
@@ -293,9 +293,8 @@ class Check(db.Model):
         return check
 
     @staticmethod
-    def create_check(status: Status, s_id):
-        check = Check(status=status.value, s_id=s_id)
-        check.checked_on = datetime.datetime.now()
+    def create_check(status: Status, s_id, checked_on):
+        check = Check(status=status.value, s_id=s_id, checked_on=checked_on)
         db.session.add(check)
         db.session.commit()
         refresh_session_if_needed(check)

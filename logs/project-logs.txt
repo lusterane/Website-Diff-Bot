@@ -137,3 +137,6 @@ DETAIL:  Key (d_id)=(1) already exists.
 2023-04-20 15:47:38,108 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
 2023-04-20 15:49:09,917 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
 2023-04-20 15:49:10,024 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-21 12:56:26,085 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-21 12:56:26,281 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-21 12:57:07,789 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with job name job4 already exists

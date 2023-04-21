@@ -46,19 +46,17 @@ class APIUtils:
         from Services.WebsiteScraper import WebsiteScraper
         new_scraped_data = WebsiteScraper.scrape_link(link)
 
-        old_scraped_data_entity = ScrapedData.get_scraped_data_by_link(link)
-        if not old_scraped_data_entity:
-            new_scraped_data_entity = ScrapedData.create_scraped_data(scraped_data=new_scraped_data, link=link)
+        s_id = ScrapedData.create_scraped_data(scraped_data=new_scraped_data, link=link).s_id
 
-        check = Check.create_check(status=Check.Status.FirstCheck, s_id=old_scraped_data_entity.s_id)
-        last_updated = check.checked_on
+        current_time = APIUtils.__get_current_time__()
+        check = Check.create_check(status=Check.Status.FirstCheck, s_id=s_id, checked_on=current_time)
         job_data = {
             'job_name': job_name,
             'frequency': frequency,
-            'last_updated': last_updated,
-            'next_update': APIUtils.__get_next_update_time__(last_updated=last_updated, frequency=int(frequency)),
+            'last_updated': current_time,
+            'next_update': APIUtils.__get_next_update_time__(last_updated=current_time, frequency=int(frequency)),
             'p_id': profile_id,
-            's_id': old_scraped_data_entity.s_id
+            's_id': s_id
         }
         return Job.create_job(job_data=job_data).__json__()
 
@@ -118,6 +116,10 @@ class APIUtils:
     @staticmethod
     def __get_next_update_time__(last_updated: datetime, frequency: int):
         return last_updated + datetime.timedelta(minutes=frequency)
+
+    @staticmethod
+    def __get_current_time__():
+        return datetime.datetime.now()
 
     @staticmethod
     def __jsonify_instrument_list__(lis):
