@@ -35,6 +35,12 @@ class Job(db.Model):
         return jobs
 
     @staticmethod
+    def get_stale_jobs():
+        now = datetime.datetime.now()
+        stale_jobs = Job.query.filter(Job.next_update < now).all()
+        return stale_jobs
+
+    @staticmethod
     def get_job_by_id(j_id):
         job = Job.query.get(j_id)
         return job
@@ -42,7 +48,7 @@ class Job(db.Model):
     @staticmethod
     def create_job(job_data):
         job = Job(job_name=job_data['job_name'], frequency=job_data['frequency'],
-                  last_updated=job_data['last_updated'], next_update=job_data['next_update'], date_created=datetime.datetime.now(), p_id=job_data['p_id'],
+                  last_updated=job_data['last_updated'], next_update=job_data['next_update'], date_created=['date_created'], p_id=job_data['p_id'],
                   s_id=job_data['s_id'])
         db.session.add(job)
         db.session.commit()
@@ -96,7 +102,7 @@ class Profile(db.Model):
 
     p_id = db.Column(db.BigInteger, primary_key=True)
     email = db.Column(db.Text, nullable=False, unique=True)
-    jobs = db.relationship('Job', backref='profile', lazy=True)
+    jobs = db.relationship('Job', backref='profile_entity', lazy=True)
 
     @staticmethod
     def get_all_profiles():
@@ -150,9 +156,9 @@ class ScrapedData(db.Model):
     s_id = db.Column(db.BigInteger, primary_key=True)
     scraped_data = db.Column(db.Text, nullable=False)
     link = db.Column(db.Text, nullable=False)
-    jobs = db.relationship('Job', backref='scraped_data', lazy=True)
-    diffs = db.relationship('Diff', backref='scraped_data', lazy=True)
-    checks = db.relationship('Check', backref='scraped_data', lazy=True)
+    jobs = db.relationship('Job', backref='scraped_data_entity', lazy=True)
+    diffs = db.relationship('Diff', backref='scraped_data_entity', lazy=True)
+    checks = db.relationship('Check', backref='scraped_data_entity', lazy=True)
 
     @staticmethod
     def get_all_scraped_data():
@@ -275,10 +281,10 @@ class Check(db.Model):
     s_id = db.Column(db.BigInteger, db.ForeignKey(f'{TableNames.SCRAPED_DATA_TABLE.value}.s_id'))
 
     class Status(Enum):
-        AlertSent = 'Sent Alert'
-        FirstCheck = 'First Check'
-        NoChange = 'No Change'
-        SendAlertFailed = 'Failed To Send Alert'
+        AlertSent = 'ALERT_SENT'
+        FirstCheck = 'FIRST_CHECK'
+        NoChange = 'NO_CHANGE'
+        AlertFailed = 'ALERT_FAILED'
         pass
 
     @staticmethod

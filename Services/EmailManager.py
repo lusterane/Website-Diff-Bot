@@ -37,10 +37,10 @@ class EmailManager:
     def __init__(self):
         self.config = 'a'
 
-    def test_send_email_success(self):
+    def test_send_email_success(self, diff_string, email, link, first_name='John', last_name='Doe'):
         logger.info('Successfully sent email')
 
-    def test_send_email_fail(self):
+    def test_send_email_fail(self, diff_string, email, link, first_name='John', last_name='Doe'):
         message = 'f bro'
         raise Exception(message)
 

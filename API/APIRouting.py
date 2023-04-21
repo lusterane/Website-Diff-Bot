@@ -108,7 +108,19 @@ def create_job():
     except Exception as e:
         logger.error(e)
         abort(400, description=e)
+'''
+POST /api/jobs/all/refresh
+Description: Refreshes all stale jobs
+'''
+@app.route('/api/jobs/all/refresh', methods=['POST'])
+def refresh_jobs():
+    try:
+        jobs = APIUtils.refresh_stale_jobs()
+        return make_response({'staleJobsUpdated': jobs}, 200)
 
+    except Exception as e:
+        logger.error(e)
+        abort(400, description=e)
 
 ''' Helpers '''
 if __name__ == '__main__':
