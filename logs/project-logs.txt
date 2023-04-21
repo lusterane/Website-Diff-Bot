@@ -71,3 +71,69 @@ WHERE "JobsTable".j_id = %(pk_1)s]
 [parameters: {'pk_1': '4'}]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 2023-04-20 11:20:31,269 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - Job ID 4 does not exist
+2023-04-20 11:23:20,598 - Services.LoggerContext.get_checks_from_job_id() on line 60 - ERROR - Job ID None does not exist
+2023-04-20 11:44:20,173 - Services.LoggerContext.create_job() on line 109 - ERROR - Profile ID 5 does not exist
+2023-04-20 12:31:12,784 - Services.LoggerContext.create_job() on line 109 - ERROR - Error creating backref 'scraped_data' on relationship 'Job.link': property of that name exists on mapper 'Mapper[ScrapedData(ScrapedDataTable)]'
+2023-04-20 12:31:49,259 - Services.LoggerContext.create_job() on line 109 - ERROR - No module named 'WebsiteScraper'
+2023-04-20 12:32:08,876 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 12:32:09,062 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 12:37:55,362 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 12:37:55,564 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 12:37:57,856 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with link http://example.com/link3 already exists
+2023-04-20 12:38:45,272 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with link http://example.com/link3 already exists
+2023-04-20 12:38:49,556 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 12:38:49,660 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 12:38:58,738 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with job name job1 already exists
+2023-04-20 12:39:03,053 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with job name job1 already exists
+2023-04-20 13:09:45,786 - Services.LoggerContext.create_job() on line 109 - ERROR - Job with job name job1 already exists
+2023-04-20 13:37:43,359 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 13:37:43,473 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 13:37:43,874 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "DiffsTable_pkey"
+DETAIL:  Key (d_id)=(1) already exists.
+
+[SQL: INSERT INTO "DiffsTable" (scraped_diff, updated_on, s_id) VALUES (%(scraped_diff)s, %(updated_on)s, %(s_id)s) RETURNING "DiffsTable".d_id]
+[parameters: {'scraped_diff': '- E\n+ Example Domain\nExample Domain\nT\n- ample Domai\n+ is domain is for use in illustrative examples in documents. You may use t\n- Exa\n+ is\n domain in literature without prior coordination or asking for permission.\nMore information...', 'updated_on': datetime.datetime(2023, 4, 20, 13, 37, 43, 752579), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:32:28,978 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:32:29,090 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:32:29,439 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ChecksTable_pkey"
+DETAIL:  Key (c_id)=(1) already exists.
+
+[SQL: INSERT INTO "ChecksTable" (status, checked_on, s_id) VALUES (%(status)s, %(checked_on)s, %(s_id)s) RETURNING "ChecksTable".c_id]
+[parameters: {'status': 'First Check', 'checked_on': datetime.datetime(2023, 4, 20, 15, 32, 29, 333574), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:32:58,900 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:32:59,006 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:32:59,348 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ChecksTable_pkey"
+DETAIL:  Key (c_id)=(2) already exists.
+
+[SQL: INSERT INTO "ChecksTable" (status, checked_on, s_id) VALUES (%(status)s, %(checked_on)s, %(s_id)s) RETURNING "ChecksTable".c_id]
+[parameters: {'status': 'First Check', 'checked_on': datetime.datetime(2023, 4, 20, 15, 32, 59, 226647), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:33:25,378 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:33:25,481 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:33:25,817 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ChecksTable_pkey"
+DETAIL:  Key (c_id)=(3) already exists.
+
+[SQL: INSERT INTO "ChecksTable" (status, checked_on, s_id) VALUES (%(status)s, %(checked_on)s, %(s_id)s) RETURNING "ChecksTable".c_id]
+[parameters: {'status': 'First Check', 'checked_on': datetime.datetime(2023, 4, 20, 15, 33, 25, 721373), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:39:38,900 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:39:39,012 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:39:39,382 - Services.LoggerContext.create_job() on line 109 - ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "DiffsTable_pkey"
+DETAIL:  Key (d_id)=(1) already exists.
+
+[SQL: INSERT INTO "DiffsTable" (scraped_diff, updated_on, s_id) VALUES (%(scraped_diff)s, %(updated_on)s, %(s_id)s) RETURNING "DiffsTable".d_id]
+[parameters: {'scraped_diff': '- E\n+ Example Domain\nExample Domain\nT\n- ample Domai\n+ is domain is for use in illustrative examples in documents. You may use t\n- Exa\n+ is\n domain in literature without prior coordination or asking for permission.\nMore information...', 'updated_on': datetime.datetime(2023, 4, 20, 15, 39, 39, 281599), 's_id': 2}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-20 15:42:29,960 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:42:30,063 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:42:30,781 - Services.LoggerContext.test_send_email_success() on line 41 - INFO - Successfully sent email
+2023-04-20 15:42:30,998 - Services.LoggerContext.create_job() on line 109 - ERROR - unsupported type for timedelta minutes component: str
+2023-04-20 15:46:20,678 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:46:20,784 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:46:21,243 - Services.LoggerContext.create_job() on line 109 - ERROR - unsupported type for timedelta minutes component: str
+2023-04-20 15:47:38,002 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:47:38,108 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!
+2023-04-20 15:49:09,917 - Services.LoggerContext.scrape_link() on line 14 - INFO - Starting Scraping http://example.com/link2. . .
+2023-04-20 15:49:10,024 - Services.LoggerContext.scrape_link() on line 18 - INFO - Scraping Success!

@@ -22,10 +22,10 @@ class Job(db.Model):
 
     j_id = db.Column(db.BigInteger, primary_key=True)
     job_name = db.Column(db.Text, nullable=False)
-    link = db.Column(db.Text, nullable=False)
     frequency = db.Column(db.Integer, nullable=False)
     last_updated = db.Column(db.TIMESTAMP(timezone=True), nullable=False)
     next_update = db.Column(db.TIMESTAMP(timezone=True), nullable=False)
+    date_created = db.Column(db.TIMESTAMP(timezone=True), nullable=False)
     p_id = db.Column(db.BigInteger, db.ForeignKey(f'{TableNames.PROFILES_TABLE.value}.p_id'))
     s_id = db.Column(db.BigInteger, db.ForeignKey(f'{TableNames.SCRAPED_DATA_TABLE.value}.s_id'))
 
@@ -41,25 +41,26 @@ class Job(db.Model):
 
     @staticmethod
     def create_job(job_data):
-        job = Job(job_name=job_data['job_name'], link=job_data['link'], frequency=job_data['frequency'],
-                  last_updated=job_data['last_updated'], next_update=job_data['next_update'], p_id=job_data['p_id'],
+        job = Job(job_name=job_data['job_name'], frequency=job_data['frequency'],
+                  last_updated=job_data['last_updated'], next_update=job_data['next_update'], date_created=datetime.datetime.now(), p_id=job_data['p_id'],
                   s_id=job_data['s_id'])
         db.session.add(job)
         db.session.commit()
         refresh_session_if_needed(job)
         return job
 
+    '''
+    only let user update job_name and frequency
+    '''
+
     @staticmethod
     def update_job(j_id, job_data):
         job = Job.query.get(j_id)
         if job:
             job.job_name = job_data['job_name']
-            job.link = job_data['link']
             job.frequency = job_data['frequency']
             job.last_updated = job_data['last_updated']
             job.next_update = job_data['next_update']
-            job.p_id = job_data['p_id']
-            job.s_id = job_data['s_id']
             db.session.commit()
             refresh_session_if_needed(job)
         return job
@@ -77,17 +78,17 @@ class Job(db.Model):
         return {
             'j_id': self.j_id,
             'job_name': self.job_name,
-            'link': self.link,
             'frequency': self.frequency,
             'last_updated': self.last_updated.isoformat(),
             'next_update': self.next_update.isoformat(),
+            'date_created': self.date_created.isoformat(),
             'p_id': self.p_id,
             's_id': self.s_id,
         }
 
     def __repr__(self):
-        return f"Job(j_id={self.j_id}, job_name='{self.job_name}', link='{self.link}', frequency={self.frequency}, last_updated='{self.last_updated}', " \
-               f"next_update='{self.next_update}', p_id={self.p_id}, s_id={self.s_id})"
+        return f"Job(j_id={self.j_id}, job_name='{self.job_name}', frequency={self.frequency}, last_updated='{self.last_updated}', " \
+               f"next_update='{self.next_update}', data_created='{self.date_created}', p_id={self.p_id}, s_id={self.s_id})"
 
 
 class Profile(db.Model):
@@ -148,6 +149,7 @@ class ScrapedData(db.Model):
 
     s_id = db.Column(db.BigInteger, primary_key=True)
     scraped_data = db.Column(db.Text, nullable=False)
+    link = db.Column(db.Text, nullable=False, unique=True)
     jobs = db.relationship('Job', backref='scraped_data', lazy=True)
     diffs = db.relationship('Diff', backref='scraped_data', lazy=True)
     checks = db.relationship('Check', backref='scraped_data', lazy=True)
@@ -163,8 +165,13 @@ class ScrapedData(db.Model):
         return scraped_data
 
     @staticmethod
-    def create_scraped_data(scraped_data):
-        new_scraped_data = ScrapedData(scraped_data=scraped_data)
+    def get_scraped_data_by_link(link):
+        scraped_data = ScrapedData.query.filter_by(link=link).first()
+        return scraped_data
+
+    @staticmethod
+    def create_scraped_data(scraped_data, link):
+        new_scraped_data = ScrapedData(scraped_data=scraped_data, link=link)
         db.session.add(new_scraped_data)
         db.session.commit()
         refresh_session_if_needed(new_scraped_data)
@@ -192,10 +199,11 @@ class ScrapedData(db.Model):
         return {
             's_id': self.s_id,
             'scraped_data': self.scraped_data,
+            'link': self.link
         }
 
     def __repr__(self):
-        return f"ScrapedData(s_id={self.s_id}, scraped_data='{get_truncated_html_data(self.scraped_data)}')"
+        return f"ScrapedData(s_id={self.s_id}, scraped_data='{get_truncated_html_data(self.scraped_data)},link='{self.link}')"
 
 
 class Diff(db.Model):
@@ -266,6 +274,13 @@ class Check(db.Model):
     checked_on = db.Column(db.TIMESTAMP(timezone=True), nullable=False)
     s_id = db.Column(db.BigInteger, db.ForeignKey(f'{TableNames.SCRAPED_DATA_TABLE.value}.s_id'))
 
+    class Status(Enum):
+        AlertSent = 'Sent Alert'
+        FirstCheck = 'First Check'
+        NoChange = 'No Change'
+        SendAlertFailed = 'Failed To Send Alert'
+        pass
+
     @staticmethod
     def get_all_checks():
         checks = Check.query.all()
@@ -278,8 +293,8 @@ class Check(db.Model):
         return check
 
     @staticmethod
-    def create_check(status, s_id):
-        check = Check(status=status, s_id=s_id)
+    def create_check(status: Status, s_id):
+        check = Check(status=status.value, s_id=s_id)
         check.checked_on = datetime.datetime.now()
         db.session.add(check)
         db.session.commit()
@@ -287,10 +302,10 @@ class Check(db.Model):
         return check
 
     @staticmethod
-    def update_check(c_id, status, checked_on, s_id):
+    def update_check(c_id, status: Status, checked_on, s_id):
         check = Check.query.get(c_id)
         if check:
-            check.status = status
+            check.status = status.value
             check.checked_on = checked_on
             check.s_id = s_id
             db.session.commit()
